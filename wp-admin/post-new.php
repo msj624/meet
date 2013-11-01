@@ -25,6 +25,12 @@ if ( 'post' == $post_type ) {
 	if ( wp_redirect( admin_url( 'media-new.php' ) ) )
 		exit;
 } else {
+    if ('event' == $post_type)
+    {
+        $inviteURL = $_GET['invite'];
+        $joinURL = $_GET['join'];
+    }
+
 	$submenu_file = "post-new.php?post_type=$post_type";
 	if ( isset( $post_type_object ) && $post_type_object->show_in_menu && $post_type_object->show_in_menu !== true ) {
 		$parent_file = $post_type_object->show_in_menu;
