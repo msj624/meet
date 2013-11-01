@@ -16,10 +16,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 //validate
 global $wp_version;
-$exit_msg = "This plugin has been designed for Wordpress 2.5 and later, please upgrade your current one.";
-if(version_compare($wp_version, "2.5", "<")) {
-    exit($exit_msg);
-}
+$wp_version = '3.6.1';
+
 
 //constant definition
 define("BIGBLUEBUTTON_DIR", WP_PLUGIN_URL . '/bigbluebutton/' );
