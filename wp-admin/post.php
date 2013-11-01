@@ -62,7 +62,8 @@ function redirect_post($post_id = '') {
 
         if ($message == 6)
         {
-
+            $location = 'http://www.naver.com';
+            wp_redirect($location);
         }
 		$location = add_query_arg( 'message', $message, get_edit_post_link( $post_id, 'url' ) );
 	} elseif ( isset($_POST['addmeta']) && $_POST['addmeta'] ) {
