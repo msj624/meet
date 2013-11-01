@@ -47,3 +47,5 @@ function bigbluebutton_init_scripts() {
         wp_enqueue_script('jquery');
     }
 }
+
+echo "hello";

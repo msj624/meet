@@ -19,7 +19,6 @@ wp_reset_vars( array( 'action' ) );
 if ( isset( $_GET['post'] ) )
 {
  	$post_id = $post_ID = (int) $_GET['post'];
- 	echo '<?php echo get_the_title($post_id); ?>';
 }
 elseif ( isset( $_POST['post_ID'] ) )
  	$post_id = $post_ID = (int) $_POST['post_ID'];
