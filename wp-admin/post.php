@@ -58,13 +58,14 @@ function redirect_post($post_id = '') {
 		} else {
 				$message = 'draft' == $status ? 10 : 1;
 		}
-
+        /*
         if ($message == 6)
         {
             $location = 'http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/temp_bigbluebutton-plugin.php';
             wp_redirect($location);
             exit;
         }
+        */
 		$location = add_query_arg( 'message', $message, get_edit_post_link( $post_id, 'url' ) );
 	} elseif ( isset($_POST['addmeta']) && $_POST['addmeta'] ) {
 		$location = add_query_arg( 'message', 2, wp_get_referer() );
