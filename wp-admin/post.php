@@ -60,6 +60,7 @@ function redirect_post($post_id = '') {
 				$message = 'draft' == $status ? 10 : 1;
 		}
 
+
 		$location = add_query_arg( 'message', $message, get_edit_post_link( $post_id, 'url' ) );
 	} elseif ( isset($_POST['addmeta']) && $_POST['addmeta'] ) {
 		$location = add_query_arg( 'message', 2, wp_get_referer() );
