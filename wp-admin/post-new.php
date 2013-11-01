@@ -64,16 +64,10 @@ if ( is_multisite() ) {
 
 	unset( $check_users );
 }
-
-function session_admin_notice() {
-    if($out = $_SESSION['admin_notices']) {
-        $_SESSION["admin_notices"] = "";
-        echo stripslashes($_GET['invite']);
-    }
-    return false;
+add_action( 'rightnow_end' , 'my_custom_rightnow' );
+function my_custom_rightnow() {
+    echo 'Hello World!';
 }
-add_action('admin_notices', "session_admin_notice");
-
 // Show post form.
 $post = get_default_post_to_edit( $post_type, true );
 $post_ID = $post->ID;
