@@ -3,9 +3,6 @@ echo "hello";
 
 require('php/bbb_api.php');
 
-bigbluebutton_init_sessions();
-bigbluebutton_init_scripts();
-
 function bigbluebutton_init_sessions() {
     if (!session_id()) {
         session_start();
