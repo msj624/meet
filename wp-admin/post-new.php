@@ -64,12 +64,18 @@ if ( is_multisite() ) {
 
 	unset( $check_users );
 }
-add_action( 'rightnow_end' , 'my_custom_rightnow' );
-function my_custom_rightnow() {
-    echo 'Hello World!';
-}
+
 // Show post form.
 $post = get_default_post_to_edit( $post_type, true );
+
+add_filter( 'default_content' , 'my_default_content' );
+function my_default_content( $post_content ) {
+
+    $post_content = '<div class="test-default-content">Hello World!</div>';
+
+    return $post_content;
+}
+
 $post_ID = $post->ID;
 include( ABSPATH . 'wp-admin/edit-form-advanced.php' );
 include( ABSPATH . 'wp-admin/admin-footer.php' );
