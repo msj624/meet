@@ -33,38 +33,17 @@ define('BIGBLUEBUTTON_STRING_MEETING_RECORDED', '<br><br>This session is being r
 //================================================================================
 require('php/bbb_api.php');
 
-//================================================================================
-//------------------Code for development------------------------------------------
-//================================================================================
-if(!function_exists('_log')){
-    function _log( $message ) {
-        if( WP_DEBUG === true ){
-            if( is_array( $message ) || is_object( $message ) ){
-                error_log( print_r( $message, true ) );
-            } else {
-                error_log( $message );
-            }
-        }
+bigbluebutton_init_sessions();
+bigbluebutton_init_scripts();
+
+function bigbluebutton_init_sessions() {
+    if (!session_id()) {
+        session_start();
     }
 }
-_log('Loading the plugin');
 
-//================================================================================
-//------------------------------------Main----------------------------------------
-//================================================================================
-//hook definitions
-register_activation_hook(__FILE__, 'bigbluebutton_install' ); //Runs the install script (including the databse and options set up)
-//register_deactivation_hook(__FILE__, 'bigbluebutton_uninstall') ); //Runs the uninstall function (it includes the database and options delete)
-register_uninstall_hook(__FILE__, 'bigbluebutton_uninstall' ); //Runs the uninstall function (it includes the database and options delete)
-
-//shortcode definitions
-add_shortcode('bigbluebutton', 'bigbluebutton_shortcode');
-add_shortcode('bigbluebutton_recordings', 'bigbluebutton_recordings_shortcode');
-
-//action definitions
-add_action('init', 'bigbluebutton_init');
-add_action('admin_menu', 'bigbluebutton_add_pages', 1);
-add_action('admin_init', 'bigbluebutton_admin_init', 1);
-add_action('plugins_loaded', 'bigbluebutton_update' );
-add_action('plugins_loaded', 'bigbluebutton_widget_init' );
-set_error_handler("bigbluebutton_warning_handler", E_WARNING);
+function bigbluebutton_init_scripts() {
+    if (!is_admin()) {
+        wp_enqueue_script('jquery');
+    }
+}
