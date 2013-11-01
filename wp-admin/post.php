@@ -10,6 +10,7 @@
 
 /** WordPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
+require('../wp-content/plugins/bigbluebutton/php/bbb_api.php');
 
 $parent_file = 'edit.php';
 $submenu_file = 'edit.php';
