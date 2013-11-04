@@ -63,10 +63,10 @@ if ( is_multisite() ) {
 // Show post form.
 $post = get_default_post_to_edit( $post_type, true );
 
-add_filter( 'default_content' , 'my_default_content' );
-function my_default_content( $post_content ) {
+add_filter( 'default_content' , 'my_default_contents' , $post->ID);
+function my_default_contents( $post_content ) {
 
-    $post_content = '<div class="invite">' + 'hello' + '</div>';
+    $post_content = '<div class="test-default-content">Hello World!</div>';
 
     return $post_content;
 }
