@@ -73,10 +73,16 @@ if ('event' == $_POST['post_type'])
 
     add_filter( 'default_content' , 'my_default_content' );
     function my_default_content( $post_content ) {
+        $user_name = "";
+        if ( is_user_logged_in() ) {
+            global $current_user;
+            get_currentuserinfo();
+            $user_name = $current_user->user_login;
+        }
 
     $post_content = 'Enter the meeting description.<br><br>
 
-    <a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a><br><br>
+    <a title="Join" href="'.$_POST['invite'].'&name='.$user_name.'">Join Meeting (Guest)</a><br><br>
 
     Enter password (Creator): <input id=\'password1\' type=\'password\'/><br><br>
 
