@@ -6,7 +6,27 @@
  * Time: 오후 4:37
  */
 
-global $current_user;
-get_currentuserinfo();
+$incfile = 'wp-includes/pluggable-functions.php';
+$c=0;
+while(!is_file($incfile))
+{
+    $incfile = '../' . $incfile;
+    $c++;
+    if($c==30) {
+        echo "Could not find pluggable-functions.php.";
+        exit;
+    }
+}
+require_once($incfile);
 
-wp_redirect($_POST['invite'].'&username='.$current_user->user_login);
+if ( is_user_logged_in() ) {
+    global $current_user;
+    get_currentuserinfo();
+
+    wp_redirect($_POST['invite'].'&username='.$current_user->user_login);
+}
+else
+{
+    wp_redirect($_POST['invite'].'&username=""');
+}
+
