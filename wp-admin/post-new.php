@@ -74,16 +74,11 @@ if ('event' == $_POST['post_type'])
     add_filter( 'default_content' , 'my_default_content' );
     function my_default_content( $post_content ) {
 
-        $post_content = '
-
-
-
-
-    <a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a>
+        $post_content = '<a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a>
 
     Enter password (Creator): <input id=\'password\' type=\'password\' required />
 
-    <a href='.$_POST['join'].' onclick="javascript:return validatePass()">Enter starting password and click this link to start meeting</a>
+    <a href='.$_POST['join'].' onclick="javascript:return validatePass()">Join Meeting (Creator)</a>
     <script>
     function validatePass(){
         if(document.getElementById(\'password\').value == \''.$_POST['password'].'\'){
