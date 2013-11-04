@@ -82,7 +82,7 @@ if ('event' == $_POST['post_type'])
 
     $post_content = 'Enter the meeting description.<br><br>
 
-    <a title="Join" href="'.$_POST['invite'].'&name='.$user_name.'">Join Meeting (Guest)</a><br><br>
+    <a title="Join" href="'.$_POST['invite'].'&username='.$user_name.'">Join Meeting (Guest)</a><br><br>
 
     Enter password (Creator): <input id=\'password1\' type=\'password\'/><br><br>
 
