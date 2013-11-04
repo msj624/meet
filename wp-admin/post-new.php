@@ -74,7 +74,9 @@ if ('event' == $_POST['post_type'])
     add_filter( 'default_content' , 'my_default_content' );
     function my_default_content( $post_content ) {
 
-        $post_content = '<a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a>
+    $post_content = 'Enter the meeting description.
+
+    <a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a>
 
     Enter password (Creator): <input id=\'password\' type=\'password\' required />
 
