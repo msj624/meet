@@ -60,16 +60,16 @@ if ( is_multisite() ) {
 	unset( $check_users );
 }
 
-// Show post form.
-$post = get_default_post_to_edit( $post_type, true );
-
-add_filter( 'default_content' , 'my_default_contents' , $post->ID);
-function my_default_contents( $post_content ) {
+add_filter( 'default_content' , 'my_default_content' );
+function my_default_content( $post_content ) {
 
     $post_content = '<div class="test-default-content">Hello World!</div>';
 
     return $post_content;
 }
+
+// Show post form.
+$post = get_default_post_to_edit( $post_type, true );
 
 $post_ID = $post->ID;
 include( ABSPATH . 'wp-admin/edit-form-advanced.php' );
