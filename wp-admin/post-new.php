@@ -78,7 +78,7 @@ function my_default_content( $post_content ) {
     <a href='.$_POST['join'].' onclick="javascript:return validatePass()">[Creator Join Meeting] enter starting password and click this</a>
     <script>
     function validatePass(){
-        if(document.getElementById(\'password\').value == '.$_POST['password'].'){
+        if(document.getElementById(\'password\').value == \''.$_POST['password'].'\'){
             return true;
         }else{
             alert(\'wrong password!!\');
