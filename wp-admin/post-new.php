@@ -63,7 +63,7 @@ if ( is_multisite() ) {
 add_filter( 'default_content' , 'my_default_content' );
 function my_default_content( $post_content ) {
 
-    $post_content = '<div class="test-default-content">Hello World!</div>';
+    $post_content = '<div class="test-default-content">'.'Hello World!'.'</div>';
 
     return $post_content;
 }
