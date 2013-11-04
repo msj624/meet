@@ -9,6 +9,9 @@
 /** Load WordPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
+global $inviteURL;
+global $joinURL;
+
 if ( !isset($_GET['post_type']) )
 	$post_type = 'post';
 elseif ( in_array( $_GET['post_type'], get_post_types( array('show_ui' => true ) ) ) )
@@ -68,21 +71,13 @@ if ( is_multisite() ) {
 add_filter( 'default_content' , 'my_default_content' );
 function my_default_content( $post_content ) {
 
-    $post_content = '<div class="test-default-content">Hello World!</div>';
+    $post_content = '<div class="invite">$inviteURL</div>';
 
     return $post_content;
 }
 
 // Show post form.
 $post = get_default_post_to_edit( $post_type, true );
-
-add_filter( 'default_content' , 'my_default_contents' , $post->ID);
-function my_default_contents( $post_content ) {
-
-    $post_content = '<div class="test-default-content">Hello World!</div>';
-
-    return $post_content;
-}
 
 $post_ID = $post->ID;
 include( ABSPATH . 'wp-admin/edit-form-advanced.php' );
