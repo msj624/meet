@@ -63,7 +63,7 @@ if ( is_multisite() ) {
 add_filter( 'default_content' , 'my_default_content' );
 function my_default_content( $post_content ) {
 
-    $post_content = '<a title="Join Meeting" href="'.$_POST['invite'].'">';
+    $post_content = '<a title="Join" href="'.$_POST['invite'].'">Join Meeting</a>';
 
     return $post_content;
 }
