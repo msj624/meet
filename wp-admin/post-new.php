@@ -76,7 +76,7 @@ if ('event' == $_POST['post_type'])
 
     //<a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a><br><br>
     //<a href='.$_POST['join'].' onclick=\'javascript:return validatePass()\'>Join Meeting (Creator)</a>
-        
+
     $post_content = 'Enter the meeting description.<br><br>
 
     Enter password: <input id=\'password1\' type=\'password\'/><br><br>
@@ -84,9 +84,9 @@ if ('event' == $_POST['post_type'])
     <form method="post" name="form">
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <input type="submit" value="Guest" onclick="javascript:return validatePass() form.action=\'redirectBBB.php\';" />
-    <input type="submit" value="Creator" onclick="javascript:return validatePass(); form.action='.$_POST['join'].'" />
     </form>
     <br><br>
+    <a href='.$_POST['join'].' onclick=\'javascript:return validatePass()\'>Creator</a>
 
     <script>
     function validatePass(varP){
