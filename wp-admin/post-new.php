@@ -78,17 +78,10 @@ if ('event' == $_POST['post_type'])
 
     $post_content = 'Enter the meeting description.<br><br>
 
-    <script>
-    function post(event) {
-        event.preventDefault();
-        document.getElementById("my_form").submit();
-    }
-    </script>
-
     <form action="goJoin.php" method="post" id="my_form" style="display: none;">
         <input type="hidden" name="invite" value='.$_POST['invite'].'/>
+        <a href="javascript:document.form1.submit()">Join Meeting (Guest)</a>
     </form>
-    <a href="#" onclick="post()">Join Meeting (Guest)</a>
 
     Enter password (Creator): <input id=\'password1\' type=\'password\'/><br><br>
 
