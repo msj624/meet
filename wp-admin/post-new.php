@@ -75,7 +75,6 @@ if ('event' == $_POST['post_type'])
     function my_default_content( $post_content ) {
 
     //<a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a><br><br>
-    //<a href='.$_POST['join'].' onclick=\'javascript:return validatePass()\'>Join Meeting (Creator)</a>
 
     $post_content = 'Enter the meeting description.<br><br>
 
@@ -83,10 +82,12 @@ if ('event' == $_POST['post_type'])
 
     <form method="post" name="form">
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
-    <input type="submit" value="Guest" onclick="javascript:return validatePass() form.action=\'redirectBBB.php\';" />
+    <input type="submit" value="Guest" onclick="javascript: form.action=\'redirectBBB.php\';" />
     </form>
     <br><br>
-    <a href='.$_POST['join'].' onclick=\'javascript:return validatePass()\'>Creator</a>
+
+    <a href='.$_POST['join'].' onclick=\'javascript:return validatePass()\'>Join Meeting (Creator)</a>
+    <br><br>
 
     <script>
     function validatePass(varP){
