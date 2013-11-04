@@ -50,11 +50,6 @@ if ( ! function_exists( 'activetab_setup' ) ) :
 		add_theme_support( 'post-thumbnails' ); // featured images
 		set_post_thumbnail_size( 800, 9999 ); // unlimited height, soft crop
 
-        add_filter('login_headerurl', 'my_login_url_local');
-        function my_login_url_local() {
-            return get_bloginfo('http://183.110.207.46/wp/');
-        }
-
 		$custom_header_args = array(
 			'default-image'          => get_template_directory_uri() . '/img/headers/nature.jpg',
 			'random-default'         => true, // random image rotation
