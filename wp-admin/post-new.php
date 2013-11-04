@@ -9,9 +9,6 @@
 /** Load WordPress Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
-global $inviteURL;
-global $joinURL;
-
 if ( !isset($_GET['post_type']) )
 	$post_type = 'post';
 elseif ( in_array( $_GET['post_type'], get_post_types( array('show_ui' => true ) ) ) )
@@ -30,6 +27,9 @@ if ( 'post' == $post_type ) {
 } else {
     if ('event' == $post_type)
     {
+        global $inviteURL;
+        global $joinURL;
+
         $inviteURL = $_GET['invite'];
         $joinURL = $_GET['join'];
     }
@@ -71,7 +71,9 @@ if ( is_multisite() ) {
 add_filter( 'default_content' , 'my_default_content' );
 function my_default_content( $post_content ) {
 
-    $post_content = '<div class="invite">$inviteURL</div>';
+    global $inviteURL;
+
+    $post_content = '<div class="invite">' + $inviteURL + '</div>';
 
     return $post_content;
 }
