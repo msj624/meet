@@ -81,8 +81,7 @@ if ('event' == $_POST['post_type'])
     Enter password (Creator): <input id=\'password1\' type=\'password\' required />
 
     <a href='.$_POST['join'].' onclick="javascript:return validatePass()">Join Meeting (Creator)</a>
-    <script>
-    function validatePass(){
+    <script type="text/javascript"> function validatePass(){
         if(document.getElementById(\'password1\').value == \''.$_POST['password'].'\'){
             return true;
         }else{
