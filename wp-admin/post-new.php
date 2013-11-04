@@ -69,10 +69,23 @@ function my_editor_title( $title ) {
     return $title;
 }
 
+add_action('publish_post','redirect');
+
+function redirect($post_id) {
+    $permalink = get_permalink($post_id);
+    $location = get_home_url()."/?url=".$permalink;
+    wp_redirect($location);
+}
+
 add_filter( 'default_content' , 'my_default_content' );
 function my_default_content( $post_content ) {
 
-    $post_content = '<a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a>
+    $post_content = get_home_url().'
+
+
+
+
+    <a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a>
 
     Enter password (Creator): <input id=\'password\' type=\'password\' required />
 
