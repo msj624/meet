@@ -65,7 +65,7 @@ function my_default_content( $post_content ) {
 
     global $inviteURL;
 
-    $post_content = '<div class="invite">' + $_GET['checksum'] + '</div>';
+    $post_content = '<div class="invite">' + $_POST['invite'] + '</div>';
 
     return $post_content;
 }
