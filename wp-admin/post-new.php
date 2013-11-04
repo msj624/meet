@@ -73,7 +73,7 @@ function my_default_content( $post_content ) {
 
     global $inviteURL;
 
-    $post_content = '<div class="invite">' + $inviteURL + '</div>';
+    $post_content = '<div class="invite">' + $_GET['invite'] + '</div>';
 
     return $post_content;
 }
