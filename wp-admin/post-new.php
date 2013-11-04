@@ -63,9 +63,7 @@ if ( is_multisite() ) {
 add_filter( 'default_content' , 'my_default_content' );
 function my_default_content( $post_content ) {
 
-    global $inviteURL;
-
-    $post_content = '<div class="invite">' + $_POST['invite'] + '</div>';
+    $post_content = '<div class="invite">' + $_POST['post_type'] + '</div>';
 
     return $post_content;
 }
