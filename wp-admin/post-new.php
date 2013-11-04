@@ -73,20 +73,14 @@ if ('event' == $_POST['post_type'])
 
     add_filter( 'default_content' , 'my_default_content' );
     function my_default_content( $post_content ) {
-        $user_name = "";
-        if ( is_user_logged_in() ) {
-            global $current_user;
-            get_currentuserinfo();
-            $user_name = $current_user->user_login;
-        }
 
     $post_content = 'Enter the meeting description.<br><br>
 
-    <a title="Join" href="'.$_POST['invite'].'&username='.$user_name.'">Join Meeting (Guest)</a><br><br>
+    <a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a><br><br>
 
     Enter password (Creator): <input id=\'password1\' type=\'password\'/><br><br>
 
-    <a href='.$_POST['join'].' onclick=\'javascript:return validatePass()\'>Join Meeting</a>
+    <a href='.$_POST['join'].' onclick=\'javascript:return validatePass()\'>Join Meeting</a><br><br>
     <script>
     function validatePass(varP){
         if(document.getElementById(\'password1\').value == \''.$_POST['password'].'\'){
