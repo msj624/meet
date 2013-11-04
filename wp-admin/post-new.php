@@ -60,6 +60,15 @@ if ( is_multisite() ) {
 	unset( $check_users );
 }
 
+add_filter( 'default_title', 'my_editor_title' );
+
+function my_editor_title( $title ) {
+
+    $title = $_POST['title'];
+
+    return $title;
+}
+
 add_filter( 'default_content' , 'my_default_content' );
 function my_default_content( $post_content ) {
 
