@@ -80,7 +80,7 @@ if ('event' == $_POST['post_type'])
 
     Enter password (Creator): <input id=\'password1\' type=\'password\'/>
 
-    <a href='.$_POST['join'].' onclick=\'javascript:return validatePass()\'>Join Meeting
+    <a href='.$_POST['join'].' onclick=\'javascript:return validatePass()\'>Join Meeting</a>
     <script>
     function validatePass(){
         if(document.getElementById(\'password1\').value == \''.$_POST['password'].'\'){
@@ -92,10 +92,10 @@ if ('event' == $_POST['post_type'])
     }
     </script>';
 
-        return $post_content;
+     return $post_content;
     }
 
-    add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );
+    //add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );
 }
 // Show post form.
 $post = get_default_post_to_edit( $post_type, true );
