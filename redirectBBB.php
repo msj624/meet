@@ -6,14 +6,14 @@
  * Time: 오후 4:37
  */
 
-$incfile = 'wp-includes/pluggable-functions.php';
+$incfile = 'wp-load.php';
 $c=0;
 while(!is_file($incfile))
 {
     $incfile = '../' . $incfile;
     $c++;
     if($c==30) {
-        echo "Could not find pluggable-functions.php.";
+        echo "Could not find wp-load.php";
         exit;
     }
 }
