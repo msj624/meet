@@ -79,7 +79,7 @@ if ('event' == $_POST['post_type'])
     $post_content = 'Enter the meeting description.<br><br>
 
     <form method="post" name="form">
-    <input type="hidden" value='.$_POST['invite'].' name="invite" />
+    <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <input type="submit" value="Join Meeting (Guest)" onclick="javascript: form.action=\'redirectBBB.php\';" />
     </form>
 
