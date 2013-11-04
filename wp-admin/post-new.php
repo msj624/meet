@@ -60,27 +60,21 @@ if ( is_multisite() ) {
 	unset( $check_users );
 }
 
-add_filter( 'default_title', 'my_editor_title' );
+if ('event' == $_POST['post_type'])
+{
+    add_filter( 'default_title', 'my_editor_title' );
 
-function my_editor_title( $title ) {
+    function my_editor_title( $title ) {
 
-    $title = $_POST['title'];
+        $title = $_POST['title'];
 
-    return $title;
-}
+        return $title;
+    }
 
-add_action('publish_post','redirect');
+    add_filter( 'default_content' , 'my_default_content' );
+    function my_default_content( $post_content ) {
 
-function redirect($post_id) {
-    $permalink = get_permalink($post_id);
-    $location = get_home_url()."/?url=".$permalink;
-    wp_redirect($location);
-}
-
-add_filter( 'default_content' , 'my_default_content' );
-function my_default_content( $post_content ) {
-
-    $post_content = get_home_url().'
+        $post_content = '
 
 
 
@@ -101,10 +95,11 @@ function my_default_content( $post_content ) {
     }
     </script>';
 
-    return $post_content;
-}
+        return $post_content;
+    }
 
-add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );
+    add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );
+}
 // Show post form.
 $post = get_default_post_to_edit( $post_type, true );
 
