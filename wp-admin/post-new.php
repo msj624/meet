@@ -76,12 +76,20 @@ if ('event' == $_POST['post_type'])
 
     $post_content = 'Enter the meeting description.
 
-    <script type=\'text/javascript\' src=\'http://183.110.207.46/wp/check.js\'></script>
     <a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a>
 
     Enter password (Creator): <input id=\'password1\' type=\'password\' required />
 
-    <a href='.$_POST['join'].' onclick="javascript:return validatePass(document.getElementById(\'password1\').value,'.$_POST['password'].')">Join Meeting (Creator)</a>';
+    <a href='.$_POST['join'].' onclick="javascript:return validatePass()">Join Meeting (Creator)</a>
+    <script type="text/javascript"> function validatePass(){
+        if(document.getElementById(\'password1\').value == \''.$_POST['password'].'\'){
+            return true;
+        }else{
+            alert(\'wrong password!!\');
+            return false;
+        }
+    }
+    </script>';
 
         return $post_content;
     }
