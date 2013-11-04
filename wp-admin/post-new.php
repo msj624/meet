@@ -25,14 +25,6 @@ if ( 'post' == $post_type ) {
 	if ( wp_redirect( admin_url( 'media-new.php' ) ) )
 		exit;
 } else {
-    if ('event' == $post_type)
-    {
-        global $inviteURL;
-        global $joinURL;
-
-        $inviteURL = $_GET['invite'];
-        $joinURL = $_GET['join'];
-    }
 
 	$submenu_file = "post-new.php?post_type=$post_type";
 	if ( isset( $post_type_object ) && $post_type_object->show_in_menu && $post_type_object->show_in_menu !== true ) {
@@ -73,7 +65,7 @@ function my_default_content( $post_content ) {
 
     global $inviteURL;
 
-    $post_content = '<div class="invite">' + $_GET['checksum'] + '</div>';
+    $post_content = '<div class="invite">' + $_GET['inviteLink'] + '</div>';
 
     return $post_content;
 }
