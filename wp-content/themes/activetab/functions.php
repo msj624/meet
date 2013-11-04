@@ -52,7 +52,7 @@ if ( ! function_exists( 'activetab_setup' ) ) :
 
         add_filter('login_headerurl', 'my_login_url_local');
         function my_login_url_local() {
-            return get_bloginfo(get_home_url());
+            return get_bloginfo('http://183.110.207.46/wp/');
         }
 
 		$custom_header_args = array(
