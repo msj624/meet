@@ -90,6 +90,7 @@ function my_default_content( $post_content ) {
     return $post_content;
 }
 
+add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );
 // Show post form.
 $post = get_default_post_to_edit( $post_type, true );
 
