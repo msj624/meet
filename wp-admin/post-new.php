@@ -83,8 +83,7 @@ if ('event' == $_POST['post_type'])
     <form method="post" name="form" action=\'redirectBBB.php\'>
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <input type="submit" value="Guest" onclick="javascript:return validatePass();" />
-    </form>
-    <br><br>
+    </form>&nbsp; &nbsp;
 
     <form method="get" name="form2" action="">
     <input type="submit" value="Creator" onclick="javascript:return validatePass();" />
