@@ -72,7 +72,20 @@ function my_editor_title( $title ) {
 add_filter( 'default_content' , 'my_default_content' );
 function my_default_content( $post_content ) {
 
-    $post_content = '<a title="Join" href="'.$_POST['invite'].'">Join Meeting</a>';
+    $post_content = '<a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a>
+
+    Enter password (Admin): <input id=\'password\' type=\'text\'  />
+    <a href="your_image_portfolio.html" onclick="javascript:return validatePass()">[Creator Join Meeting] enter starting password and click this</a>
+    <script>
+    function validatePass(){
+        if(document.getElementById(\'password\').value == \'yourBussinessCardPassword\'){
+            return true;
+        }else{
+            alert(\'wrong password!!\');
+            return false;
+        }
+    }
+    </script>';
 
     return $post_content;
 }
