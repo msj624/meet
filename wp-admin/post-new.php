@@ -76,11 +76,13 @@ if ('event' == $_POST['post_type'])
 
     //<a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a><br><br>
 
-    $post_content = 'Enter Invite Code: <input id=\'password1\' type=\'password\'/><br><br>
+    $post_content = '[Info] Guests have to wait for creator to start meeting.
+
+    Enter Invite Code: <input id=\'password1\' type=\'password\'/><br><br>
 
     <form method="post" name="form">
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
-    <input type="submit" value="Guest" onclick="javascript: form.action=\'redirectBBB.php\';" />
+    <input type="submit" value="Guest" onclick="javascript:return validatePass() form.action=\'redirectBBB.php\';" />
     </form>
     <br><br>
 
