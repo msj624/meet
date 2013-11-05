@@ -76,9 +76,15 @@ if ('event' == $_POST['post_type'])
 
     //<a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a><br><br>
 
-    $post_content = '[Info] Guests have to wait for creator to start meeting.<br>
-    <a title="Invite" href="http://183.110.207.46/wp/redirectBBB.php?url='.$_POST['invite'].'">Join Meeting (Guest)</a><br>
-    <a title="Join" href="'.$_POST['join'].'">Join Meeting (Creator)</a><br>';
+    $post_content = '[Info] Guests have to wait for creator to start meeting.<br><br>
+    <form  action="redirectBBB.php" method="post">
+    <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
+    <button name="g_submit" value="guest">Guest</button>
+    </form>
+    <form  action="redirectBBB.php" method="post">
+    <input type="hidden" value="'.$_POST['join'].'" name="join" />
+    <button name="c_submit" value="creator">Creator</button>
+    </form>';
 
      return $post_content;
     }
