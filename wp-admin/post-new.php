@@ -76,7 +76,7 @@ if ('event' == $_POST['post_type'])
 
     //<a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a><br><br>
 
-    $post_content = '[Info] Guests have to wait for creator to start meeting.<br><br>
+    $post_content = '[Info] Guest have to wait for creator to start meeting.<br><br>
     <form  action="redirectBBB.php" method="post">
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <button name="g_submit" value="guest">Guest</button>
