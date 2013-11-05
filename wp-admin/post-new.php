@@ -80,12 +80,12 @@ if ('event' == $_POST['post_type'])
             $event_mader = $current_user->ID ;
         }
 
-    $post_content = '[Info] Guest have to wait for creator to start meeting.<br><br>
+    $post_content = '[Info] Guest have to wait for creator to start meeting.
     <form  action="redirectBBB.php" method="post">
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <input type="hidden" value="'.$_POST['join'].'" name="join" />
     <input type="hidden" value="'.$event_mader.'" name="mader" />
-    <button name="redirect_submit" value="redirect">Join Meeting</button>
+    <input type="submit" value="Join Meeting" />
     </form>';
 
      return $post_content;
