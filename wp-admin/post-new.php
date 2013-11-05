@@ -73,17 +73,19 @@ if ('event' == $_POST['post_type'])
 
     add_filter( 'default_content' , 'my_default_content' );
     function my_default_content( $post_content ) {
-
-    //<a title="Join" href="'.$_POST['invite'].'">Join Meeting (Guest)</a><br><br>
+        $event_mader = '';
+        if ( is_user_logged_in() ) {
+            global $current_user;
+            get_currentuserinfo();
+            $event_mader = $current_user->user_login;
+        }
 
     $post_content = '[Info] Guest have to wait for creator to start meeting.<br><br>
     <form  action="redirectBBB.php" method="post">
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
-    <button name="g_submit" value="guest">Guest</button>
-    </form>
-    <form  action="redirectBBB.php" method="post">
     <input type="hidden" value="'.$_POST['join'].'" name="join" />
-    <button name="c_submit" value="creator">Creator</button>
+    <input type="hidden" value="'.$event_mader.'" name="mader" />
+    <button name="redirect_submit" value="redirect">Join Meeting</button>
     </form>';
 
      return $post_content;

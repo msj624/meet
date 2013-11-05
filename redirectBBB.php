@@ -23,32 +23,25 @@ if ( is_user_logged_in() ) {
     global $current_user;
     get_currentuserinfo();
 
-    if ( isset($_GET['url']) )
+    if ( isset($_POST['$event_mader']) )
     {
-        wp_redirect($_GET['url'].'&username='.$current_user->user_login);
-    }
-    else if ( isset($_POST['invite']) )
-    {
-        wp_redirect($_POST['invite'].'&username='.$current_user->user_login);
+        if ($_POST['$event_mader'] == $current_user->user_login)
+        {
+            wp_redirect($_POST['join']);
+        }
+        else
+        {
+            wp_redirect($_POST['invite'].'&username='.$current_user->user_login);
+        }
     }
     else
     {
-        wp_redirect($_POST['join']);
+        echo "Could not event mader";
+        exit;
     }
 }
 else
 {
-    if ( isset($_GET['url']) )
-    {
-        wp_redirect($_GET['url'].'&username=""');
-    }
-    else if ( isset($_POST['invite']) )
-    {
-        wp_redirect($_POST['invite'].'&username=""');
-    }
-    else
-    {
-        wp_redirect($_POST['join']);
-    }
+    wp_redirect(get_home_url());
 }
 
