@@ -77,7 +77,7 @@ if ('event' == $_POST['post_type'])
         if ( is_user_logged_in() ) {
             global $current_user;
             get_currentuserinfo();
-            $event_mader = $current_user->user_login;
+            $event_mader = $current_user->ID ;
         }
 
     $post_content = '[Info] Guest have to wait for creator to start meeting.<br><br>
