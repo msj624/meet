@@ -78,27 +78,15 @@ if ('event' == $_POST['post_type'])
 
     $post_content = '[Info] Guests have to wait for creator to start meeting.<br><br>
 
-    Enter Invite Code: <input id=\'password1\' type=\'password\'/><br><br>
-
-    <form  action="redirectBBB.php" method="post" onsubmit="return validatePass();">
+    <form  action="redirectBBB.php" method="post">
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <input type="submit" value="Guest">
     </form>
-    <form  action="redirectBBB.php" method="post" onsubmit="return validatePass();">
+
+    <form  action="redirectBBB.php" method="post">
     <input type="hidden" value="'.$_POST['join'].'" name="join" />
     <input type="submit" value="Creator">
-    </form>
-
-    <script>
-    function validatePass(){
-        if(document.getElementById(\'password1\').value == \''.$_POST['password'].'\'){
-            return true;
-        }else{
-            alert(\'wrong invite code !!\');
-            return false;
-        }
-    }
-    </script>';
+    </form>';
 
      return $post_content;
     }
