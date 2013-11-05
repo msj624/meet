@@ -95,7 +95,7 @@ if ('event' == $_POST['post_type'])
         if(document.getElementById(\'password1\').value == \''.$_POST['password'].'\'){
             return true;
         }else{
-            alert(\'wrong password!!\');
+            alert(\'wrong invite code !!\');
             return false;
         }
     }
