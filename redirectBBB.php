@@ -23,9 +23,9 @@ if ( is_user_logged_in() ) {
     global $current_user;
     get_currentuserinfo();
 
-    if ( isset($_POST['$event_mader']) )
+    if ( isset($_POST['mader']) )
     {
-        if ($_POST['$event_mader'] == $current_user->user_login)
+        if ($_POST['mader'] == $current_user->user_login)
         {
             wp_redirect($_POST['join']);
         }
