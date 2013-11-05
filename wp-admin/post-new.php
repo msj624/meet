@@ -80,20 +80,19 @@ if ('event' == $_POST['post_type'])
 
     Enter Invite Code: <input id=\'password1\' type=\'password\'/><br><br>
 
-    <form  action="redirectBBB.php" method="post" onsubmit="return validatePass(this);">
+    <form  action="redirectBBB.php" method="post" onsubmit="return validatePass();">
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <input type="submit" value="Guest">
     </form>
 
-    <form  action="redirectBBB.php" method="post" onsubmit="return validatePass(this);">
+    <form  action="redirectBBB.php" method="post" onsubmit="return validatePass();">
     <input type="hidden" value="'.$_POST['join'].'" name="join" />
     <input type="submit" value="Creator">
     </form>
 
     <script>
-    function validatePass(form){
-        var e = form.elements;
-        if(e[\'password1\'].value == \''.$_POST['password'].'\'){
+    function validatePass(){
+        if(document.getElementById(\'password1\').value == \''.$_POST['password'].'\'){
             return true;
         }else{
             alert(\'wrong password!!\');
