@@ -89,7 +89,7 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 	do_action( 'login_head' );
 
 	if ( is_multisite() ) {
-		$login_header_url   = network_home_url();
+		$login_header_url   = __( 'http://183.110.207.46/wp' );;
 		$login_header_title = $current_site->site_name;
 	} else {
 		$login_header_url   = __( 'http://wordpress.org/' );
