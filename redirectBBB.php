@@ -24,7 +24,7 @@ if ( is_user_logged_in() ) {
     get_currentuserinfo();
     if ( !isset($_POST['invite']) )
     {
-        wp_redirect($_POST['join'].'&username='.$current_user->user_login);
+        wp_redirect($_POST['join']);
     }
     else
     {
@@ -35,7 +35,7 @@ else
 {
     if ( !isset($_POST['invite']) )
     {
-        wp_redirect($_POST['join'].'&username=""');
+        wp_redirect($_POST['join']);
     }
     else
     {
