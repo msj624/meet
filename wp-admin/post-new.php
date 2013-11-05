@@ -84,7 +84,6 @@ if ('event' == $_POST['post_type'])
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <input type="submit" value="Guest">
     </form>
-
     <form  action="redirectBBB.php" method="post" onsubmit="return validatePass();">
     <input type="hidden" value="'.$_POST['join'].'" name="join" />
     <input type="submit" value="Creator">
