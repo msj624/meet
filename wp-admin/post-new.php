@@ -80,13 +80,13 @@ if ('event' == $_POST['post_type'])
 
     Enter Invite Code: <input id=\'password1\' type=\'password\'/><br><br>
 
-    <form  action="redirectBBB.php" method="post" onsumbit="return validatePass()">
+    <form  action="redirectBBB.php" method="post" onsumbit="return validatePass();">
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <input type="submit" value="Guest">
     </form>
 
-    <form  action="redirectBBB.php" method="get" onsumbit="return validatePass()">
-    <input type="hidden" value="'.$_POST['join'].'" name="invite" />
+    <form  action="redirectBBB.php" method="post" onsumbit="return validatePass();">
+    <input type="hidden" value="'.$_POST['join'].'" name="join" />
     <input type="submit" value="Creator">
     </form>
 
