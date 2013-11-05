@@ -81,6 +81,7 @@ if ('event' == $_POST['post_type'])
         }
 
     $post_content = 'Guest have to wait for creator to start meeting.
+
     <form  action="redirectBBB.php" method="post">
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <input type="hidden" value="'.$_POST['join'].'" name="join" />
