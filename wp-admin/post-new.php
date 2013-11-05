@@ -78,7 +78,7 @@ if ('event' == $_POST['post_type'])
 
     $post_content = 'Enter the meeting description.<br><br>
 
-    Enter password: <input id=\'password1\' type=\'password\'/><br><br>
+    Enter Invite Code: <input id=\'password1\' type=\'password\'/><br><br>
 
     <form method="post" name="form">
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
