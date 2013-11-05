@@ -91,16 +91,8 @@ if ('event' == $_POST['post_type'])
      return $post_content;
     }
 
-    function mytheme_tinymce_config( $init ) {
-        $valid_iframe = 'iframe[id|class|title|style|align|frameborder|height|longdesc|marginheight|marginwidth|name|scrolling|src|width]';
-        if ( isset( $init['extended_valid_elements'] ) ) {
-            $init['extended_valid_elements'] .= ',' . $valid_iframe;
-        } else {
-            $init['extended_valid_elements'] = $valid_iframe;
-        }
-        return $init;
-    }
-    add_filter('tiny_mce_before_init', 'mytheme_tinymce_config');
+    // *** Important ***
+    // you have to install Capability Manager Enhanced Plugin then you have to give the access permission of unfiltered_html to other users.
 
     add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );
 }
