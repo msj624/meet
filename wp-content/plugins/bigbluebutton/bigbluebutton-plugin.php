@@ -679,14 +679,13 @@ function bigbluebutton_general_options() {
         $out .= '</div>';
 
     } else {
-        // echo bigbluebutton_permission_settings();
+        echo bigbluebutton_permission_settings();
 
         echo bigbluebutton_create_meetings();
 
-        //echo bigbluebutton_list_meetings();
+        echo bigbluebutton_list_meetings();
 
-        //echo bigbluebutton_list_recordings('List of Recordings');
-
+        echo bigbluebutton_list_recordings('List of Recordings');
     }
 
 }
