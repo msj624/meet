@@ -22,11 +22,24 @@ require_once($incfile);
 if ( is_user_logged_in() ) {
     global $current_user;
     get_currentuserinfo();
-
-    wp_redirect($_POST['invite'].'&username='.$current_user->user_login);
+    if ( !isset($_POST['invite']) )
+    {
+        wp_redirect($_POST['join'].'&username='.$current_user->user_login);
+    }
+    else
+    {
+        wp_redirect($_POST['invite'].'&username='.$current_user->user_login);
+    }
 }
 else
 {
-    wp_redirect($_POST['invite'].'&username=""');
+    if ( !isset($_POST['invite']) )
+    {
+        wp_redirect($_POST['join'].'&username=""');
+    }
+    else
+    {
+        wp_redirect($_POST['invite'].'&username=""');
+    }
 }
 

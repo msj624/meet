@@ -84,15 +84,14 @@ if ('event' == $_POST['post_type'])
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <input type="submit" value="Guest">
     </form>
-    <br><br>
 
-    <form  action="'.$_POST['join'].'" method="get" onsumbit="return validatePass()">
+    <form  action="redirectBBB.php" method="get" onsumbit="return validatePass()">
+    <input type="hidden" value="'.$_POST['join'].'" name="invite" />
     <input type="submit" value="Creator">
     </form>
-    <br><br>
 
     <script>
-    function validatePass(varP){
+    function validatePass(){
         if(document.getElementById(\'password1\').value == \''.$_POST['password'].'\'){
             return true;
         }else{
