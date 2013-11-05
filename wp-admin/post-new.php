@@ -85,11 +85,22 @@ if ('event' == $_POST['post_type'])
     <input type="hidden" value="'.$_POST['invite'].'" name="invite" />
     <input type="hidden" value="'.$_POST['join'].'" name="join" />
     <input type="hidden" value="'.$event_mader.'" name="mader" />
-    <input type="submit" value="Join Meeting" />
+    <button name="redirect_submit" value="redirect">Join Meeting</button>
     </form>';
 
      return $post_content;
     }
+
+    function mytheme_tinymce_config( $init ) {
+        $valid_iframe = 'iframe[id|class|title|style|align|frameborder|height|longdesc|marginheight|marginwidth|name|scrolling|src|width]';
+        if ( isset( $init['extended_valid_elements'] ) ) {
+            $init['extended_valid_elements'] .= ',' . $valid_iframe;
+        } else {
+            $init['extended_valid_elements'] = $valid_iframe;
+        }
+        return $init;
+    }
+    add_filter('tiny_mce_before_init', 'mytheme_tinymce_config');
 
     add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );
 }
