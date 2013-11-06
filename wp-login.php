@@ -155,9 +155,10 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 	 * @param string $message Login message text.
 	 */
 	$message = apply_filters( 'login_message', $message );
-	if ( !empty( $message ) )
+	/*
+    if ( !empty( $message ) )
 		echo $message . "\n";
-
+    */
 	// In case a plugin uses $error rather than the $wp_errors object
 	if ( !empty( $error ) ) {
 		$wp_error->add('error', $error);
