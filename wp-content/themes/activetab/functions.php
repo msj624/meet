@@ -454,6 +454,11 @@ function optionsframework_option_name() { // set theme option name to 'activetab
 
 }
 
+function custom_loginlogo_url($url) {
+    return 'http://183.110.207.46/wp/';
+}
+
+add_filter( 'login_headerurl', 'custom_loginlogo_url' );
 
 function activetab_optionscheck_change_santiziation() { // remove default and add custom filter for textarea in options framework
 	remove_filter( 'of_sanitize_textarea', 'of_sanitize_textarea' );
