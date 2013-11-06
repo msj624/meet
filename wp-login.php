@@ -86,11 +86,11 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 	 *
 	 * @since 2.1.0
 	 */
-	//do_action( 'login_head' );
+	do_action( 'login_head' );
 
 	if ( is_multisite() ) {
-		$login_header_url   = network_home_url();
-		$login_header_title = $current_site->site_name;
+		$login_header_url   = "";
+		$login_header_title = "";
 	} else {
 		$login_header_url   = __( 'http://wordpress.org/' );
 		$login_header_title = __( 'Powered by WordPress' );
