@@ -454,12 +454,6 @@ function optionsframework_option_name() { // set theme option name to 'activetab
 
 }
 
-function custom_loginlogo_url($url) {
-    return 'http://183.110.207.46/wp/';
-}
-
-add_filter( 'login_headerurl', 'custom_loginlogo_url' );
-
 function activetab_optionscheck_change_santiziation() { // remove default and add custom filter for textarea in options framework
 	remove_filter( 'of_sanitize_textarea', 'of_sanitize_textarea' );
 	add_filter( 'of_sanitize_textarea', 'activetab_custom_sanitize_textarea' );
@@ -495,4 +489,34 @@ function activetab_custom_sanitize_textarea( $input ) { // allow script and styl
 	$custom_allowedtags = array_merge( $custom_allowedtags, $allowedposttags );
 	$output = wp_kses( $input, $custom_allowedtags );
 	return $output;
+}
+
+// Customizing
+
+add_filter( 'login_headerurl', 'custom_loginlogo_url' );
+
+function custom_loginlogo_url($url) {
+    return 'http://183.110.207.46/wp/';
+}
+
+add_filter('redirect_post_location', 'redirect_to_post_on_publish_or_save');
+
+function redirect_to_post_on_publish_or_save($location)
+{
+    global $post;
+
+    if (
+        (isset($_POST['publish']) || isset($_POST['save'])) &&
+        preg_match("/post=([0-9]*)/", $location, $match) &&
+        $post &&
+        $post->ID == $match[1] &&
+        (isset($_POST['publish']) || $post->post_status == 'publish') && // Publishing draft or updating published post
+        $pl = get_permalink($post->ID)
+    ) {
+        // Always redirect to the post
+        $location = $pl;
+    }
+
+    return $location;
+
 }
