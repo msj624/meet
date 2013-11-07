@@ -984,4 +984,34 @@
     add_filter('get_comment_author_link', 'zAlive_openCommentAuthorLinkInNewWindow');
   }
 
+    // Customizing
+
+    add_filter( 'login_headerurl', 'custom_loginlogo_url' );
+
+    function custom_loginlogo_url($url) {
+        return 'http://183.110.207.46/wp/';
+    }
+
+    add_filter('redirect_post_location', 'redirect_to_post_on_publish_or_save');
+
+    function redirect_to_post_on_publish_or_save($location)
+    {
+        global $post;
+
+        if (
+            (isset($_POST['publish']) || isset($_POST['save'])) &&
+            preg_match("/post=([0-9]*)/", $location, $match) &&
+            $post &&
+            $post->ID == $match[1] &&
+            (isset($_POST['publish']) || $post->post_status == 'publish') && // Publishing draft or updating published post
+            $pl = get_permalink($post->ID)
+        ) {
+            // Always redirect to the post
+            $location = $pl;
+        }
+
+        return $location;
+    }
+
 ?>
+
