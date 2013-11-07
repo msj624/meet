@@ -27,7 +27,7 @@
 						}else{
 							?>
 							<a href="<?php echo trailingslashit(get_admin_url()); ?>profile.php"><?php esc_html_e('Profile','login-with-ajax') ?></a><br/>
-                            <a href="<?php echo trailingslashit(get_admin_url()); ?>edit.php?post_type=event">My Meetings</a>
+                            <a href="<?php echo trailingslashit(get_admin_url()); ?>edit.php?post_type=event">My Meetings</a><br/>
 							<?php	
 						}
 					}
