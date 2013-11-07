@@ -22,7 +22,6 @@ get_header(); ?>
       <?php else : ?>
         <?php get_template_part( 'template/content', 'none' ); ?>
       <?php endif; ?>
-
     </div>
   <?php //show sidebar on the right
     if( $zAlive_options['primary_sidebar_layout'] == 1 ) { get_sidebar(); } 
