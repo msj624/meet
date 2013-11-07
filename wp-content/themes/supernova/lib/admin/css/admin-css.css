@@ -1,0 +1,645 @@
+/*
+* Containts styles for the admin options page	
+*/
+#supernovaoptions{width:900px;}
+.supernova_tabs{height:500px;
+	background-color: #616975;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(114, 122, 134)),to(rgb(80, 88, 100)));
+	background-image: -webkit-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+	background-image: -moz-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+	background-image: -o-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+	background-image: -ms-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+	background-image: linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+	width:142px;
+	display:block;
+	box-shadow: -1px 2px 5px;	
+	float:left;	
+	padding-right: 8px;
+	}	
+.supernova_tabs ul{
+	padding: 0;
+	margin: 0;
+	}
+.supernova_tabs li{
+	width:128px;
+	padding: 4px;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	display: block!important;
+	color: #DDD;
+	cursor:pointer;	
+	background:#97739B;
+	margin:0;
+	border-bottom:1px solid #fff;	
+	background-color: #616975;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(114, 122, 134)),to(rgb(80, 88, 100)));
+	background-image: -webkit-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+	background-image: -moz-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+	background-image: -o-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+	background-image: -ms-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+	background-image: linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#727a86', EndColorStr='#505864');
+	border-bottom: 1px solid #33373d;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #878e98;
+	-moz-box-shadow: inset 0px 1px 0px 0px #878e98;
+	box-shadow: inset 0px 1px 0px 0px #878e98;
+	width: 100%;
+	height: 2.75em;
+	line-height: 2.75em;
+	position: relative;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	color: #fff;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.5);
+	-webkit-transition:  0.5s;
+	-moz-transition:0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition:0.5s;
+	cursor: pointer;			
+	}		
+.supernova_tabs li:hover{
+	border:none;
+	padding-right:20px;
+	marign-right:-20px!important;
+	background:#32373d;;
+	color:#FFF;
+	width:125px;
+	font-weight:bold;
+	}	
+#wpfooter{
+	position:static;
+	}		
+.supernova-botton-primary{
+	margin-left:300px;
+	padding:10px;
+	}	
+#TB_window {
+	z-index: 999999999 !important;
+	}		
+.new-button-primary{
+	height: 40px !important;
+	width: 185px !important;
+	line-height: 40px !important;
+	position: absolute;
+	bottom: 5px;
+	font-size:15px !important;
+	}			
+#menu_right{
+	float:left;
+	margin-left: 30px;
+	margin-bottom: 70px;
+	width:650px;
+	}		
+.clearfix{
+	clear:both;
+	}	
+#menu_right label{
+	font-weight: bold;
+	font-size: 13px;
+	display: block;
+	text-indent: 5px;
+	display: block;
+	margin-top: 8px;
+	}	
+#menu_right label img{
+	margin-right:10px;
+	float:left;
+	height: 30px;
+	width: 30px;
+	margin-top: 6px;	
+	}	
+#menu_right label  i{
+	display: inline-block;
+	margin-top: 12px;
+	margin-left: -10px;
+	}	
+a.cusfavicon {
+	font-size:14px;
+	text-decoration:underline;
+	cursor:pointer;
+	}	
+.supernova_help{
+	font-style:italic;
+	font-size:14px;
+	display:block;
+	margin-bottom:10px;
+	}	
+.sayed{	
+	}	
+.submit_sticky{
+	width:814px;
+	height:50px;
+	background:url(../images/TransparentBlack.png);
+	position:fixed;
+	bottom:0;
+	left:163px;
+	border-radius:5px 5px 0 0 ;
+	z-index: 9999999;
+	}	
+.use_default_label{
+	float:right;
+	margin-right:10px;
+	margin-top:10px;
+	}
+.use_default{
+	float:right;
+	margin-right:30px !important;
+	margin-top: 10px !important;
+	}
+.reset_button{
+	position:fixed;
+	bottom:10px;	
+	left:175px;
+	z-index: 999999999;
+	}
+.supernova_tabs .supernova_current{
+	border: none !important;
+	padding-right: 20px !important;
+	marign-right: -20px!important;
+	background: #32373d !important;
+	color: #FFF !important;
+	width: 125px !important;
+	font-weight: bold !important;
+	}	
+#addmore1, #addmore2, #addmore3{
+	color:blue;
+	font-size:14px;
+	cursor:pointer;
+	}	
+#addmore1:hover, #addmore2:hover{
+	color:red;
+	font-weight:bold;
+	}
+.loader{
+	background:url(../images/loader.gif);
+	position:fixed;
+	top: 255px;
+	left: 600px;
+	width:30px;
+	height:30px;
+	display:none;
+	z-index:999999999;
+	}
+.event_preview{
+	background:url(../images/no_image.jpg) no-repeat center;
+	width:200px;
+	height:100px;
+	}		
+.supernova_saved{
+	background:url(../images/settings_saved.gif) no-repeat center;
+	width: 128px;
+	height:16px;
+	position:fixed;
+	left:720px;
+	bottom:13px;	
+	border-radius:5px;
+	}	
+.saving_settings{
+	background:url(../images/saving_settings.gif) no-repeat center;
+	width: 150px;
+	height:16px;
+	position:fixed;
+	left:620px;
+	bottom:3px;	
+	border-radius:5px;	
+	display:none;
+	}
+.imgpre{
+	width:120px;
+	height:75px;
+	}
+#menu_right input[type="text"], input[type="email"], input[type="password"], textarea, select, input[type="checkbox"], input[type="radio"]{
+	background: none repeat scroll 0 0 #FAFAFE;
+	border: 1px solid #E2E2E6;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+	color: #464B5A;
+	padding: 5px 5px;
+	}
+#menu_right input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus{
+	background: none repeat scroll 0 0 #FAFAFE;
+	border: 1px solid #E2E2E6;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+	color: #464B5A;
+	padding: 5px 5px;	
+	}
+.supernova_tabs i{
+	width:25px;
+	height:25px;
+	display:inline-block;
+	background:url(../images/sprite.png);
+	vertical-align: middle;
+	}
+i.general{
+	background-position: -175px 0;
+	}	
+i.layout{
+	background-position: -350px 0;
+	}	
+i.styling{
+	background-position: -150px 0;
+	}		
+i.slider{
+	background-position: -300px 0;
+	}				
+i.social{
+	background-position: -250px 0;
+	}			
+i.footer{
+	background-position: -100px 0;	
+	}	
+i.ad{
+	background-position: -74px 0;	
+	}	
+.supernova_tabs i.support{
+	background:url(../images/coffee.gif) no-repeat top !important;
+	margin-top: -15px;
+	}	
+i.gallery{
+	background-position: -275px 0;
+	}				
+.sayed .documentation{
+	color: #333;
+	text-shadow: 1px 1px 1px #fff;
+	background:#fff;
+	overflow:hidden;
+	}	
+.sayed .documentation h3{
+	color: #333;
+	text-shadow: 1px 1px 1px #fff;
+	}
+.cofee{
+	width: 320px;
+	}
+.cofee img{
+	float:left;
+	}
+.paypal img{
+	margin-top:25px;
+	}
+.cofee i{
+	display: inline-block;
+	margin-top: 36px;
+	font-weight: bold;	
+	font-size: 16px;
+	}
+.tzCheckBox{
+	background: url('../images/on-off.png') no-repeat left top;
+	display: inline-block;
+	min-width: 77px;
+	height: 34px;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;
+}
+.tzCheckBox.checked{
+	background: url('../images/background.png') no-repeat left top;
+	display: inline-block;
+	min-width: 77px;
+	height: 34px;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;	
+}
+.tzCheckBox .tzCBContent{
+	color: white;
+	line-height: 31px;
+	padding-right: 38px !important;
+	text-align: right !important;
+	display: none;	
+}
+.tzCheckBox.checked .tzCBContent{
+	text-align:left !important;
+	padding:0 0 0 38px;
+}
+.tzCheckBox.checked .tzCBPart{
+	background-position:top right;
+	left:auto;
+	right:-14px;
+}
+.remove_link_left label, .remove_link_right label{
+	display: block;
+	margin-bottom:5px;
+	margin-top:10px;
+	text-indent:5px;
+	}		
+	
+/*Tooltip*/
+
+.tooltip2{
+    display: inline;
+    position: relative;
+	}
+.tooltip2:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: fixed;
+    z-index: 98;
+    width: 220px;
+	z-index:9999999999;
+	}
+.tooltip2:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: fixed;
+    z-index: 99;
+	}
+.tooltip{
+    display: inline;
+    position: relative;
+	}
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 180px;
+	}
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+	}
+.tooltip3:hover:after{
+	content:'Are you sure you want to reset all settings? It will remove all settings from each page of theme options.';
+	}	
+	
+/*Help Icon*/	
+				
+.Shelp{
+	width:16px;
+	height:20px;
+	background:url(../images/help_icon.png) bottom no-repeat;
+	float:right;
+	display: block;
+	cursor:pointer;
+	margin-right: 15px;
+	}	
+.Shelp:hover{
+	background:url(../images/help_icon.png) top no-repeat;
+	}
+.field_help {
+	font-style: italic;
+	display: block;
+	padding-bottom: 15px;
+	margin-top: 5px;
+}
+.field_help i {
+    font-style: normal;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.help_wrapper{
+    position: relative;
+}
+#menu_right .help{
+        font-style: italic;
+        display: block;
+        padding-bottom: 10px;
+        margin-top: 5px;
+        background: #fff;
+        display: block;        
+        position: absolute;
+        z-index: 99999999;
+        width: 400px;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px; 
+        right: -186px;
+        top: -75px;
+        background-color: #fff;
+        background: rgba(255,255,255,0.98);
+        border: 1px solid #c5c5c5;
+        -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+        -webkit-border-radius: 3px;
+        border: 1px solid rgba(100, 100, 100, .4);
+        -webkit-background-clip: padding-box;        
+	}
+#supernova_options_page #menu_right .widefat td{overflow: visible}        
+        
+.supernova32{
+	background:url(../images/options-symbol.png) no-repeat top !important;
+	height: 33px;
+	}	
+.dontshow{
+	display:none !important;
+	}	
+#supernova_options_page{
+	display:none;
+        position: relative;
+	}	
+h2.supernova_heading{
+	margin-bottom:12px;
+	}
+
+/*FOR SLIDER*/
+
+
+/*the slider background*/
+.slider_range {
+	width:230px;
+	height:11px;
+	background:url(../images/slider-bg.png);
+	position:relative;
+	margin:0;
+	padding:0 10px;
+	margin-top: 12px;
+	margin-left: 10px;
+	border-radius: 10px;
+	}
+
+/*Style for the slider button*/
+.ui-slider-handle {
+	width:18px;
+	height:18px;
+	position:absolute;
+	top:-4px;
+	margin-left:-12px;
+	z-index:200;
+	background:url(../images/slider-button.png);
+	}
+
+/*Result div where the slider value is displayed*/
+.slider-result {
+	font-size:15px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#32373d;
+	width:250px;
+	text-align:center;
+	font-weight:700;
+	padding:10px 0;
+	}
+
+/*This is the fill bar colour*/
+.ui-widget-header {
+	background:url(../images/fill.png) no-repeat left;
+	height:8px;
+	left:1px;
+	top:1px;
+	position:absolute;
+	}
+
+.widefat a:focus{
+	outline:0 !important;
+	}
+	 
+.slider_range1{
+	width: 440px;
+	}	 
+	
+.supernova_documentation td{
+	font-weight:bold;
+	}	
+	
+.imgpre img{
+	border-radius: 5px;
+	border: 5px solid #fff;
+	-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.75);
+	width: 145px;
+	height: 120px;
+	float: left;
+	margin: 0 10px 10px 10px;
+	}	
+	
+.wp-admin select, .wp-admin select {
+	max-width:275px;
+	min-width: 100px;
+	}	
+
+.supernova_version_notice{
+	color:red;
+	font-weight:bold;
+	font-size:13px;
+	}	
+	
+.sidebar_left, .sidebar_right{
+	float:left;
+	display:block;
+	margin-right:50px;
+	margin-top:10px;
+	}
+	
+/*Support*/
+
+#sup_logo img{
+width: 220px;	
+}
+.clearfix{
+	clear:both;	
+}
+#sup_info {
+margin-bottom: 10px;
+}
+#sup_info p{
+font-size: 1em;
+margin: 1em 0;
+font-style: italic;
+}	
+#sup_donate {
+margin-top: -5px;
+}
+.cofee i {
+display: inline-block;
+margin-top: 58px;
+font-weight: bold;
+font-size: 16px;
+margin-left: 15px;
+}
+#sup_info .sup_url{
+font-size:1.1em;
+font-weight:normal;
+}
+#sup_info .sup_wp_url{
+font-weight:normal;
+font-size:1.1em;
+font-style:italic;
+	}	
+	
+.slider-result:after{
+	content:'px';
+	}	
+.slider-result2:after, .slider-result3:after {
+	content:'%';
+	}	
+.ui-widget-header{
+	border:none !important;
+	}
+.scheme_one{float:left;margin-right: 25px;}
+.scheme_one input[type="radio"]{margin-left: 23px;visibility: hidden;}
+.scheme_color{width:60px; height:50px; background:#348CB3;}
+.supernova_ad{max-width:95%; width:95%;}
+.scheme_two input[type="radio"]{margin-top: -9px !Important;margin-right: 5px !Important;display: inline-block;}
+.scheme_two{float:left;margin-right: 20px;}
+
+#menu_right sup{font-weight: bold;font-size: 15px;margin-right: 5px;}
+#supernova_options_page .blink{color: red;}
+.sidebar_left, .sidebar_right, .scheme_two, .scheme_color{cursor: pointer;padding-top: 3px;padding-left: 3px;}
+#supernova_options_page .checkedyes {display: none;}
+#supernova_options_page .checkedyes img{width: 14px;}
+#supernova_options_page .triangle{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #fff;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    bottom: -12px;
+    left: 207px;
+}
+.wrap h2.pstdoyt{
+    font-size: 18px;
+}
+
+.image_size_notice {
+    width: 250px;
+    position: absolute;
+    top: 139px;
+    right: -180px;
+    display: none;
+}
+
+.image_size_notice td{
+    padding: 15px;
+}
+
+#menu_right  .popular_post_selection span{float: left;margin-right: 30px;display: block;margin-bottom: 10px;margin-top: 5px;}
+#menu_right  .popular_post_selection span:last-child{clear: both;}
+#menu_right  .popular_post_selection label{float: right;margin-top: 0;}

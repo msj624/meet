@@ -1,0 +1,79 @@
+/* Caution! Ensure accessibility in print and other media types... */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+
+/* Skin */
+div#box-tabs { width: 252px; padding: 0; border: none; background: transparent none; }
+div#box-tabs h2 { display: none; }
+div#box-tabs div.interior { border: none; padding: 0; }
+div#box-tabs ul.ui-tabs-nav { 
+	display: block; height: 36px; margin: 0; padding: 0;
+}
+div#box-tabs ul.ui-tabs-nav li { 
+	display: block; margin: 0; padding: 0; float: left; text-align: center; 
+	width: 83px; height: 36px; 
+}
+div#box-tabs ul.ui-tabs-nav li.ui-tabs-selected {
+	width: 84px;
+	background: #1d1d23 none;
+	border: 1px solid #30303b; border-bottom: none;
+}
+
+div#box-tabs ul.ui-tabs-nav li a, div#box-tabs ul.ui-tabs-nav li a:visited { 
+	display: block; margin: 0; padding: 0; line-height: 36px; 
+	font-family: Verdana, sans-serif; font-size: 10px; text-transform: uppercase; 
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	outline: none;
+	background: transparent none;
+}
+
+div#box-tabs ul.ui-tabs-nav li.ui-tabs-selected a, div#box-tabs ul.ui-tabs-nav li.ui-tabs-selected a:visited {
+	background: #1d1d23 none;
+}
+
+div#box-tabs ul.ui-tabs-nav li a:hover {
+	background: transparent none;
+}
+
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active,
+.ui-tabs-nav .ui-tabs-unselect a:hover, .ui-tabs-nav .ui-tabs-unselect a:focus, .ui-tabs-nav .ui-tabs-unselect a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+
+div#box-tabs div.ui-tabs-panel {
+	padding: 10px;
+	background: #1d1d23 none; border: 1px solid #30303b;
+}
+div#box-tabs div.ui-tabs-panel p.notice {
+	display: block;
+	padding: 10px; margin: 0;
+	text-align: center;
+}
+div#box-tabs div.details ul { display: block; list-style-type: none; margin: 0; padding: 0; }
+div#box-tabs div.details ul li { 
+	display: block; margin: 0; padding: 0 0 4px 0; 
+	background: transparent url('images/background-list-item.gif') left bottom repeat-x; 
+}
+div#box-tabs div.details ul li a, div#box-tabs ul li a:visited { 
+	background: transparent url('images/background-list-item-norm.gif') 10px center no-repeat;
+	display: block; margin: 0; padding: 10px 10px 10px 35px; 
+	text-decoration: none;
+	outline: none;
+}
+div#box-tabs div.details ul li a:hover   { 
+	background: #131317 url('images/background-list-item-over.gif') 10px center no-repeat;
+	text-decoration: none;
+}
+

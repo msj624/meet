@@ -1,0 +1,328 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-11 05:39+0700\n"
+"PO-Revision-Date: 2011-01-11 05:41+0700\n"
+"Last-Translator: Firman Wandayandi <firmanw@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: supports/options.php:29
+msgid "16px x 16px PNG/GIF/Ico image that will represent your website's icon. You can create it using online tools such as <a href=\"http://favikon.com/\">favikon</a>."
+msgstr ""
+
+#: supports/options.php:73
+msgid "Additional custom codes to be added to the footer."
+msgstr ""
+
+#: supports/options.php:43
+msgid "Additional custom codes to be added to the header."
+msgstr ""
+
+#: supports/options.php:145
+msgid "Additional custom css to be added to template."
+msgstr ""
+
+#: supports/options.php:60
+msgid "All rights reserved"
+msgstr ""
+
+#: supports/options.php:23
+msgid "An image that will represent your website's logo. 185px x 42px PNG transparent image would be the great one."
+msgstr ""
+
+#: supports/options.php:93
+msgid "Background Color"
+msgstr ""
+
+#: supports/options.php:99
+msgid "Background Image"
+msgstr ""
+
+#: supports/options.php:116
+msgid "Background Image Position"
+msgstr ""
+
+#: supports/options.php:105
+msgid "Background Image Repeat"
+msgstr ""
+
+#: supports/options.php:190
+msgid "Blockquote"
+msgstr ""
+
+#: supports/options.php:125
+msgid "Bottom Center"
+msgstr ""
+
+#: supports/options.php:124
+msgid "Bottom Left"
+msgstr ""
+
+#: supports/options.php:126
+msgid "Bottom Right"
+msgstr ""
+
+#: supports/options.php:207
+msgid "Category"
+msgstr ""
+
+#: supports/options.php:122
+msgid "Center Center"
+msgstr ""
+
+#: supports/options.php:121
+msgid "Center Left"
+msgstr ""
+
+#: supports/options.php:123
+msgid "Center Right"
+msgstr ""
+
+#: functions/wpop_theme_settings.php:62
+msgid "Changelog"
+msgstr ""
+
+#: supports/options.php:58
+#: supports/options.php:60
+msgid "Copyright"
+msgstr ""
+
+#: supports/options.php:144
+msgid "Custom CSS"
+msgstr ""
+
+#: supports/options.php:87
+msgid "Custom Style"
+msgstr ""
+
+#: supports/options.php:94
+msgid "Custom body background color."
+msgstr ""
+
+#: supports/options.php:100
+msgid "Custom body background image."
+msgstr ""
+
+#: supports/options.php:139
+msgid "Customize the color of the link hover."
+msgstr ""
+
+#: supports/options.php:133
+msgid "Customize the color of the link."
+msgstr ""
+
+#: functions/wpop_theme_settings.php:63
+msgid "Documentation"
+msgstr ""
+
+#: supports/options.php:88
+msgid "Enable and applies custom styling to the theme."
+msgstr ""
+
+#: supports/options.php:59
+msgid "Enter the Copyright notice of the website."
+msgstr ""
+
+#: supports/options.php:42
+#: supports/options.php:72
+msgid "Extras"
+msgstr ""
+
+#: supports/options.php:27
+msgid "Favicon"
+msgstr ""
+
+#: supports/options.php:221
+msgid "Five"
+msgstr ""
+
+#: supports/options.php:52
+msgid "Footer"
+msgstr ""
+
+#: supports/options.php:220
+msgid "Four"
+msgstr ""
+
+#: supports/options.php:15
+msgid "General"
+msgstr ""
+
+#: supports/options.php:36
+msgid "Header"
+msgstr ""
+
+#: supports/options.php:160
+msgid "Heading 1"
+msgstr ""
+
+#: supports/options.php:165
+msgid "Heading 2"
+msgstr ""
+
+#: supports/options.php:170
+msgid "Heading 3"
+msgstr ""
+
+#: supports/options.php:175
+msgid "Heading 4"
+msgstr ""
+
+#: supports/options.php:180
+msgid "Heading 5"
+msgstr ""
+
+#: supports/options.php:155
+msgid "Here you can use custom typography which also support the <a href=\"http://code.google.com/webfonts\">Google Fonts</a>."
+msgstr ""
+
+#: supports/options.php:216
+msgid "How many pictures to show within the slideshow."
+msgstr ""
+
+#: supports/options.php:132
+msgid "Link"
+msgstr ""
+
+#: supports/options.php:138
+msgid "Link Hover"
+msgstr ""
+
+#: supports/options.php:195
+msgid "List"
+msgstr ""
+
+#: supports/options.php:21
+msgid "Logo"
+msgstr ""
+
+#: classes/wpop.php:248
+msgid "Mobile"
+msgstr ""
+
+#: supports/options.php:107
+msgid "No Repeat"
+msgstr ""
+
+#: supports/options.php:214
+msgid "Number of Items"
+msgstr ""
+
+#: supports/options.php:185
+msgid "Paragraph"
+msgstr ""
+
+#: supports/options.php:66
+msgid "Paste the <a href=\"http://google.com/analytics/\">Google Analytics</a> (nor others) tracking code to be added to footer."
+msgstr ""
+
+#: supports/options.php:110
+msgid "Repeat Both Horizontally and Vertically"
+msgstr ""
+
+#: supports/options.php:108
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: supports/options.php:109
+msgid "Repeat Vertically"
+msgstr ""
+
+#: functions/wpop_theme_settings.php:68
+#: functions/wpop_theme_settings.php:124
+msgid "Save Changes"
+msgstr ""
+
+#: classes/wpop.php:244
+msgid "Settings"
+msgstr ""
+
+#: supports/options.php:223
+msgid "Seven"
+msgstr ""
+
+#: supports/options.php:222
+msgid "Sixth"
+msgstr ""
+
+#: supports/options.php:201
+msgid "Slideshow"
+msgstr ""
+
+#: supports/options.php:80
+msgid "Styling"
+msgstr ""
+
+#: classes/wpop_migration.php:68
+msgid "Successfully migrated from previous version"
+msgstr ""
+
+#: functions/wpop_theme_settings.php:64
+msgid "Support Forum"
+msgstr ""
+
+#: classes/wpop.php:258
+msgid "Themes"
+msgstr ""
+
+#: supports/options.php:219
+msgid "Three"
+msgstr ""
+
+#: supports/options.php:119
+msgid "Top Center"
+msgstr ""
+
+#: supports/options.php:118
+msgid "Top Left"
+msgstr ""
+
+#: supports/options.php:120
+msgid "Top Right"
+msgstr ""
+
+#: supports/options.php:65
+msgid "Tracking Code"
+msgstr ""
+
+#: supports/options.php:218
+msgid "Two"
+msgstr ""
+
+#: supports/options.php:152
+msgid "Typography"
+msgstr ""
+
+#: functions/wpop_theme_settings.php:56
+msgid "Version"
+msgstr ""
+
+#: functions/wpop_theme_settings.php:62
+msgid "View theme changelog"
+msgstr ""
+
+#: functions/wpop_theme_settings.php:63
+msgid "View theme documentation"
+msgstr ""
+
+#: functions/wpop_theme_settings.php:64
+msgid "Visit the Wordspop support forum"
+msgstr ""
+
+#: supports/options.php:209
+msgid "Which category should be use as slideshow."
+msgstr ""
+
+#: supports/options.php:104
+msgid "background_repeat"
+msgstr ""
+

@@ -1,0 +1,57 @@
+/* Admin CSS by Worspop */
+
+.wpop_admin_url {
+
+}
+.wpop_admin_url label {
+	width: 150px;
+	float: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px;
+}
+.admin_form, .admin_desc {
+	float: left;
+	width: 300px;
+	padding: 10px;
+}
+.admin_desc {
+	width: 150px;
+	line-height: 1.4em;
+}
+.admin_form img {
+	background: #efefef;
+}
+p.submit {
+	clear: both;
+}
+.section_row {
+	border-bottom: 1px solid #efefef;
+}
+.wpop_clear {
+	clear: both;
+}
+.admin_form label {
+	font-size: 1em;
+	padding: 0;
+}
+#poststuff .wpop_intro p {
+	font-size: 1.2em;
+	width: 650px;
+}
+
+/* Twitter */
+p.twitter-message {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+p.twitter-message span.twitter-timestamp {
+	font-style: italic;
+	font-weight: normal;
+}
+p.wpop-follow {
+	font-size: 0.9em;
+}
+p.wpop-follow a {
+	font-weight: bold;
+}

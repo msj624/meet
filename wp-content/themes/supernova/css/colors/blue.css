@@ -1,0 +1,48 @@
+/* CSS Document */
+#nav_wrapper {background:url(../../images/colors/line-blue.png) bottom left repeat-x}
+.featured_content {background:url(../../images/colors/slider-blue.png) no-repeat}
+
+/*Colors*/
+#header_navigation .category ul li a{color:#348CB3}
+.header_catnav .catnav ul a {color:#348CB3}
+#top_nav li a:hover{color:#348CB3}
+#nav li a:hover {color:#348CB3}
+#nav li.current_page_item a, #top_nav li.current_page_item a{color:#348CB3;}
+#nav .current_page_item .hasChildren, #top_nav .current_page_item .hasChildren{border-top:8px solid #348CB3;}
+.post_title a:hover{color:#348CB3!Important;}
+.article_wrapper{border-left:1px solid #348CB3}
+page_links a {color:#348CB3}
+#content .tags a {background: #348CB3}
+.next_prev_post a{color:#348CB3;}
+.entry a{color:#348CB3;}
+.entry .moretag:hover {color:#348CB3!Important;}
+.main_content .meta_author a{color:#348CB3;}
+#footer .current_page_item a{color:#348CB3;}
+#footer a:hover{color:#348CB3}
+.footer_nav li a:hover,#footer .footer_nav li a:hover{color:#348CB3!important}
+.widget_pages a:hover{background:#348CB3;}
+.widget_meta a:hover{background:#348CB3;}
+.widget_archive a:hover{background:#348CB3;}
+.widget_recent_comments a:hover{background:#348CB3;}
+.widget_nav_menu a:hover{background:#348CB3;}
+.widget_recent_entries a:hover{background:#348CB3;}
+.widget_tag_cloud a:hover{background:#348CB3;}
+#wp-calendar tbody td:hover { background: #348CB3;}
+#wp-calendar #today{background: #348CB3;}
+.rsswidget:hover{color:#348CB3!important}
+.supernova a:hover{background:#348CB3;}
+.widget_categories li a:hover{background:#348CB3;}
+.leave_comment a:hover{color:#348CB3;}
+.single_content .meta_author{color:#348CB3}
+#supernova_breadcrumbs a{color:#348CB3}
+.supernova_related_posts a{color:#348CB3;}
+.supernova_related_posts a:hover{background: #348CB3;}
+.pagination a:hover{color:#348CB3}
+.pagination .current{color:#348CB3;}
+.replyback a {color:#348CB3;}
+.flex-control-paging li a.flex-active { background: #348CB3;}
+/*Selection*/
+::selection{background: #69BEE4; /* Safari */}
+::-moz-selection{background: #69BEE4; /* Firefox */}
+p.red::selection{background: #69BEE4;}
+p.red::-moz-selection{background: #69BEE4;}

@@ -1,0 +1,19 @@
+/************************************************/
+/*** Pagination : Start *************************/
+/************************************************/
+
+div#pagenav { height: 38px; color: #fff; }
+div#pagenav a, div#pagenav a:link { padding: 5px 10px; margin: 6px 4px 0px 0px; border: 1px solid #5f7c9c; color: #5f7c9c; background-color: transparent; }
+
+div.wp-pagenavi { height: 38px; padding: 0; }
+div.wp-pagenavi a, div.wp-pagenavi a:link { float: left; display: block; padding: 5px 10px;  margin: 6px 4px 0px 0px; border: 1px solid #5f7c9c; color: #5f7c9c; background-color: transparent; }
+div.wp-pagenavi a:visited { text-decoration: none; border: 1px solid #5f7c9c; color: #5f7c9c; background-color: transparent; }
+div.wp-pagenavi a:hover { border: 1px solid #5f7c9c; color: #5f7c9c; background-color: transparent; }
+div.wp-pagenavi a:active { text-decoration: none; border: 1px solid #5f7c9c; color: #5f7c9c; background-color: transparent; }
+div.wp-pagenavi span { float: left; display: block; padding: 5px 10px;  margin: 6px 4px 0px 0px; border: 1px solid #5f7c9c; color: #5f7c9c; background-color: transparent; }
+div.wp-pagenavi span.current { font-weight: bold; border: 1px solid #5f7c9c; color: #5f7c9c; background-color: transparent; }
+div.wp-pagenavi span.extend { border: 1px solid #5f7c9c; color: #5f7c9c; background-color: transparent; }
+
+/************************************************/
+/*** Pagination : End ***************************/
+/************************************************/

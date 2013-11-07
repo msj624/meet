@@ -1,0 +1,8 @@
+
+div[id*="supernova"] .widget-title {
+	background: url(../images/supernova.png) no-repeat 5px 22%;
+	padding-left: 25px;
+	}
+div#supernova_meta h3 span, div#supernova_meta_posts h3 span{background:url(../images/supernova.png) no-repeat 5px 22%;text-indent: 28px;display: block;line-height: 21px;}
+div#supernova_meta .inside p textarea{width:100%;max-width: 100%}
+#supernova-popular-post, #supernova-recommended-post{margin-right:5px;}

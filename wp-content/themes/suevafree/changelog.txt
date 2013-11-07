@@ -1,0 +1,11 @@
+SuevaFree Changelog
+
+Version 1.1.6 - Released: 01.10.2013
+
+Added : Blog sidebar for Homepage.
+
+Version 1.1.5 - Released: 21.09.2013
+
+Fixed : Correct view for images with captions for responsive version.
+Fixed : Css code optimized.
+Fixed : Background colors from option panel.

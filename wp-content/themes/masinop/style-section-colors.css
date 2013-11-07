@@ -1,0 +1,131 @@
+/************************************************/
+/*** Colors : Core : Start **********************/
+/************************************************/
+
+body { background: #282831 url('images/background.gif') center top repeat-x; color: #333; }
+a:link, a:visited { color: #5f7c9c; }
+a:hover { color: #5f7c9c; }
+
+/************************************************/
+/*** Colors : Core : End ************************/
+/************************************************/
+
+
+/************************************************/
+/*** Colors : Header : Start ********************/
+/************************************************/
+
+
+/************************************************/
+/*** Colors : Header : End **********************/
+/************************************************/
+
+
+/************************************************/
+/*** Colors : Body : Start **********************/
+/************************************************/
+
+div#content { background: #fff url('images/background-content.gif') left top repeat-y; }
+div#sidebar { background: transparent url('images/background-title.jpg') left top no-repeat; }
+
+/************************************************/
+/*** Colors : Body : End ************************/
+/************************************************/
+
+
+/************************************************/
+/*** Colors : Blog Entry : Start ****************/
+/************************************************/
+
+div.pagetitle { }
+div.pagetitle h2 {  }
+
+div.postgroup { }
+div.post {  }
+div.post div.title { background: transparent url('images/background-post-title.gif') left top no-repeat; }
+div.post div.title h2 { background: #fff none; color: #282831; }
+div.post div.title h2 a, div.post div.title h2 a:visited { color: #282831; }
+div.post div.title p { color: #aeaeae; }
+div.post div.title p a, div.post div.title p a:visited { color: #aeaeae; }
+
+
+/************************************************/
+/*** Colors : Blog Entry : End ******************/
+/************************************************/
+
+
+/************************************************/
+/*** Colors : Comments : Start **************/
+/************************************************/
+
+div#comments h3, div#postcomment h3 { color: #5f7c9c; }
+div#comments h3 a, div#comments h3 a:visited { color: #5f7c9c; }
+div#comments p, div#postcomment p { color: #aeaeae; }
+div#comments p a, div#comments p a:visited { color: #aeaeae; }
+
+ol.commentlist { }
+ol.commentlist li.commentlist { }
+ol.commentlist li.commentlist cite { 
+	color: #666; background: #fff url('images/background-post-meta.gif') left top repeat-x; 
+	border-top-color: #aeaeae; border-bottom-color: #aeaeae; 
+}
+ol.commentlist li.commentlist cite img.avatar { border-color: #876551; }
+ol.commentlist li.commentlist cite span.author, ol.commentlist li.commentlist cite span.author a, 
+ol.commentlist li.commentlist cite span.author a:visited { 
+	color: #000; 
+}
+ol.commentlist li.commentlist cite a, ol.commentlist li.commentlist cite a:visited { color: #aeaeae; }
+
+form#commentform { border-top-color: #aeaeae}
+form#commentform p.input span { background: transparent url('images/background-input.gif') left top no-repeat; }
+form#commentform p.input span input { background: transparent none; }
+form#commentform p.textarea span { background: transparent url('images/background-textarea.gif') left top no-repeat; }
+textarea#comment { background: transparent none; }
+ 
+/************************************************/
+/*** Colors : Comments : End ********************/
+/************************************************/
+
+
+/************************************************/
+/*** Colors : Sidebar : Start *******************/
+/************************************************/
+
+div.box { border-color: #30303b; background: #1d1d23 none; }
+div.box h2 { background: transparent url('images/background-box-title.gif') 8px 3px no-repeat; border-bottom-color: #000; color: #999;}
+div.box div.interior { 	border-top-color: #30303b; color: #999; }
+div.box div.interior ul li { color: #999; }
+div.box div.interior ul li a, div.box div.interior ul li a:visited { color: #999; }
+div.box div.interior ul li a:hover { background-color: #131317; }
+
+
+div#box-rss div.interior { border: none; }
+div#box-rss ul { }
+div#box-rss ul li { color: #999; }
+div#box-rss ul li.rss a { background: transparent url('images/background-rss.gif') left center no-repeat; }
+div#box-rss ul li.email a { background: transparent url('images/background-email.gif') left center no-repeat; }
+div#box-rss ul li.twitter a { background: transparent url('images/background-twitter.gif') left center no-repeat; }
+
+div#box-search div.interior { border: none; }
+div#box-search p { background: transparent url('images/background-search.gif') 5px top no-repeat;  }
+div#box-search p input { color: #2F2F2F; background: transparent none;  }
+
+
+div.box-widget_recent_comments ul#recentcomments li a:visited { background: transparent none; }
+table#wp-calendar { color: #999; }
+
+/************************************************/
+/*** Colors : Sidebar : End *********************/
+/************************************************/
+
+
+/************************************************/
+/*** Colors : Footer : Start ********************/
+/************************************************/
+
+div#footer { background: #1d1d23 url('images/background-footer.gif') left top repeat-x; border-top-color: #3b3b43; color: #666; }
+div#footer a, div#footer a:visited { color: #666; }
+
+/************************************************/
+/*** Colors : Footer : End **********************/
+/************************************************/

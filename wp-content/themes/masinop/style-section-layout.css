@@ -1,0 +1,154 @@
+/************************************************/
+/*** Layout : Core : Start **********************/
+/************************************************/
+
+html, body, div { margin: 0; padding: 0; }
+form { display: block; margin: 0; padding: 0; }
+.clearer { clear: both; }
+.hidden { visibility: hidden; }
+.nodisplay { display: none; }
+
+div#container { margin: 0 auto; padding: 28px 0 0 0; width: 100%; }
+
+/************************************************/
+/*** Layout : Core : End ************************/
+/************************************************/
+
+
+/************************************************/
+/*** Layout : Header : Start ********************/
+/************************************************/
+
+div#title { display: none; }
+div#googleads { margin: 0 auto; width: 961px; }
+div#googleads-wrapper { height: 31px; padding: 0 0 0 372px; }
+
+/************************************************/
+/*** Layout : Header : End **********************/
+/************************************************/
+
+
+/************************************************/
+/*** Layout : Body : Start **********************/
+/************************************************/
+
+div#wrapper { margin: 0 auto; width: 961px; }
+div#wrapper-wrapper { }
+div#content { margin: 0; padding: 0; width: 677px; float: right; }
+div#sidebar { margin: 0; padding: 0; width: 284px; float: left; }
+
+/************************************************/
+/*** Layout : Body : End ************************/
+/************************************************/
+
+
+/************************************************/
+/*** Layout : Blog Entry : Start ****************/
+/************************************************/
+
+div.pagetitle { margin: 0 40px 0 83px; } 
+div.pagetitle h2 { display: block; margin: 0; padding: 18px 0; text-align: center; }
+
+div.postgroup { padding: 0 40px 0 0; }
+div.post { padding: 0 0 10px 0; }
+div.post div.title { padding: 0 0 0 27px; }
+div.post div.title h2 { display: block; margin: 0; padding: 15px 0 0 56px; }
+div.post div.title p { display: block; margin: 0 0 0 56px; padding: 0 0 10px 0; border-bottom: 2px dotted; }
+div.singlepost { padding: 0 40px 0 0; }
+
+div.post div.entry { padding: 0 0 0 83px; }
+div.post div.entry blockquote { margin: 15px 0; padding: 0 10px 0 35px; border-left: 8px solid; }
+div.postmeta { padding: 0 40px 0 83px; }
+
+/************************************************/
+/*** Layout : Blog Entry : End ******************/
+/************************************************/
+
+
+/************************************************/
+/*** Layout : Comments : Start ******************/
+/************************************************/
+
+div#comments, div#postcomment { margin: 0 40px 0 83px; }
+div#comments h2, div#postcomment h2 { display: block; margin: 0; padding: 18px 0; }
+div#comments p, div#postcomment p { display: block; margin: 0; padding: 0; }
+
+ol.commentlist { display: block; margin: 0 40px 0 83px; padding: 0; list-style-type: none; }
+ol.commentlist li.commentlist { display: block; margin: 0;  padding: 0 0 10px 0; }
+ol.commentlist li.commentlist cite { display: block; padding: 10px; height: 42px; border-top: 2px dotted; border-bottom: 2px dotted; }
+ol.commentlist li.commentlist cite img.avatar { float: left; margin: 0 10px 0 0; padding: 2px; border: 1px solid; }
+ol.commentlist li.commentlist cite span { display: block; }
+ol.commentlist li.commentlist cite span.author { margin: 3px 0 0 0; }
+ol.commentlist li.commentlist cite span.on { display: none; }
+
+
+ol.commentlist li.commentlist div.commenttext { margin: 0; padding: 10px; }
+ol.commentlist li.commentlist div.commenttext div.interior { float: left; margin: 0 0 0 10px; width: 543px; }
+
+small.commentmetadata { display: block; }
+small.commentmetadata cite { display: block; margin: 0; padding: 0 0 3px 0; }
+
+form#commentform { display: block; margin: 0 40px 0 83px; padding: 30px; border-top: 2px dotted; }
+form#commentform p { display: block; margin: 0 0 5px 0; padding: 0; line-height: 14px; }
+form#commentform p label { display: block; margin: 0; padding: 0 0 5px 0; }
+form#commentform p.input span { display: block; margin: 0; padding: 5px 0 0 0; height: 22px; }
+form#commentform p.input span input { width: 230px; padding: 0 5px; border: 0; }
+form#commentform p.textarea { display: block; margin: 0 0 10px 0;  }
+form#commentform p.textarea span { display: block; margin: 0; padding: 0; }
+form#commentform p.button { text-align: left; }
+textarea#comment { width: 347px; height: 62px; padding: 5px; border: 0; }
+
+/************************************************/
+/*** Layout : Comments : End ********************/
+/************************************************/
+	
+
+/************************************************/
+/*** Layout : Sidebar : Start *******************/
+/************************************************/
+
+div.box { width: 230px; padding: 10px; margin: 0 0 12px 0; border: 1px solid; }
+div.box h2 { display: block; margin: 0; padding: 10px 30px; line-height: 15px; border-bottom: 1px solid; }
+div.box div.interior { border-top: 1px solid; }
+div.box div.interior ul { display: block; margin: 0; padding: 0; }
+div.box div.interior ul li { display: block; margin: 0; padding: 0; }
+div.box div.interior ul li a:link, div.box div.interior ul li a:visited { display: block; margin: 0; padding: 10px 10px 10px 30px; }
+
+a#ghost { display: block; height: 70px; margin: 0 0 30px 0; }
+
+div#box-rss h2 { display: none; }
+div#box-rss ul { display: block; margin: 0; padding: 0; text-align: center; }
+div#box-rss ul li { display: inline; padding: 0 10px 0 0; line-height: 15px; }
+div#box-rss ul li a { display: inline; padding: 0 0 0 18px; line-height: 15px; }
+div#box-rss ul li.twitter { padding: 0; }
+
+div#box-search h2 { display: none; }
+div#box-search p { display: block; margin: 0; padding: 4px 0 0 34px; height: 18px; }
+div#box-search p input { width: 180px; border: none; }
+
+div#box-adverts h2 { display: none; border: none; }
+div#box-adverts div { padding: 15px 0; border: none; text-align: center; }
+div#box-adverts div img { border: none; }
+
+div.box-widget_archive div.interior, div.box-widget_tag_cloud div.interior { padding: 10px; }
+div.box-widget_recent_comments ul#recentcomments li { display: block; padding: 10px 10px 10px 30px; }
+div.box-widget_recent_comments ul#recentcomments li a, div.box-widget_recent_comments ul#recentcomments li a:visited { display: inline; padding: 0; }
+table#wp-calendar { width: 180px; margin: 0 auto; }
+
+/************************************************/
+/*** Layout : Sidebar : End *********************/
+/************************************************/
+
+				
+/************************************************/
+/*** Layout : Footer : Start ********************/
+/************************************************/
+
+div#footer { border-top: 1px solid; }
+div#footer-wrapper { margin: 0 auto; padding: 18px; width: 920px; }
+div#footads { margin: 18px auto 0 auto; width: 728px; border: 3px solid; }
+div#footer-wrapper p { display: block; margin: 0; padding: 15px ; text-align: center; }
+
+/************************************************/
+/*** Layout : Footer : End **********************/
+/************************************************/

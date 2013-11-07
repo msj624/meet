@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: PACKAGE VERSION\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2011-01-11 08:09+0700\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#: 404.php:7
+msgid   "404 Not Found"
+msgstr  ""
+
+#: libs/config/options.php:69
+msgid   "A category which will be treated as the blog section."
+msgstr  ""
+
+#: libs/config/options.php:54
+msgid   "A category which will be treated as the testimonials page."
+msgstr  ""
+
+#: libs/config/options.php:208
+msgid   "Allow Comment"
+msgstr  ""
+
+#: libs/config/options.php:215
+msgid   "Allow visitor to post a comment"
+msgstr  ""
+
+#: libs/config/options.php:152
+msgid   "Always on Center"
+msgstr  ""
+
+#: libs/config/options.php:145
+msgid   "Auto Scale"
+msgstr  ""
+
+#: libs/config/options.php:146
+msgid   "Auto scaled the popup to fit the viewport"
+msgstr  ""
+
+#: libs/config/options.php:106
+msgid   "Blind X Axis"
+msgstr  ""
+
+#: libs/config/options.php:107
+msgid   "Blind Y Axis"
+msgstr  ""
+
+#: libs/config/options.php:108
+msgid   "Blind Z Axis"
+msgstr  ""
+
+#: libs/config/options.php:61 libs/config/options.php:77
+msgid   "Blog"
+msgstr  ""
+
+#: libs/config/options.php:74
+msgid   "Blog Heading"
+msgstr  ""
+
+#: libs/config/options.php:67
+msgid   "Blog Section"
+msgstr  ""
+
+#: sidebar.php:8
+msgid   "Categories"
+msgstr  ""
+
+#: archive.php:6 category-default.php:6
+msgid   "Category"
+msgstr  ""
+
+#: libs/widgets/fotofolio_categories copy.php:106
+msgid   "Category IDs, separated by commas. Blog and Testimonials category "
+        "excluded by default (if any)."
+msgstr  ""
+
+#: libs/config/options.php:158
+msgid   "Close on Click"
+msgstr  ""
+
+#: libs/config/options.php:159
+msgid   "Close the popup if clicking the content"
+msgstr  ""
+
+#: comments.php:18
+msgid   "Comments"
+msgstr  ""
+
+#: comments.php:42
+msgid   "Comments are closed."
+msgstr  ""
+
+#: libs/config/options.php:113
+msgid   "Cover"
+msgstr  ""
+
+#: libs/config/options.php:111
+msgid   "Curtain X Axis"
+msgstr  ""
+
+#: libs/config/options.php:112
+msgid   "Curtain Y Axis"
+msgstr  ""
+
+#: libs/widgets/fotofolio_categories copy.php:35
+msgid   "Custom categories list of Fotofolio Landscape"
+msgstr  ""
+
+#: libs/config/options.php:129
+msgid   "Display Duration"
+msgstr  ""
+
+#: comments.php:74
+msgid   "Email"
+msgstr  ""
+
+#: libs/widgets/fotofolio_categories copy.php:105
+msgid   "Exclude:"
+msgstr  ""
+
+#: libs/config/options.php:104
+msgid   "Fade"
+msgstr  ""
+
+#: libs/config/options.php:105
+msgid   "Fade and Zoom"
+msgstr  ""
+
+#: libs/config/options.php:139
+msgid   "Fancybox"
+msgstr  ""
+
+#: libs/widgets/fotofolio_categories copy.php:41
+msgid   "Fotofolio Landscape Categories"
+msgstr  ""
+
+#: libs/config/options.php:109
+msgid   "Grow X Axis"
+msgstr  ""
+
+#: libs/config/options.php:110
+msgid   "Grow Y Axis"
+msgstr  ""
+
+#: libs/config/options.php:76
+msgid   "Heading title for blog section."
+msgstr  ""
+
+#: libs/config/options.php:94
+msgid   "Horizontal Scroll"
+msgstr  ""
+
+#: libs/config/options.php:47
+msgid   "I'm too lazy to write about myself :D"
+msgstr  ""
+
+#: comments.php:52
+#, php-format
+msgid   "Leave a Reply to %s"
+msgstr  ""
+
+#: comments.php:66
+msgid   "Log out &raquo;"
+msgstr  ""
+
+#: comments.php:59
+msgid   "Logged in"
+msgstr  ""
+
+#: comments.php:66
+msgid   "Logged in as"
+msgstr  ""
+
+#: libs/functions/fotofolio_register_nav_menus.php:4
+msgid   "Main Menu"
+msgstr  ""
+
+#: libs/config/options.php:201
+msgid   "Miscellanious"
+msgstr  ""
+
+#: comments.php:71
+msgid   "Name"
+msgstr  ""
+
+#: archive.php:13 category-blog.php:23 category-default.php:13
+msgid   "Newer"
+msgstr  ""
+
+#: single-blog.php:16
+msgid   "Next"
+msgstr  ""
+
+#: libs/config/options.php:223
+msgid   "No"
+msgstr  ""
+
+#: libs/config/options.php:211
+msgid   "No, don't let them comment on my work"
+msgstr  ""
+
+#: archive.php:12 category-blog.php:22 category-default.php:12
+msgid   "Older"
+msgstr  ""
+
+#: libs/config/options.php:153
+msgid   "Popup is always centered while scrolling page"
+msgstr  ""
+
+#: libs/config/options.php:220
+msgid   "Prevent Right Click"
+msgstr  ""
+
+#: libs/config/options.php:226
+msgid   "Prevent visitor to right click the document (e.g for saving the "
+        "stuffs)"
+msgstr  ""
+
+#: single-blog.php:17
+msgid   "Previous"
+msgstr  ""
+
+#: category-blog.php:15 single-blog.php:12
+msgid   "Published"
+msgstr  ""
+
+#: index.php:16
+msgid   "Recently Added"
+msgstr  ""
+
+#: libs/config/options.php:91
+msgid   "Scroll Down"
+msgstr  ""
+
+#: libs/config/options.php:92
+msgid   "Scroll Left"
+msgstr  ""
+
+#: libs/config/options.php:93
+msgid   "Scroll Right"
+msgstr  ""
+
+#: libs/config/options.php:90
+msgid   "Scroll Up"
+msgstr  ""
+
+#: libs/config/options.php:88
+msgid   "Select the transition effect that you like most"
+msgstr  ""
+
+#: libs/config/options.php:44
+msgid   "Self Introduction"
+msgstr  ""
+
+#: libs/config/options.php:46
+msgid   "Short brief about your self"
+msgstr  ""
+
+#: libs/config/options.php:164
+msgid   "Show Title"
+msgstr  ""
+
+#: libs/config/options.php:165
+msgid   "Show the post title on popup box"
+msgstr  ""
+
+#: libs/config/options.php:98
+msgid   "Shuffle"
+msgstr  ""
+
+#: libs/config/options.php:96
+msgid   "Slide X Axis"
+msgstr  ""
+
+#: libs/config/options.php:97
+msgid   "Slide Y Axis"
+msgstr  ""
+
+#: comments.php:85
+msgid   "Submit Comment"
+msgstr  ""
+
+#: index.php:31
+msgid   "Testimonial"
+msgstr  ""
+
+#: libs/config/options.php:52
+msgid   "Testimonials Category"
+msgstr  ""
+
+#: libs/config/options.php:172
+msgid   "The position of title should be placed"
+msgstr  ""
+
+#: comments.php:7
+msgid   "This post is password protected. Enter the password to view comments."
+msgstr  ""
+
+#: libs/config/options.php:171
+msgid   "Title Position"
+msgstr  ""
+
+#: libs/widgets/fotofolio_categories copy.php:102
+msgid   "Title:"
+msgstr  ""
+
+#: libs/config/options.php:115
+msgid   "Toss"
+msgstr  ""
+
+#: libs/config/options.php:86
+msgid   "Transition Effect"
+msgstr  ""
+
+#: libs/config/options.php:122
+msgid   "Transition Speed"
+msgstr  ""
+
+#: libs/config/options.php:100
+msgid   "Turn Down"
+msgstr  ""
+
+#: libs/config/options.php:101
+msgid   "Turn Left"
+msgstr  ""
+
+#: libs/config/options.php:102
+msgid   "Turn Right"
+msgstr  ""
+
+#: libs/config/options.php:99
+msgid   "Turn Up"
+msgstr  ""
+
+#: libs/config/options.php:114
+msgid   "Uncover"
+msgstr  ""
+
+#: libs/config/options.php:95
+msgid   "Vertical Scroll"
+msgstr  ""
+
+#: comments.php:77
+msgid   "Website"
+msgstr  ""
+
+#: sidebar-blog.php:4
+msgid   "Widget Section"
+msgstr  ""
+
+#: libs/config/options.php:116
+msgid   "Wipe"
+msgstr  ""
+
+#: libs/config/options.php:222
+msgid   "Yes"
+msgstr  ""
+
+#: libs/config/options.php:210
+msgid   "Yes, show the comment"
+msgstr  ""
+
+#: comments.php:59
+msgid   "You must be"
+msgstr  ""
+
+#: comments.php:52
+msgid   "Your Comment"
+msgstr  ""
+
+#: libs/config/options.php:103
+msgid   "Zoom"
+msgstr  ""
+
+#: category-blog.php:15 single-blog.php:12
+msgid   "on"
+msgstr  ""
+
+#: comments.php:71 comments.php:74
+msgid   "required"
+msgstr  ""
+
+#: comments.php:59
+msgid   "to post a comment."
+msgstr  ""

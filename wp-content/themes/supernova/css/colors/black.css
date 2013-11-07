@@ -1,0 +1,48 @@
+#nav_wrapper {background:url(../../images/colors/line-black.png) bottom left repeat-x}
+.featured_content {background:url(../../images/colors/slider-black.png) no-repeat;}
+.top_search #supernova_search {background:#000;}
+
+/*Colors*/
+#header_navigation .category ul li a{color:#4B4B4D}
+.header_catnav .catnav ul a {color:#4B4B4D}
+#top_nav li a:hover{color:#4B4B4D}
+#nav li a:hover {color:#4B4B4D}
+#nav li.current_page_item a, #top_nav li.current_page_item a{color:#4B4B4D;}
+#nav .current_page_item .hasChildren, #top_nav .current_page_item .hasChildren{border-top:8px solid #4B4B4D;}
+.post_title a:hover{color:#4B4B4D!Important;}
+.article_wrapper{border-left:1px solid #4B4B4D}
+page_links a {color:#4B4B4D}
+#content .tags a {background: #4B4B4D}
+.next_prev_post a{color:#4B4B4D;}
+.entry a{color:#4B4B4D;}
+.entry .moretag:hover {color:#4B4B4D!Important;}
+.main_content .meta_author a{color:#4B4B4D;}
+#footer .current_page_item a{color:#4B4B4D;}
+#footer a:hover{color:#4B4B4D}
+.footer_nav li a:hover,#footer .footer_nav li a:hover{color:#4B4B4D!important}
+.widget_pages a:hover{background:#4B4B4D;}
+.widget_meta a:hover{background:#4B4B4D;}
+.widget_archive a:hover{background:#4B4B4D;}
+.widget_recent_comments a:hover{background:#4B4B4D;}
+.widget_nav_menu a:hover{background:#4B4B4D;}
+.widget_recent_entries a:hover{background:#4B4B4D;}
+.widget_tag_cloud a:hover{background:#4B4B4D;}
+#wp-calendar tbody td:hover { background: #4B4B4D;}
+#wp-calendar #today{background: #4B4B4D;}
+.rsswidget:hover{color:#4B4B4D!important}
+.supernova a:hover{background:#4B4B4D;}
+.widget_categories li a:hover{background:#4B4B4D;}
+.leave_comment a:hover{color:#4B4B4D;}
+.single_content .meta_author{color:#4B4B4D}
+#supernova_breadcrumbs a{color:#4B4B4D}
+.supernova_related_posts a{color:#4B4B4D;}
+.supernova_related_posts a:hover{background: #4B4B4D;}
+.pagination a:hover{color:#4B4B4D}
+.pagination .current{color:#4B4B4D;}
+.replyback a {color:#4B4B4D;}
+.flex-control-paging li a.flex-active { background: #4B4B4D;}
+/*Selection*/
+::selection{background: #4B4B4D; /* Safari */}
+::-moz-selection{background: #4B4B4D; /* Firefox */}
+p.red::selection{background: #4B4B4D;}
+p.red::-moz-selection{background: #4B4B4D;}
