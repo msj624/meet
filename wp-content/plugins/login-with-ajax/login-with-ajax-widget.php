@@ -63,6 +63,10 @@ class LoginWithAjaxWidget extends WP_Widget {
             	<label for="<?php echo $this->get_field_id('profile_link'); ?>"><?php _e('Show profile link?', 'login-with-ajax'); ?> </label>
                 <input id="<?php echo $this->get_field_id('profile_link'); ?>" name="<?php echo $this->get_field_name('profile_link'); ?>" type="checkbox" value="1" <?php echo !empty($instance['profile_link']) ? 'checked="checked"':""; ?> />
 			</p>
+        <p>
+            <label for="<?php echo $this->get_field_id('profile_link'); ?>"><?php _e('Show profile link?', 'login-with-ajax'); ?> </label>
+            <input id="<?php echo $this->get_field_id('profile_link'); ?>" name="<?php echo $this->get_field_name('profile_link'); ?>" type="checkbox" value="1" <?php echo !empty($instance['profile_link']) ? 'checked="checked"':""; ?> />
+        </p>
             <p>
             	<label for="<?php echo $this->get_field_id('remember'); ?>"><?php _e('Recover Password?', 'login-with-ajax'); ?> </label>
                 <input id="<?php echo $this->get_field_id('remember'); ?>" name="<?php echo $this->get_field_name('remember'); ?>" type="checkbox" value="1" <?php echo !empty($instance['remember']) ? 'checked="checked"':""; ?> />
