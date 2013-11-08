@@ -1,3 +1,4 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <?php
 /**
  * default header template
