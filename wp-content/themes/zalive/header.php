@@ -1,3 +1,4 @@
+<!-- http://183.110.207.46/wp/ upper IE8 Support -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <?php
 /**
