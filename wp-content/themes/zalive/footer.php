@@ -17,7 +17,7 @@
         <div class="copyright-text">
           <?php if($zAlive_options['copyright_content'] !='') { echo $zAlive_options['copyright_content'];} else { ?>
           &copy; <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a> All Rights Reserved.
-          <?php } ?>Theme zAlive by <a href="http://www.zenoven.com/" title="zenoven" >zenoven</a>.
+          <?php } ?>
         </div>
         
         <ul class="copyright-links">
