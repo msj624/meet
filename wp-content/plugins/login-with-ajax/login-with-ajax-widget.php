@@ -51,6 +51,7 @@ class LoginWithAjaxWidget extends WP_Widget {
     function form($instance) {
     	$instance = array_merge($this->defaults, $instance);
         ?>
+
 			<p>
 				<label for="<?php echo $this->get_field_id('title'); ?>"><?php echo sprintf(__('Title (%s)', 'login-with-ajax'),__('Logged In','login-with-ajax')); ?>: </label>
 				<input type="text" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo esc_attr($instance['title']); ?>" />
