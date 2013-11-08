@@ -19,16 +19,6 @@
           &copy; <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a> All Rights Reserved.
           <?php } ?>
         </div>
-        
-        <ul class="copyright-links">
-          <?php 
-            if ( has_nav_menu( 'footer_custom_links' ) ) {
-              wp_nav_menu( array('theme_location'  => 'footer_custom_links', 'container' => '','depth' => 1 ,'items_wrap' => '%3$s' ) ); 
-            } else {
-              wp_list_pages('depth=1&title_li=0&sort_column=menu_order&number=4');
-            }
-          ?>
-        </ul>
       </div>
     </div>
     <?php wp_footer(); ?>
