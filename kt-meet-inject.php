@@ -20,6 +20,7 @@ while(!is_file($incfile))
 require_once($incfile);
 
 $post_id = $_GET['id'];
+$meetingID = $_GET['meetingID'];
 
 $post_contents = get_post_field('post_content', $post_id);
 
