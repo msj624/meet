@@ -1008,7 +1008,8 @@
         ) {
             // Always redirect to the post
             // $location = $pl;
-            $location = "http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/kt-meet-creating.php?id=".$post->ID."&title=".get_post_field('post_title', $post->ID)."&record=false";
+            $record = "false";
+            $location = "http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/kt-meet-creating.php?id=".$post->ID."&record=".$record."&title=".get_post_field('post_title', $post->ID);
         }
 
         return $location;

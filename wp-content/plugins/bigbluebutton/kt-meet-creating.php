@@ -8,6 +8,7 @@
 
 require('php/bbb_api.php');
 
+$id = $_GET['id'];
 $name = $_GET['title'];
 $record = $_GET['record']; //false, true
 
@@ -23,13 +24,11 @@ $params = 'name='.urlencode($name).'&meetingID='.urlencode($meetingID).'&attende
 
 $url_create = $url_create.$params.'&checksum='.sha1("create".$params.$SALT);
 
-echo $url_create;
-
-
 $xml = bbb_wrap_simplexml_load_file($url_create);
 
 if( $xml && $xml->returncode == 'SUCCESS' ) {
-    echo $url_create;
+    header("Location: http://183.110.207.46/wp/kt-meet-inject.php?id=".$id."&meetingID=".$meetingID);
+    exit();
 }
 else if( $xml ) {
     echo (string)$xml->messageKey.' : '.(string)$xml->message;
