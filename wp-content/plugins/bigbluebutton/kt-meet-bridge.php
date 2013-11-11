@@ -24,6 +24,7 @@ $params = 'name='.urlencode($name).'&meetingID='.urlencode($meetingID).'&attende
 $url_create = $url_create.$params.'&checksum='.sha1("create".$params.$SALT);
 
 echo 'CreateURL: '.$url_create;
+echo '<br/>';
 
 $xml = bbb_wrap_simplexml_load_file($url_create);
 
