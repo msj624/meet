@@ -1008,7 +1008,7 @@
         ) {
             // Always redirect to the post
             // $location = $pl;
-            $location = "http://183.110.207.46/wp/kt-meet-inject.php?id=".$post->ID;
+            $location = "http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/kt-meet-inject.php?id=".$post->ID;
         }
 
         return $location;

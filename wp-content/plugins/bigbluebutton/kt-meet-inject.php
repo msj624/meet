@@ -18,6 +18,8 @@ while(!is_file($incfile))
 }
 require_once($incfile);
 
+require('php/bbb_api.php');
+
 $post_id = $_GET['id'];
 
 $post_contents = get_post_field('post_content', $post_id);
