@@ -22,7 +22,7 @@ $post_id = $_GET['id'];
 
 $post_contents = get_post_field('post_content', $post_id);
 $post_title = get_post_field('post_title', $post_id);
-
+/*
 $name = $post_title;
 $meetingID = bigbluebutton_generateToken();
 $SALT = "ade7513b0851821b36c0b94bec4dd63d";
@@ -37,6 +37,7 @@ $params = 'name='.urlencode($name).'&meetingID='.urlencode($meetingID).'&attende
 $url_create = $url_create.$params.'&checksum='.sha1("create".$params.$SALT);
 
 echo $url_create;
+*/
 /*
 $xml = bbb_wrap_simplexml_load_file($url_create);
 
