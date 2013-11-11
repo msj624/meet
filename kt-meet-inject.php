@@ -31,7 +31,7 @@ if ( is_user_logged_in() ) {
     get_currentuserinfo();
     $event_mader = $current_user->ID ;
 
-    $post_contents = $post_contents.'<br/><form  action="redirect-to-meet.php" method="post">
+    $post_contents = $post_contents.'<br/>Click the button below to join the meeting.<br/><form  action="redirect-to-meet.php" method="post">
     <input type="hidden" value="'.$meetingID.'" name="meetingID" />
     <input type="hidden" value="'.$event_mader.'" name="mader" />
     <button name="redirect_submit" value="redirect">Join Meeting</button>
@@ -41,6 +41,7 @@ if ( is_user_logged_in() ) {
     $my_post['ID'] = $post_id;
     $my_post['post_content'] = $post_contents;
     wp_update_post( $my_post );
+    wp_redirect(get_permalink($post->ID));
 }
 else
 {
