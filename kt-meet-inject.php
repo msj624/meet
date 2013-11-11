@@ -67,7 +67,7 @@ else if( $xml ) {
 else {
     echo 'Unable to fetch URL '.$url_create.$params.'&checksum='.sha1("create".$params.$SALT);
 }
-*/
+
 function bigbluebutton_generateToken($tokenLength=6){
     $token = '';
 
@@ -112,4 +112,5 @@ function bbb_wrap_simplexml_load_file($url){
 
     return (simplexml_load_file($url));
 }
+*/
 //get_permalink($post->ID)
