@@ -19,7 +19,7 @@ while(!is_file($incfile))
 require_once($incfile);
 
 require('php/bbb_api.php');
-
+/*
 $post_id = $_GET['id'];
 
 $post_contents = get_post_field('post_content', $post_id);
@@ -40,7 +40,7 @@ $url_create = $url_create.$params.'&checksum='.sha1("create".$params.$SALT);
 
 echo $url_create;
 
-/*
+
 $xml = bbb_wrap_simplexml_load_file($url_create);
 
 if( $xml && $xml->returncode == 'SUCCESS' ) {
