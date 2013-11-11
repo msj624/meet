@@ -30,7 +30,9 @@ $xml = bbb_wrap_simplexml_load_file($url_create);
 
 if( $xml && $xml->returncode == 'SUCCESS' ) {
     $username = "admin";
-    echo 'JoinURL: '.BigBlueButton::getJoinURL( $meetingID, $username, $moderatorPW, $SALT, $URL );
+    echo 'JoinURL(Creator): '.BigBlueButton::getJoinURL( $meetingID, $username, $moderatorPW, $SALT, $URL );
+    echo '<br/>';
+    echo 'JoinURL(Guest): '.BigBlueButton::getJoinURL( $meetingID, 'guest', $attendeePW, $SALT, $URL );
 }
 else if( $xml ) {
     echo (string)$xml->messageKey.' : '.(string)$xml->message;
