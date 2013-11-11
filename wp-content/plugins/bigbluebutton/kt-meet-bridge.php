@@ -10,13 +10,22 @@
 //================================================================================
 require('php/bbb_api.php');
 
+$name = "username";
 $meetingID = bigbluebutton_generateToken();
 $duration = 0;
-$voicebridge = 0;
 $logouturl = "http://183.110.207.46/wp/";
-
+$SALT = "ade7513b0851821b36c0b94bec4dd63d";
+$record = 'false';
+$attendeePW = '123';
+$moderatorPW = '1234';
 echo $meetingID;
-//wp_redirect('http://183.110.207.45/demo/create.jsp?action=init&creator='.$current_user->user_login);
+$url_create = "http://183.110.207.45/bigbluebutton/api/create?";
+
+$params = 'name='.urlencode($name).'&meetingID='.urlencode($meetingID).'&attendeePW='.urlencode($attendeePW).'&moderatorPW='.urlencode($moderatorPW).'&logoutURL='.urlencode($logouturl).'&record='.$record;
+
+$url_create = $url_create.$params.'&checksum='.sha1("create".$params.$SALT);
+
+wp_redirect($url_create);
 
 function bigbluebutton_generateToken($tokenLength=6){
     $token = '';
