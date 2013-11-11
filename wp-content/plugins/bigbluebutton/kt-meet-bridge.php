@@ -16,13 +16,27 @@ $SALT = "ade7513b0851821b36c0b94bec4dd63d";
 $record = 'true'; //false, true
 $attendeePW = 'ap';
 $moderatorPW = 'mp';
-$url_create = "http://183.110.207.45/bigbluebutton/api/create?";
+$URL = "http://183.110.207.45/bigbluebutton/";
+$url_create = $URL."api/create?";
 
 $params = 'name='.urlencode($name).'&meetingID='.urlencode($meetingID).'&attendeePW='.urlencode($attendeePW).'&moderatorPW='.urlencode($moderatorPW).'&record='.$record;
 
 $url_create = $url_create.$params.'&checksum='.sha1("create".$params.$SALT);
 
-echo $url_create;
+echo 'CreateURL: '.$url_create;
+
+$xml = bbb_wrap_simplexml_load_file($url_create);
+
+if( $xml && $xml->returncode == 'SUCCESS' ) {
+    $username = "admin";
+    echo 'JoinURL: '.BigBlueButton::getJoinURL( $meetingID, $username, $moderatorPW, $SALT, $URL );
+}
+else if( $xml ) {
+    echo (string)$xml->messageKey.' : '.(string)$xml->message;
+}
+else {
+    echo 'Unable to fetch URL '.$url_create.$params.'&checksum='.sha1("create".$params.$SALT);
+}
 
 function bigbluebutton_generateToken($tokenLength=6){
     $token = '';
