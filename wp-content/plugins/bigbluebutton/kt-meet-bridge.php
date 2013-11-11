@@ -10,11 +10,10 @@
 //================================================================================
 require('php/bbb_api.php');
 
-$name = "username";
+$name = "test_API_Meeting";
 $meetingID = bigbluebutton_generateToken();
-$duration = 0;
 $SALT = "ade7513b0851821b36c0b94bec4dd63d";
-$record = 'false';
+$record = 'true'; //false, true
 $attendeePW = '123';
 $moderatorPW = '1234';
 $url_create = "http://183.110.207.45/bigbluebutton/api/create?";
