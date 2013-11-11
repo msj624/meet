@@ -13,14 +13,13 @@ require('php/bbb_api.php');
 $name = "username";
 $meetingID = bigbluebutton_generateToken();
 $duration = 0;
-$logouturl = "http://183.110.207.46/wp/";
 $SALT = "ade7513b0851821b36c0b94bec4dd63d";
 $record = 'false';
 $attendeePW = '123';
 $moderatorPW = '1234';
 $url_create = "http://183.110.207.45/bigbluebutton/api/create?";
 
-$params = 'name='.urlencode($name).'&meetingID='.urlencode($meetingID).'&attendeePW='.urlencode($attendeePW).'&moderatorPW='.urlencode($moderatorPW).'&logoutURL='.urlencode($logouturl).'&record='.$record;
+$params = 'name='.urlencode($name).'&meetingID='.urlencode($meetingID).'&attendeePW='.urlencode($attendeePW).'&moderatorPW='.urlencode($moderatorPW).'&record='.$record;
 
 $url_create = $url_create.$params.'&checksum='.sha1("create".$params.$SALT);
 
