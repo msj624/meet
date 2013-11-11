@@ -41,6 +41,7 @@ if ( is_user_logged_in() ) {
     $my_post['ID'] = $post_id;
     $my_post['post_content'] = $post_contents;
     wp_update_post( $my_post );
+    echo get_permalink($post_id);
     wp_redirect(get_permalink($post_id));
 }
 else
