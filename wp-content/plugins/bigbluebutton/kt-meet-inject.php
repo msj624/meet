@@ -5,7 +5,7 @@
  * Date: 13. 11. 11
  * Time: 오후 4:45
  */
-/*
+
 $incfile = 'wp-load.php';
 $c=0;
 while(!is_file($incfile))
@@ -17,8 +17,8 @@ while(!is_file($incfile))
         exit;
     }
 }
-require_once($incfile);
-*/
+require($incfile);
+
 require('php/bbb_api.php');
 /*
 $post_id = $_GET['id'];
