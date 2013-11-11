@@ -23,7 +23,7 @@ $post_id = $_GET['id'];
 $post_contents = get_post_field('post_content', $post_id);
 $post_title = get_post_field('post_title', $post_id);
 
-require('http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/php/bbb_api.php');
+require('bbb_api.php');
 /*
 $name = $post_title;
 $meetingID = bigbluebutton_generateToken();
