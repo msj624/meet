@@ -38,6 +38,8 @@ $params = 'name='.urlencode($name).'&meetingID='.urlencode($meetingID).'&attende
 
 $url_create = $url_create.$params.'&checksum='.sha1("create".$params.$SALT);
 
+echo $url_create;
+/*
 $xml = bbb_wrap_simplexml_load_file($url_create);
 
 if( $xml && $xml->returncode == 'SUCCESS' ) {
@@ -66,7 +68,7 @@ else if( $xml ) {
 else {
     echo 'Unable to fetch URL '.$url_create.$params.'&checksum='.sha1("create".$params.$SALT);
 }
-
+*/
 function bigbluebutton_generateToken($tokenLength=6){
     $token = '';
 
