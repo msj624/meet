@@ -1006,11 +1006,16 @@
             (isset($_POST['publish']) || $post->post_status == 'publish') && // Publishing draft or updating published post
             $pl = get_permalink($post->ID)
         ) {
-            // Always redirect to the post
-            // $location = $pl;
-            $record = "false";
-            $location = "http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/kt-meet-creating.php?id=".$post->ID."&record=".$record."&title=".urlencode(get_post_field('post_type', $post->ID));
-
+            if (get_post_field('post_type', $post->ID) == 'event')
+            {
+                $record = "false";
+                $location = "http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/kt-meet-creating.php?id=".$post->ID."&record=".$record."&title=".urlencode(get_post_field('post_title', $post->ID));
+            }
+            else
+            {
+                // Always redirect to the post
+                $location = $pl;
+            }
         }
 
         return $location;
