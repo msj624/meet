@@ -1031,23 +1031,21 @@
             wp_enqueue_style("custom_admin_css", get_bloginfo('template_directory')."/css/custom_admin.css", false, false, "all");
         }
     }
-
+/*
     add_action('init', 'my_init_method');
     function my_init_method() {
         wp_deregister_script( 'jquery' );
         wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js');
     }
-
+*/
     add_action('admin_head', 'nav_script_enqueuer');
     function nav_script_enqueuer(){
         if( is_admin() && !current_user_can('administrator')) {
-            ?>
-            <script type="text/javascript">
-                jQuery(document).ready(function() {
-                    jQuery('div.wpwrap').addClass('container');
-                });
+
+            echo '<script type="text/javascript">
+            jQuery(\'div.wpwrap\').addClass(\'container\');
             </script>';
-            <?php
+
             get_template_part( 'template/header_kt' );
         }
     }
