@@ -35,17 +35,14 @@ global $zAlive_options;
             }
             ?>
         </ul>
+        <?php if( $zAlive_options['header_searchbox_enabled'] == true ) : ?>
+            <form class="pull-right input-append" id="searchbox" method="get" action="<?php echo esc_url( home_url() ); ?>/">
+                <input name="s" id="s" type="text" placeholder="<?php _e('Type and search...','zAlive'); ?>">
+                <button type="submit" class="btn"><?php _e('Search','zAlive'); ?></button>
+            </form>
+        <?php endif; ?>
     </div>
 </div>
-<?php if( $zAlive_options['show_tagline_directly'] == true ) : ?>
-    <div id="site-description" class="tagline tagline-shown-directly container visible-desktop">
-        <p><?php bloginfo('description'); ?></p>
-    </div>
-<?php else : ?>
-    <div id="site-description" class="tagline tagline-hidden container visible-desktop">
-        <p><?php bloginfo('description'); ?></p>
-    </div>
-<?php endif; ?>
 </div>
 <?php //slider
 if( $zAlive_options['slider_enabled'] == 1 || ( $zAlive_options['slider_enabled'] == 2 && is_front_page() ) ){
