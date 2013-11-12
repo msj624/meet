@@ -1021,9 +1021,9 @@
         return $location;
     }
 
-    //add_action( 'admin_print_styles', 'custom_admin_css' );
+    add_action( 'admin_print_styles', 'custom_admin_css' );
     //add_action( 'wp_enqueue_scripts', 'custom_admin_css' );
-    add_action('admin_init', 'custom_admin_css');
+    //add_action('admin_init', 'custom_admin_css');
 
     function custom_admin_css(){
 
