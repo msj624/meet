@@ -20,13 +20,13 @@ global $zAlive_options;
 </head>
 <body <?php body_class( ( is_front_page() && $zAlive_options['hide_posts_and_primary_sidebar'] == true ) ? 'hide_posts_and_primary_sidebar' : '' ); ?>>
 <div id="header2">
-    <div class="navbar container">
-        <div class="navbar-inner">
+    <div class="navbar2 container">
+        <div class="navbar-inner2">
             <?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
             <<?php echo $heading_tag; ?> class="brand">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
         </<?php echo $heading_tag; ?>>
-        <ul class="nav2">
+        <ul class="nav">
             <?php
             if ( has_nav_menu( 'top_nav_menu' ) ) {
                 wp_nav_menu( array('theme_location'  => 'top_nav_menu', 'container' => '','depth' => 2 ,'items_wrap' => '%3$s' ) );
