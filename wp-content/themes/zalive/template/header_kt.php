@@ -8,9 +8,9 @@ global $zAlive_options;
 <html class="ie ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html class="wp-admin wp-core-ui js  post-new-php admin-bar post-type-event branch-3-7 version-3-7-1 admin-color-fresh locale-en-us  customize-support" <?php language_attributes(); ?> style>
 <!--<![endif]-->
-<head class="wp-admin wp-core-ui js  post-new-php admin-bar post-type-event branch-3-7 version-3-7-1 admin-color-fresh locale-en-us  customize-support" style>
+<head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
