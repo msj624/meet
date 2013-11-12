@@ -1044,7 +1044,7 @@
             ?>
             <script type="text/javascript">
                 jQuery(document).ready(function() {
-                    jQuery('#wpwrap').addClass('container');
+                    jQuery('div.wpwrap').addClass('container');
                 });
             </script>';
             <?php
