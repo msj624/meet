@@ -19,7 +19,7 @@ global $zAlive_options;
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( ( is_front_page() && $zAlive_options['hide_posts_and_primary_sidebar'] == true ) ? 'hide_posts_and_primary_sidebar' : '' ); ?>>
-<div id="header" style="margin-top:-28px; margin-bottom:0px">
+<div id="header" style="margin-top:-28px; margin-bottom:0px;">
     <div class="navbar container">
         <div class="navbar-inner">
             <?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
