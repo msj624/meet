@@ -1035,7 +1035,7 @@
 
     add_action('admin_head', 'nav_script_enqueuer');
     function nav_script_enqueuer(){
-        get_template_part( 'template/header_kt' );
+        get_template_part( 'template/header' );
 
     }
 ?>
