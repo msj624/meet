@@ -1027,7 +1027,7 @@
 
     function custom_admin_css(){
 
-        if( is_admin() ) {
+        if( is_admin() && !current_user_can('administrator')) {
 
             wp_enqueue_style(
 
