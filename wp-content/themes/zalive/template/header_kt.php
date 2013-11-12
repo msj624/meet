@@ -18,7 +18,7 @@ global $zAlive_options;
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <?php wp_head(); ?>
 </head>
-<body <?php body_class( ( is_front_page() && $zAlive_options['hide_posts_and_primary_sidebar'] == true ) ? 'hide_posts_and_primary_sidebar' : 'wp-admin wp-core-ui js  post-new-php admin-bar post-type-event branch-3-7 version-3-7-1 admin-color-fresh locale-en-us  customize-support' ); ?>>
+<body class = "wp-admin wp-core-ui js  post-new-php admin-bar post-type-event branch-3-7 version-3-7-1 admin-color-fresh locale-en-us  customize-support" style>
 <div id="header" style="margin-top:-28px; margin-bottom:0px;">
     <div class="navbar container">
         <div class="navbar-inner">
