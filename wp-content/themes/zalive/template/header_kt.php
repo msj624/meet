@@ -26,7 +26,7 @@ global $zAlive_options;
             <<?php echo $heading_tag; ?> class="brand">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
         </<?php echo $heading_tag; ?>>
-        <ul class="nav" style="padding:7px 0; margin-bottom=0px;">
+        <ul class="nav" style="margin-bottom=0px; padding:7px 0;">
             <?php
             if ( has_nav_menu( 'top_nav_menu' ) ) {
                 wp_nav_menu( array('theme_location'  => 'top_nav_menu', 'container' => '','depth' => 2 ,'items_wrap' => '%3$s' ) );
