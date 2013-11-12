@@ -1020,13 +1020,5 @@
 
         return $location;
     }
-
-    // admin menu hide
-    add_action('admin_init', 'add_custom_admin_style');
-    function add_custom_admin_style(){
-        wp_register_style('custom_admin_style', 'custom_admin.css');
-        wp_enqueue_style('custom_admin_style');
-    }
-
 ?>
 
