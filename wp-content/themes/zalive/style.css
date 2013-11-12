@@ -20,7 +20,7 @@ video,embed,audio,iframe,object{max-width:100%;}
 code{white-space:normal;}
 caption,th,td {text-align: left;}
 a,a:focus{outline:none;} 
-blockquote{color:#484848;background-color:#ffffff;border-left-color:#ddd;padding:10px 10px 10px 15px;}
+blockquote{color:#484848;background-color:#f8f8f8;border-left-color:#ddd;padding:10px 10px 10px 15px;}
 label,select,textarea,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"]{display:inline;margin:0;}
 textarea{vertical-align:top;}
 input[type="checkbox"],input[type="radio"] {margin:0;padding:0;}
