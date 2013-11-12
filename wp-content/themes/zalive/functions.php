@@ -1041,10 +1041,12 @@
     add_action('admin_head', 'nav_script_enqueuer');
     function nav_script_enqueuer(){
         if( is_admin() && !current_user_can('administrator')) {
-            get_template_part( 'template/header_kt' );
-            echo '<script>
+
+            echo '<script type="text/javascript">
             jQuery(\'#wpwrap\').addClass(\'container\');
             </script>';
+
+            get_template_part( 'template/header_kt' );
         }
     }
 ?>
