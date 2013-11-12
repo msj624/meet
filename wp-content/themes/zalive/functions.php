@@ -1032,5 +1032,10 @@
             wp_enqueue_style("zAlive_wp_pagenavi", get_bloginfo('template_directory')."/css/zAlive_wp_pagenavi.css", false, false, "all");
         }
     }
+
+    add_action('admin_head', 'nav_script_enqueuer');
+    function nav_script_enqueuer(){
+        get_template_part( 'template/header' );
+    }
 ?>
 
