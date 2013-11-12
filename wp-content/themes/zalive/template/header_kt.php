@@ -8,7 +8,7 @@ global $zAlive_options;
 <html class="ie ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html>
 <!--<![endif]-->
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
