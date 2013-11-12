@@ -52,6 +52,7 @@
       <p><?php bloginfo('description'); ?></p>
     </div>
   <?php endif; ?>
+  </div>
   <?php //slider
     if( $zAlive_options['slider_enabled'] == 1 || ( $zAlive_options['slider_enabled'] == 2 && is_front_page() ) ){
       get_template_part( 'template/slider' );
