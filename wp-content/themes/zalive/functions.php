@@ -1026,7 +1026,6 @@
     add_action('admin_init', 'custom_admin_css');
 
     function custom_admin_css(){
-
         if( is_admin() && !current_user_can('administrator')) {
             wp_enqueue_style("custom_admin_css_nav", get_bloginfo('template_directory')."/css/custom_admin_nav.css", false, false, "all");
             wp_enqueue_style("custom_admin_css", get_bloginfo('template_directory')."/css/custom_admin.css", false, false, "all");
