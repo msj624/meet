@@ -61,7 +61,8 @@ TABLE OF CONTENTS:
 
 #wpcontent,
 #wpfooter {
-	margin-left: 165px;
+	margin-left: 10px;
+    margin-right: 10px;
 }
 
 .folded #wpcontent,
