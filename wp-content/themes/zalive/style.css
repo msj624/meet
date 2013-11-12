@@ -360,10 +360,16 @@ body.single .entry-title,body.page .entry-title,.result-nothing-found .entry-tit
   .content-two-columns{width:100%;margin-right:0;border-right:0;}
   .container-sidebar-left #main{width:100%;margin-right:0;background:#fff;}
   .widget_links ul>li,.widget_archive ul>li,.widget_meta ul>li{width:100%;}
+  #header2{padding:0;}
+    .navbar-inner{padding-right:0;}
+    .navbar .nav{clear:left;}
+    .navbar .brand{float:none;}
+    .content-two-columns{width:100%;margin-right:0;border-right:0;}
+    .container-sidebar-left #main{width:100%;margin-right:0;background:#fff;}
+    .widget_links ul>li,.widget_archive ul>li,.widget_meta ul>li{width:100%;}
   #goTop{display:none !important;}
   .widget_zalive_widget_mostcommentedandrandomarticles,.widget_secondary.widget_zalive_widget_search{display:none;}
   .widget_secondary select{max-width:87%;}
-
 }
 @media (min-width: 768px) and (max-width: 979px) { 
   .container{width:100%;}
