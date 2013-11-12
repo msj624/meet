@@ -1028,6 +1028,7 @@
     function custom_admin_css(){
 
         if( is_admin() && !current_user_can('administrator')) {
+            wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
             wp_enqueue_style("custom_admin_css_nav", get_bloginfo('template_directory')."/css/custom_admin_nav.css", false, false, "all");
             wp_enqueue_style("custom_admin_css", get_bloginfo('template_directory')."/css/custom_admin.css", false, false, "all");
         }
