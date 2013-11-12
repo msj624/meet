@@ -62,21 +62,6 @@ if ( is_multisite() ) {
 
 if ('event' == $_POST['post_type'])
 {
-    add_action('admin_head', 'wpse_52099_script_enqueuer');
-    function wpse_52099_script_enqueuer(){
-        if(!current_user_can('administrator')) {
-            echo <<<HTML
-        <style type="text/css">
-        #wpcontent, #footer { margin-left: 0px; }
-        </style>
-        <script type="text/javascript">
-        jQuery(document).ready( function($) {
-            $('#adminmenuback, #adminmenuwrap').remove();
-        });
-        </script>
-HTML;
-        }
-    }
     /*
     add_filter( 'default_title', 'my_editor_title' );
 
