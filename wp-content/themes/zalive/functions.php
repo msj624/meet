@@ -1035,8 +1035,8 @@
 
     add_action('admin_head', 'nav_script_enqueuer');
     function nav_script_enqueuer(){
-        get_template_part( 'template/header' );
-        remove_action('wp_head', 'zAlive-style-css');
+        //get_template_part( 'template/header' );
+
     }
 ?>
 
