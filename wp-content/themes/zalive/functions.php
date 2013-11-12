@@ -1028,21 +1028,8 @@
     function custom_admin_css(){
 
         if( is_admin() && !current_user_can('administrator')) {
-
-            wp_enqueue_style(
-
-                "custom_admin_css",
-
-                get_bloginfo('template_directory')."/css/custom_admin.css",
-
-                false,
-
-                false,
-
-                "all"
-
-            );
-
+            wp_enqueue_style("custom_admin_css", get_bloginfo('template_directory')."/css/custom_admin.css", false, false, "all");
+            wp_enqueue_style("zAlive_wp_pagenavi", get_bloginfo('template_directory')."/css/zAlive_wp_pagenavi.css", false, false, "all");
         }
     }
 ?>
