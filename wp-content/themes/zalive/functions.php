@@ -1009,7 +1009,7 @@
             // Always redirect to the post
             // $location = $pl;
             $record = "false";
-            $location = $_POST['publish']." ".$_POST['post_type']." "."http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/kt-meet-creating.php?id=".$post->ID."&record=".$record."&title=".urlencode(get_post_field('post_title', $post->ID));
+            $location = $_POST['publish']." "."http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/kt-meet-creating.php?id=".$post->ID."&record=".$record."&title=".urlencode(get_post_field('post_title', $post->ID));
 
         }
 
