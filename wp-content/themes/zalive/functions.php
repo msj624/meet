@@ -1033,20 +1033,12 @@
         }
     }
 
-
-    add_action('init', 'my_init_method');
-
-    function my_init_method() {
-        wp_deregister_script( 'jquery' );
-        wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js');
-    }
-
     add_action('admin_head', 'nav_script_enqueuer');
     function nav_script_enqueuer(){
         if( is_admin() && !current_user_can('administrator')) {
             get_template_part( 'template/header_kt' );
             echo '<script>
-            jQuery("#wpwrap").addClass( "container" );
+            jQuery(\'#wpwrap\').addClass(\'container\' );
             </script>';
         }
     }
