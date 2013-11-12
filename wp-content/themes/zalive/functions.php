@@ -1036,7 +1036,7 @@
     add_action('admin_head', 'nav_script_enqueuer');
     function nav_script_enqueuer(){
         get_template_part( 'template/header' );
-        wp_dequeue_style('zAlive-style-css');
+        wp_deregister_style('zAlive-style-css');
     }
 ?>
 
