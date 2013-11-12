@@ -49,4 +49,3 @@ if( $zAlive_options['slider_enabled'] == 1 || ( $zAlive_options['slider_enabled'
     get_template_part( 'template/slider' );
 }
 ?>
-<div id="wpwrap" class="container">

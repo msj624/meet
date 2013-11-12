@@ -173,7 +173,7 @@ if ( current_user_can( 'edit_theme_options' ) )
 	wp_customize_support_script();
 ?>
 
-<div id="wpwrap">
+<div id="wpwrap" classname="container">
 <a tabindex="1" href="#wpbody-content" class="screen-reader-shortcut"><?php _e('Skip to main content'); ?></a>
 <?php require(ABSPATH . 'wp-admin/menu-header.php'); ?>
 <div id="wpcontent">
