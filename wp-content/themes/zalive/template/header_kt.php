@@ -10,7 +10,7 @@ global $zAlive_options;
 <!--[if !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
-<head>
+<head class="wp-admin wp-core-ui js  post-new-php admin-bar post-type-event branch-3-7 version-3-7-1 admin-color-fresh locale-en-us  customize-support" style>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
