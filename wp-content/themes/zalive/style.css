@@ -97,13 +97,13 @@ img.aligncenter {margin-top: 12px;margin-top: 0.857142857rem;margin-bottom: 12px
 .navbar .brand{margin:0;background:#73a53e;color:#fff;text-shadow:none;line-height:60px;padding:0px 20px;font-size:32px;}
 .navbar .brand a{display:block;color:#fff;overflow:hidden;word-break:break-all;text-overflow:ellipsis;}
 .navbar .brand a:hover,.navbar .brand a:focus{text-decoration:none;}
-.navbar .nav{display:none;padding:7px 0;margin:0 10px;}
-.navbar .nav li{list-style:none;}
-.navbar .nav>li>a{color:#73a53e;text-shadow:none;}
-.navbar .nav li.dropdown.open>.dropdown-toggle, .navbar .nav li.dropdown.active>.dropdown-toggle, .navbar .nav li.dropdown.open.active>.dropdown-toggle,.navbar .nav>li>a:focus,.navbar .nav>li>a:hover{color:#fff;background:#73a53e;}
-.navbar .nav li.dropdown>.dropdown-toggle .caret,.navbar .nav li.dropdown>a:hover .caret, .navbar .nav li.dropdown>a:focus .caret{border-top-color: #73a53e;border-bottom-color: #73a53e;}
-.navbar .nav li.dropdown.open>.dropdown-toggle .caret, .navbar .nav li.dropdown.active>.dropdown-toggle .caret, .navbar .nav li.dropdown.open.active>.dropdown-toggle .caret{border-top-color: #fff;border-bottom-color: #fff;}
-.navbar .nav>li>.dropdown-menu:before,.navbar .nav>li>.dropdown-menu:after{content:none;border:none;}
+.navbar .nav2{display:none;padding:7px 0;margin:0 10px;}
+.navbar .nav2 li{list-style:none;}
+.navbar .nav2>li>a{color:#73a53e;text-shadow:none;}
+.navbar .nav2 li.dropdown.open>.dropdown-toggle, .navbar .nav2 li.dropdown.active>.dropdown-toggle, .navbar .nav2 li.dropdown.open.active>.dropdown-toggle,.navbar .nav2>li>a:focus,.navbar .nav2>li>a:hover{color:#fff;background:#73a53e;}
+.navbar .nav2 li.dropdown>.dropdown-toggle .caret,.navbar .nav2 li.dropdown>a:hover .caret, .navbar .nav2 li.dropdown>a:focus .caret{border-top-color: #73a53e;border-bottom-color: #73a53e;}
+.navbar .nav2 li.dropdown.open>.dropdown-toggle .caret, .navbar .nav2 li.dropdown.active>.dropdown-toggle .caret, .navbar .nav2 li.dropdown.open.active>.dropdown-toggle .caret{border-top-color: #fff;border-bottom-color: #fff;}
+.navbar .nav2>li>.dropdown-menu:before,.navbar .nav2>li>.dropdown-menu:after{content:none;border:none;}
 #header2 .dropdown-menu{margin:0;border:0;background:#73a53e;padding:5px;}
 #header2 .dropdown-menu>li>a{color:#fff;line-height:30px;}
 #header2 .dropdown-menu>li>a:hover,#header2 .dropdown-menu>li>a:focus,#header2 .dropdown-submenu:hover>a,#header2 .dropdown-submenu:focus>a {color:#73a53e;background:#e7e7e7;filter:none;}
