@@ -97,7 +97,7 @@ img.aligncenter {margin-top: 12px;margin-top: 0.857142857rem;margin-bottom: 12px
 .navbar .brand{margin:0;background:#73a53e;color:#fff;text-shadow:none;line-height:60px;padding:0px 20px;font-size:32px;}
 .navbar .brand a{display:block;color:#fff;overflow:hidden;word-break:break-all;text-overflow:ellipsis;}
 .navbar .brand a:hover,.navbar .brand a:focus{text-decoration:none;}
-.navbar .nav{display:none;padding:10px 0;margin:0 10px;}
+.navbar .nav{display:none;padding:7px 0;margin:0 10px;}
 .navbar .nav li{list-style:none;}
 .navbar .nav>li>a{color:#73a53e;text-shadow:none;}
 .navbar .nav li.dropdown.open>.dropdown-toggle, .navbar .nav li.dropdown.active>.dropdown-toggle, .navbar .nav li.dropdown.open.active>.dropdown-toggle,.navbar .nav>li>a:focus,.navbar .nav>li>a:hover{color:#fff;background:#73a53e;}
