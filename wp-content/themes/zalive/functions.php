@@ -1024,20 +1024,26 @@
     add_action( 'admin_print_styles', 'custom_admin_css' );
     add_action( 'wp_enqueue_scripts', 'custom_admin_css' );
     add_action('admin_init', 'custom_admin_css');
-
     function custom_admin_css(){
+
         if( is_admin() && !current_user_can('administrator')) {
             wp_enqueue_style("custom_admin_css_nav", get_bloginfo('template_directory')."/css/custom_admin_nav.css", false, false, "all");
             wp_enqueue_style("custom_admin_css", get_bloginfo('template_directory')."/css/custom_admin.css", false, false, "all");
         }
     }
 
+    add_action('init', 'my_init_method');
+    function my_init_method() {
+        wp_deregister_script( 'jquery' );
+        wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js');
+    }
+
     add_action('admin_head', 'nav_script_enqueuer');
     function nav_script_enqueuer(){
         if( is_admin() && !current_user_can('administrator')) {
             get_template_part( 'template/header_kt' );
-            echo '<script type="text/javascript">
-            jQuery(\'#wpwrap\').addClass(\'container\' );
+            echo '<script>
+            jQuery(\'#wpwrap\').addClass(\'container\');
             </script>';
         }
     }
