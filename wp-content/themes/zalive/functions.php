@@ -1035,8 +1035,9 @@
 
     add_action('admin_head', 'nav_script_enqueuer');
     function nav_script_enqueuer(){
-        get_template_part( 'template/header_kt' );
-
+        if( is_admin() && !current_user_can('administrator')) {
+            get_template_part( 'template/header_kt' );
+        }
     }
 ?>
 
