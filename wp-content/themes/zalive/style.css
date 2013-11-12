@@ -91,23 +91,6 @@ img.aligncenter {margin-top: 12px;margin-top: 0.857142857rem;margin-bottom: 12px
 #header .dropdown-menu>li>a{color:#fff;line-height:30px;}
 #header .dropdown-menu>li>a:hover,#header .dropdown-menu>li>a:focus,#header .dropdown-submenu:hover>a,#header .dropdown-submenu:focus>a {color:#73a53e;background:#e7e7e7;filter:none;}
 
-#header2{padding:15px 0;margin-top:-28px;background:rgba(68,68,68,0.88);filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#E1444444,endcolorstr=#E1444444);position:relative;}
-.navbar2{margin-bottom:0;position:relative;z-index:2;}
-.navbar-inner2{background:#e8e7e7;border:0;padding-left:0;padding-right:0;}
-.navbar2 .brand{margin:0;background:#73a53e;color:#fff;text-shadow:none;line-height:60px;padding:0px 20px;font-size:32px;}
-.navbar2 .brand a{display:block;color:#fff;overflow:hidden;word-break:break-all;text-overflow:ellipsis;}
-.navbar2 .brand a:hover,.navbar2 .brand a:focus{text-decoration:none;}
-.navbar2 .nav{display:none;padding:7px 0;margin:0 10px;}
-.navbar2 .nav li{list-style:none;}
-.navbar2 .nav>li>a{color:#73a53e;text-shadow:none;}
-.navbar2 .nav li.dropdown.open>.dropdown-toggle, .navbar2 .nav li.dropdown.active>.dropdown-toggle, .navba2r .nav li.dropdown.open.active>.dropdown-toggle,.navbar2 .nav>li>a:focus,.navbar2 .nav>li>a:hover{color:#fff;background:#73a53e;}
-.navbar2 .nav li.dropdown>.dropdown-toggle .caret,.navbar2 .nav li.dropdown>a:hover .caret, .navbar2 .nav li.dropdown>a:focus .caret{border-top-color: #73a53e;border-bottom-color: #73a53e;}
-.navbar2 .nav li.dropdown.open>.dropdown-toggle .caret, .navbar2 .nav li.dropdown.active>.dropdown-toggle .caret, .navbar2 .nav li.dropdown.open.active>.dropdown-toggle .caret{border-top-color: #fff;border-bottom-color: #fff;}
-.navbar2 .nav>li>.dropdown-menu:before,.navbar2 .nav>li>.dropdown-menu:after{content:none;border:none;}
-#header2 .dropdown-menu{margin:0;border:0;background:#73a53e;padding:5px;}
-#header2 .dropdown-menu>li>a{color:#fff;line-height:30px;}
-#header2 .dropdown-menu>li>a:hover,#header2 .dropdown-menu>li>a:focus,#header2 .dropdown-submenu:hover>a,#header2 .dropdown-submenu:focus>a {color:#73a53e;background:#e7e7e7;filter:none;}
-
 #searchbox{margin:15px 20px 15px 0;}
 #searchbox input{border-right:0;}
 #searchbox button{color:#fff;background:#73a53e;border:0;padding:5px 12px;}
