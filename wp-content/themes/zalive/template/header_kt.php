@@ -35,12 +35,6 @@ global $zAlive_options;
             }
             ?>
         </ul>
-        <?php if( $zAlive_options['header_searchbox_enabled'] == true ) : ?>
-            <form class="pull-right input-append" id="searchbox" method="get" action="<?php echo esc_url( home_url() ); ?>/">
-                <input name="s" id="s" type="text" placeholder="<?php _e('Type and search...','zAlive'); ?>">
-                <button type="submit" class="btn"><?php _e('Search','zAlive'); ?></button>
-            </form>
-        <?php endif; ?>
     </div>
 </div>
 <?php if( $zAlive_options['show_tagline_directly'] == true ) : ?>
