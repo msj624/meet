@@ -1914,7 +1914,7 @@ th .comment-grey-bubble {
 ------------------------------------------------------------------------------*/
 
 html.wp-toolbar {
-	padding-top: 28px;
+	padding-top: 0px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
