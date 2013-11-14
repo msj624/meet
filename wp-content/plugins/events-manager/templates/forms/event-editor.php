@@ -48,7 +48,7 @@ if( !empty($_REQUEST['success']) ){
 			<?php em_locate_template('forms/event/group.php',true); ?>
 		</div>
 					
-		<h3 class="event-form-when"><?php esc_html_e( 'Setting', 'dbem' ); ?></h3>
+		<h3 class="event-form-when"><?php esc_html_e( 'When', 'dbem' ); ?></h3>
 		<div class="inside event-form-when">
 		<?php 
 			if( empty($EM_Event->event_id) && $EM_Event->can_manage('edit_recurring_events','edit_others_recurring_events') && get_option('dbem_recurrence_enabled') ){
