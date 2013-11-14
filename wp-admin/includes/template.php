@@ -1685,7 +1685,7 @@ function get_submit_button( $text = null, $type = 'primary large', $name = 'subm
 }
 
 function _wp_admin_html_begin() {
-	$admin_html_class = ( is_admin_bar_showing() && current_user_can('administrator') ) ? 'wp-toolbar' : 'wp-admin wp-core-ui js  post-new-php admin-bar post-type-event branch-3-7 version-3-7-1 admin-color-fresh locale-en-us  customize-support';
+	$admin_html_class = ( is_admin_bar_showing() ) ? 'wp-toolbar' : '';
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]>
@@ -1695,6 +1695,7 @@ function _wp_admin_html_begin() {
 <html xmlns="http://www.w3.org/1999/xhtml" class="<?php echo $admin_html_class; ?>" <?php do_action('admin_xml_ns'); ?> <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php echo get_option('blog_charset'); ?>" />
 <?php
 }
