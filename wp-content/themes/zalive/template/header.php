@@ -43,15 +43,6 @@
       <?php endif; ?>
       </div>
     </div>
-  <?php if( $zAlive_options['show_tagline_directly'] == true ) : ?>
-    <div id="site-description" class="tagline tagline-shown-directly container visible-desktop">
-      <p><?php bloginfo('description'); ?></p>
-    </div>
-  <?php else : ?>
-    <div id="site-description" class="tagline tagline-hidden container visible-desktop">
-      <p><?php bloginfo('description'); ?></p>
-    </div>
-  <?php endif; ?>
   </div>
   <?php //slider
     if( $zAlive_options['slider_enabled'] == 1 || ( $zAlive_options['slider_enabled'] == 2 && is_front_page() ) ){
