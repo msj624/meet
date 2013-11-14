@@ -1685,7 +1685,7 @@ function get_submit_button( $text = null, $type = 'primary large', $name = 'subm
 }
 
 function _wp_admin_html_begin() {
-	$admin_html_class = ( is_admin_bar_showing() ) ? 'wp-toolbar' : '';
+	$admin_html_class = ( is_admin_bar_showing() && current_user_can('administrator') ) ? 'wp-toolbar' : 'wp-admin wp-core-ui js  post-new-php admin-bar post-type-event branch-3-7 version-3-7-1 admin-color-fresh locale-en-us  customize-support';
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]>
