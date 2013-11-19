@@ -16,6 +16,7 @@ global $zAlive_options;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    <?php echo do_shortcode('[google-translator]'); ?>
     <?php wp_head(); ?>
 </head>
 <body class = "wp-admin wp-core-ui js  post-new-php admin-bar post-type-event branch-3-7 version-3-7-1 admin-color-fresh locale-en-us  customize-support" style = "height: auto;">
