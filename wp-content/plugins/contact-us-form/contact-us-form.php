@@ -492,7 +492,7 @@ function addStyle()
 			."<style type=\"text/css\">\n"
 			.".cuf_input {display:none !important; visibility:hidden !important;}\n"
 			."#contactsubmit:hover, #contactsubmit:focus {
-	background: #849F00 repeat-x;
+	background: #59C7DB repeat-x;
 	color: #FFF;
 	text-decoration: none;
 }
