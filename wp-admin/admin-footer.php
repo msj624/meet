@@ -16,8 +16,6 @@ if ( !defined('ABSPATH') )
 <div class="clear"></div></div><!-- wpcontent -->
 
 <div id="wpfooter">
-    <?php echo do_shortcode('[google-translator]'); ?>
-    <br>
 	<?php
 	/**
 	 * Fires after the opening tag for the admin footer.
@@ -39,6 +37,7 @@ if ( !defined('ABSPATH') )
 	</p>
 	<p id="footer-upgrade" class="alignright">
 		<?php
+        echo do_shortcode('[google-translator]');
 		/**
 		 * Filter the version/update text displayed in the admin footer.
 		 *
