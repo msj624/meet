@@ -22,5 +22,6 @@
       </div>
     </div>
     <?php wp_footer(); ?>
+    <?php echo do_shortcode('[google-translator]'); ?>
 </body>
 </html>
