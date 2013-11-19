@@ -204,7 +204,7 @@ class WP_FullCalendar{
 	    		$item_dates_more[$post_date] = 1;
 	    		$day_ending = $post_date."T23:59:59";
 	    		//TODO archives not necesarrily working
-	    		$more_array = array ("title" => get_option('wpfc_limit_txt','more ...'), "color" => get_option('wpfc_limit_color','#fbbe30'), "start" => $day_ending, 'post_id' => 0, 'allDay' => true);
+	    		$more_array = array ("title" => get_option('wpfc_limit_txt','more ...'), "color" => get_option('wpfc_limit_color','#59c7db'), "start" => $day_ending, 'post_id' => 0, 'allDay' => true);
 	    		global $wp_rewrite;
 	    		$archive_url = get_post_type_archive_link($post_type);
 	    		if( !empty($archive_url) || $post_type == 'post' ){ //posts do have archives

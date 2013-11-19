@@ -180,7 +180,7 @@ function wpfc_em_ajax() {
 		/* @var $EM_Event EM_Event */
 		$color = "#59c7db";
 		$textColor = '#fff';
-		$borderColor = '#1d7c8e';
+		$borderColor = '#59c7db';
 		foreach( $cell_data['events'] as $EM_Event ){
 			if ( !empty ( $EM_Event->get_categories()->categories )) {
 				foreach($EM_Event->get_categories()->categories as $EM_Category){
@@ -213,7 +213,7 @@ function wpfc_em_ajax() {
 		if( $cell_data['events_count'] > $limit ){
 			$event_dates_more[$date] = 1;
 			$day_ending = $date."T23:59:59";
-			$events[] = apply_filters('wpfc_events_more', array ("title" => get_option('wpfc_limit_txt','more ...'), "color" => get_option('wpfc_limit_color','#fbbe30'), "start" => $day_ending, "url" => str_replace('%s',$date,$event_page_link), 'post_id' => 0, 'event_id' => 0 ,'allDay' => true), $date);
+			$events[] = apply_filters('wpfc_events_more', array ("title" => get_option('wpfc_limit_txt','more ...'), "color" => get_option('wpfc_limit_color','#59c7db'), "start" => $day_ending, "url" => str_replace('%s',$date,$event_page_link), 'post_id' => 0, 'event_id' => 0 ,'allDay' => true), $date);
 		}
 	}
 	echo EM_Object::json_encode( apply_filters('wpfc_events', $events) );
