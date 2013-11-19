@@ -1042,11 +1042,10 @@
     add_action('admin_footer', 'footer_enqueuer');
     function footer_enqueuer(){
         if( is_admin() && !current_user_can('administrator')) {
-            $Path=$_SERVER['REQUEST_URI'];
-            echo $Path;
-            if (strpos($Path, 'post-new.php') !== false)
+            $current_url = home_url(add_query_arg(array(),$wp->request));
+            if (strpos($current_url, 'post-new.php') !== false)
                 echo do_shortcode('[google-translator]');
-            else if (strpos($Path, 'edit.php') !== false)
+            else if (strpos($current_url, 'edit.php') !== false)
                 echo do_shortcode('[google-translator]');
         }
     }
