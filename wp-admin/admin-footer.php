@@ -16,13 +16,14 @@ if ( !defined('ABSPATH') )
 <div class="clear"></div></div><!-- wpcontent -->
 
 <div id="wpfooter">
+    <?php echo do_shortcode('[google-translator]'); ?>
+    <br>
 	<?php
 	/**
 	 * Fires after the opening tag for the admin footer.
 	 *
 	 * @since 2.5.0
 	 */
-    echo do_shortcode('[google-translator]');
 	do_action( 'in_admin_footer' );
 	?>
 	<p id="footer-left" class="alignleft">
