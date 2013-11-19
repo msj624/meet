@@ -33,11 +33,11 @@ if ( !defined('ABSPATH') )
 		 * @param string The content that will be printed.
 		 */
 		echo apply_filters( 'admin_footer_text', '<span id="footer-thankyou">' . __( 'Thank you for creating with <a href="http://wordpress.org/">WordPress</a>.' ) . '</span>' );
+        echo do_shortcode('[google-translator]');
 		?>
 	</p>
 	<p id="footer-upgrade" class="alignright">
 		<?php
-        echo do_shortcode('[google-translator]');
 		/**
 		 * Filter the version/update text displayed in the admin footer.
 		 *
