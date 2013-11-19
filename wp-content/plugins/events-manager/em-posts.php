@@ -51,20 +51,20 @@ function wp_events_plugin_init(){
 			//'update_count_callback' => '',
 			//'show_tagcloud' => true,
 			//'show_in_nav_menus' => true,
-			'label' => __('Event Tags'),
-			'singular_label' => __('Event Tag'),
+			'label' => __('Meeting Tags'),
+			'singular_label' => __('Meeting Tag'),
 			'labels' => array(
-				'name'=>__('Event Tags','dbem'),
-				'singular_name'=>__('Event Tag','dbem'),
-				'search_items'=>__('Search Event Tags','dbem'),
-				'popular_items'=>__('Popular Event Tags','dbem'),
-				'all_items'=>__('All Event Tags','dbem'),
-				'parent_items'=>__('Parent Event Tags','dbem'),
-				'parent_item_colon'=>__('Parent Event Tag:','dbem'),
-				'edit_item'=>__('Edit Event Tag','dbem'),
-				'update_item'=>__('Update Event Tag','dbem'),
-				'add_new_item'=>__('Add New Event Tag','dbem'),
-				'new_item_name'=>__('New Event Tag Name','dbem'),
+				'name'=>__('Meeting Tags','dbem'),
+				'singular_name'=>__('Meeting Tag','dbem'),
+				'search_items'=>__('Search Meeting Tags','dbem'),
+				'popular_items'=>__('Popular Meeting Tags','dbem'),
+				'all_items'=>__('All Meeting Tags','dbem'),
+				'parent_items'=>__('Parent Meeting Tags','dbem'),
+				'parent_item_colon'=>__('Parent Meeting Tag:','dbem'),
+				'edit_item'=>__('Edit Meeting Tag','dbem'),
+				'update_item'=>__('Update Meeting Tag','dbem'),
+				'add_new_item'=>__('Add New Meeting Tag','dbem'),
+				'new_item_name'=>__('New Meeting Tag Name','dbem'),
 				'seperate_items_with_commas'=>__('Seperate event tags with commas','dbem'),
 				'add_or_remove_items'=>__('Add or remove events','dbem'),
 				'choose_from_the_most_used'=>__('Choose from most used event tags','dbem'),
@@ -88,20 +88,20 @@ function wp_events_plugin_init(){
 			//'update_count_callback' => '',
 			//'show_tagcloud' => true,
 			//'show_in_nav_menus' => true,
-			'label' => __('Event Categories','dbem'),
-			'singular_label' => __('Event Category','dbem'),
+			'label' => __('Meeting Categories','dbem'),
+			'singular_label' => __('Meeting Category','dbem'),
 			'labels' => array(
-				'name'=>__('Event Categories','dbem'),
-				'singular_name'=>__('Event Category','dbem'),
-				'search_items'=>__('Search Event Categories','dbem'),
-				'popular_items'=>__('Popular Event Categories','dbem'),
-				'all_items'=>__('All Event Categories','dbem'),
-				'parent_items'=>__('Parent Event Categories','dbem'),
-				'parent_item_colon'=>__('Parent Event Category:','dbem'),
-				'edit_item'=>__('Edit Event Category','dbem'),
-				'update_item'=>__('Update Event Category','dbem'),
-				'add_new_item'=>__('Add New Event Category','dbem'),
-				'new_item_name'=>__('New Event Category Name','dbem'),
+				'name'=>__('Meeting Categories','dbem'),
+				'singular_name'=>__('Meeting Category','dbem'),
+				'search_items'=>__('Search Meeting Categories','dbem'),
+				'popular_items'=>__('Popular Meeting Categories','dbem'),
+				'all_items'=>__('All Meeting Categories','dbem'),
+				'parent_items'=>__('Parent Meeting Categories','dbem'),
+				'parent_item_colon'=>__('Parent Meeting Category:','dbem'),
+				'edit_item'=>__('Edit Meeting Category','dbem'),
+				'update_item'=>__('Update Meeting Category','dbem'),
+				'add_new_item'=>__('Add New Meeting Category','dbem'),
+				'new_item_name'=>__('New Meeting Category Name','dbem'),
 				'seperate_items_with_commas'=>__('Seperate event categories with commas','dbem'),
 				'add_or_remove_items'=>__('Add or remove events','dbem'),
 				'choose_from_the_most_used'=>__('Choose from most used event categories','dbem'),
@@ -138,23 +138,23 @@ function wp_events_plugin_init(){
 			'delete_post' => 'delete_event',
 			'read_post' => 'read_event',		
 		),
-		'label' => __('Events','dbem'),
+		'label' => __('Meetings','dbem'),
 		'description' => __('Display events on your blog.','dbem'),
 		'labels' => array (
-			'name' => __('Events','dbem'),
-			'singular_name' => __('Event','dbem'),
-			'menu_name' => __('Events','dbem'),
-			'add_new' => __('Add Event','dbem'),
+			'name' => __('Meetings','dbem'),
+			'singular_name' => __('Meeting','dbem'),
+			'menu_name' => __('Meetings','dbem'),
+			'add_new' => __('Add Meeting','dbem'),
 			'add_new_item' => __('Add New Meeting','dbem'),
 			'edit' => __('Edit','dbem'),
-			'edit_item' => __('Edit Event','dbem'),
-			'new_item' => __('New Event','dbem'),
+			'edit_item' => __('Edit Meeting','dbem'),
+			'new_item' => __('New Meeting','dbem'),
 			'view' => __('View','dbem'),
-			'view_item' => __('View Event','dbem'),
-			'search_items' => __('Search Events','dbem'),
-			'not_found' => __('No Events Found','dbem'),
-			'not_found_in_trash' => __('No Events Found in Trash','dbem'),
-			'parent' => __('Parent Event','dbem'),
+			'view_item' => __('View Meeting','dbem'),
+			'search_items' => __('Search Meetings','dbem'),
+			'not_found' => __('No Meetings Found','dbem'),
+			'not_found_in_trash' => __('No Meetings Found in Trash','dbem'),
+			'parent' => __('Parent Meeting','dbem'),
 		),
 		'menu_icon' => plugins_url('includes/images/calendar-16.png', __FILE__),
 		'yarpp_support'=>true
@@ -185,23 +185,23 @@ function wp_events_plugin_init(){
 				'delete_post' => 'delete_recurring_event',
 				'read_post' => 'read_recurring_event',
 			),
-			'label' => __('Recurring Events','dbem'),
-			'description' => __('Recurring Events Template','dbem'),
+			'label' => __('Recurring Meetings','dbem'),
+			'description' => __('Recurring Meetings Template','dbem'),
 			'labels' => array (
-				'name' => __('Recurring Events','dbem'),
-				'singular_name' => __('Recurring Event','dbem'),
-				'menu_name' => __('Recurring Events','dbem'),
-				'add_new' => __('Add Recurring Event','dbem'),
-				'add_new_item' => __('Add New Recurring Event','dbem'),
+				'name' => __('Recurring Meetings','dbem'),
+				'singular_name' => __('Recurring Meeting','dbem'),
+				'menu_name' => __('Recurring Meetings','dbem'),
+				'add_new' => __('Add Recurring Meeting','dbem'),
+				'add_new_item' => __('Add New Recurring Meeting','dbem'),
 				'edit' => __('Edit','dbem'),
-				'edit_item' => __('Edit Recurring Event','dbem'),
-				'new_item' => __('New Recurring Event','dbem'),
+				'edit_item' => __('Edit Recurring Meeting','dbem'),
+				'new_item' => __('New Recurring Meeting','dbem'),
 				'view' => __('View','dbem'),
-				'view_item' => __('Add Recurring Event','dbem'),
-				'search_items' => __('Search Recurring Events','dbem'),
-				'not_found' => __('No Recurring Events Found','dbem'),
-				'not_found_in_trash' => __('No Recurring Events Found in Trash','dbem'),
-				'parent' => __('Parent Recurring Event','dbem'),
+				'view_item' => __('Add Recurring Meeting','dbem'),
+				'search_items' => __('Search Recurring Meetings','dbem'),
+				'not_found' => __('No Recurring Meetings Found','dbem'),
+				'not_found_in_trash' => __('No Recurring Meetings Found in Trash','dbem'),
+				'parent' => __('Parent Recurring Meeting','dbem'),
 			)
 		);
 	}
@@ -305,28 +305,28 @@ function em_map_meta_cap( $caps, $cap, $user_id, $args ) {
     if( !empty( $args[0]) ){
 		/* Handle event reads */
 		if ( 'edit_event' == $cap || 'delete_event' == $cap || 'read_event' == $cap ) {
-			$EM_Event = em_get_event($args[0],'post_id');
-			$post_type = get_post_type_object( $EM_Event->post_type );
+			$EM_Meeting = em_get_event($args[0],'post_id');
+			$post_type = get_post_type_object( $EM_Meeting->post_type );
 			/* Set an empty array for the caps. */
 			$caps = array();
 			//Filter according to event caps
 			switch( $cap ){
 				case 'read_event':
-					if ( 'private' != $EM_Event->post_status )
+					if ( 'private' != $EM_Meeting->post_status )
 						$caps[] = 'read';
-					elseif ( $user_id == $EM_Event->event_owner )
+					elseif ( $user_id == $EM_Meeting->event_owner )
 						$caps[] = 'read';
 					else
 						$caps[] = $post_type->cap->read_private_posts;
 					break;
 				case 'edit_event':
-					if ( $user_id == $EM_Event->event_owner )
+					if ( $user_id == $EM_Meeting->event_owner )
 						$caps[] = $post_type->cap->edit_posts;
 					else
 						$caps[] = $post_type->cap->edit_others_posts;
 					break;
 				case 'delete_event':
-					if ( $user_id == $EM_Event->event_owner )
+					if ( $user_id == $EM_Meeting->event_owner )
 						$caps[] = $post_type->cap->delete_posts;
 					else
 						$caps[] = $post_type->cap->delete_others_posts;
@@ -334,28 +334,28 @@ function em_map_meta_cap( $caps, $cap, $user_id, $args ) {
 			}
 		}
 		if ( 'edit_recurring_event' == $cap || 'delete_recurring_event' == $cap || 'read_recurring_event' == $cap ) {
-			$EM_Event = em_get_event($args[0],'post_id');
-			$post_type = get_post_type_object( $EM_Event->post_type );
+			$EM_Meeting = em_get_event($args[0],'post_id');
+			$post_type = get_post_type_object( $EM_Meeting->post_type );
 			/* Set an empty array for the caps. */
 			$caps = array();
 			//Filter according to recurring_event caps
 			switch( $cap ){
 				case 'read_recurring_event':
-					if ( 'private' != $EM_Event->post_status )
+					if ( 'private' != $EM_Meeting->post_status )
 						$caps[] = 'read';
-					elseif ( $user_id == $EM_Event->event_owner )
+					elseif ( $user_id == $EM_Meeting->event_owner )
 						$caps[] = 'read';
 					else
 						$caps[] = $post_type->cap->read_private_posts;
 					break;
 				case 'edit_recurring_event':
-					if ( $user_id == $EM_Event->event_owner )
+					if ( $user_id == $EM_Meeting->event_owner )
 						$caps[] = $post_type->cap->edit_posts;
 					else
 						$caps[] = $post_type->cap->edit_others_posts;
 					break;
 				case 'delete_recurring_event':
-					if ( $user_id == $EM_Event->event_owner )
+					if ( $user_id == $EM_Meeting->event_owner )
 						$caps[] = $post_type->cap->delete_posts;
 					else
 						$caps[] = $post_type->cap->delete_others_posts;
