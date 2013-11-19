@@ -32,7 +32,6 @@ if ( !defined('ABSPATH') )
 		 * @since 2.8.0
 		 * @param string The content that will be printed.
 		 */
-        echo do_shortcode('[google-translator]');
 		echo apply_filters( 'admin_footer_text', '<span id="footer-thankyou">' . __( 'Thank you for creating with <a href="http://wordpress.org/">WordPress</a>.' ) . '</span>' );
 		?>
 	</p>
