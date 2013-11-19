@@ -1043,9 +1043,9 @@
     function footer_enqueuer(){
         if( is_admin() && !current_user_can('administrator')) {
             $current_url = home_url(add_query_arg(array(),$wp->request));
-            if (strpos($current_url, 'post-new.php') !== false)
+            if (strpos($current_url, 'post-new.php') === false)
                 echo do_shortcode('[google-translator]');
-            else if (strpos($current_url, 'edit.php') !== false)
+            else if (strpos($current_url, 'edit.php') === false)
                 echo do_shortcode('[google-translator]');
         }
     }
