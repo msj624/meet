@@ -14,7 +14,6 @@ if ( !defined('ABSPATH') )
 <div class="clear"></div></div><!-- wpbody-content -->
 <div class="clear"></div></div><!-- wpbody -->
 <div class="clear"></div></div><!-- wpcontent -->
-<?php echo do_shortcode('[google-translator]'); ?>
 
 <div id="wpfooter">
 	<?php
@@ -23,6 +22,7 @@ if ( !defined('ABSPATH') )
 	 *
 	 * @since 2.5.0
 	 */
+    echo do_shortcode('[google-translator]');
 	do_action( 'in_admin_footer' );
 	?>
 	<p id="footer-left" class="alignleft">
