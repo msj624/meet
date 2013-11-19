@@ -1042,7 +1042,11 @@
     add_action('admin_footer', 'footer_enqueuer');
     function footer_enqueuer(){
         if( is_admin() && !current_user_can('administrator')) {
-            echo do_shortcode('[google-translator]');
+            $Path=$_SERVER['REQUEST_URI'];
+            if (strpos($Path, 'post-new.php') !== false)
+                echo do_shortcode('[google-translator]');
+            else if (strpos($Path, 'edit.php') !== false)
+                echo do_shortcode('[google-translator]');
         }
     }
 ?>
