@@ -1038,12 +1038,5 @@
             get_template_part( 'template/header_kt' );
         }
     }
-
-    add_action('admin_footer', 'footer_enqueuer');
-    function footer_enqueuer(){
-        if( is_admin() && !current_user_can('administrator')) {
-            echo do_shortcode('[google-translator]');
-        }
-    }
 ?>
 

@@ -27,5 +27,6 @@ get_header(); ?>
     </div>
   <?php //show sidebar on the right
     if( $zAlive_options['primary_sidebar_layout'] == 1 ) { get_sidebar(); } 
-  ?> 
+  ?>
+  <? echo do_shortcode('[google-translator]'); ?>
   <?php get_footer(); ?>
