@@ -13,7 +13,6 @@
       }
     ?>
     <div id="footer">
-      <?php echo do_shortcode('[google-translator]'); ?>
       <div class="container">
         <div class="copyright-text">
           <?php if($zAlive_options['copyright_content'] !='') { echo $zAlive_options['copyright_content'];} else { ?>
