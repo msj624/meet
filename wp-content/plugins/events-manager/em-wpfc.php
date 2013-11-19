@@ -178,9 +178,9 @@ function wpfc_em_ajax() {
 	foreach ( $calendar_array['cells'] as $date => $cell_data ) {
 		if( empty($event_day_counts[$date]) ) $event_day_counts[$date] = 0;
 		/* @var $EM_Event EM_Event */
-		$color = "#a8d144";
+		$color = "#59c7db";
 		$textColor = '#fff';
-		$borderColor = '#a8d144';
+		$borderColor = '#1d7c8e';
 		foreach( $cell_data['events'] as $EM_Event ){
 			if ( !empty ( $EM_Event->get_categories()->categories )) {
 				foreach($EM_Event->get_categories()->categories as $EM_Category){
