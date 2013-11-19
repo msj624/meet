@@ -192,7 +192,7 @@ class WP_FullCalendar{
 	    remove_filter( 'posts_where', 'wpfc_temp_filter_where' );
 	    //loop through each post and slot them into the array of posts to return to browser
 	    while ( $the_query->have_posts() ) { $the_query->the_post();
-	    	$color = "#a8d144";
+	    	$color = "#59c7db";
 	    	$post_date = substr($post->post_date, 0, 10);
 	    	$post_timestamp = strtotime($post->post_date);
 	    	if( empty($item_date_counts[$post_date]) || $item_date_counts[$post_date] < $limit ){
