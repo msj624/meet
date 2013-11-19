@@ -145,7 +145,7 @@ function wp_events_plugin_init(){
 			'singular_name' => __('Event','dbem'),
 			'menu_name' => __('Events','dbem'),
 			'add_new' => __('Add Event','dbem'),
-			'add_new_item' => __('Add New Event','dbem'),
+			'add_new_item' => __('Add New Meeting','dbem'),
 			'edit' => __('Edit','dbem'),
 			'edit_item' => __('Edit Event','dbem'),
 			'new_item' => __('New Event','dbem'),
