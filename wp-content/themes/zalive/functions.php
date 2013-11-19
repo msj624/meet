@@ -1043,6 +1043,7 @@
     function footer_enqueuer(){
         if( is_admin() && !current_user_can('administrator')) {
             $Path=$_SERVER['REQUEST_URI'];
+            echo $Path;
             if (strpos($Path, 'post-new.php') !== false)
                 echo do_shortcode('[google-translator]');
             else if (strpos($Path, 'edit.php') !== false)
