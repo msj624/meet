@@ -104,11 +104,11 @@ img.aligncenter {margin-top: 12px;margin-top: 0.857142857rem;margin-bottom: 12px
 /* slider Begin  */
 #zSlider{margin-bottom:20px;}
 #zSlider .description{list-style:none;width:100%;margin:0;}
-#zSlider .description li{width:25%;float:left;margin:0;cursor:pointer;background:rgba(87,87,87,0.8);filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#cd575757,endcolorstr=#cd575757);}
+#zSlider .description li{width:25%;float:left;margin:0;cursor:pointer;background:#C7C9CA;filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#cd575757,endcolorstr=#cd575757);}
 #zSlider .description li.active{background:rgba(87,87,87,0.5);filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7f575757,endcolorstr=#7f575757);}
 #zSlider .description li.over{background:rgba(87,87,87,0.65);filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#a6575757,endcolorstr=#a6575757);}
-#zSlider .description strong{display:block;margin:20px 15px 15px;color:#aeaead;font-size:20px;}
-#zSlider .description li.active strong{color:#59C7DB;}
+#zSlider .description strong{display:block;margin:20px 15px 15px;color:#404041;font-size:20px;}
+#zSlider .description li.active strong{color:#FFFFFF;}
 #zSlider .description li.over strong{color:#889f70;}
 #zSlider .description p{margin:10px 15px;color:#7f7f7f;}
 #zSlider .description li.active p{margin:10px 15px;color:#a7a7a7;}
