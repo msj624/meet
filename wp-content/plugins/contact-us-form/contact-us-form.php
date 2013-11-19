@@ -499,7 +499,7 @@ function addStyle()
 #contactsubmit:active {background: #849F00}
 #contactsubmit {
 	color: #FFF;
-	background: #59C7DB repeat-x;
+	background: #59c7db repeat-x;
 	display: block;
 	float: left;
 	height: 28px;
