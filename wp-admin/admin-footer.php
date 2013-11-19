@@ -46,7 +46,7 @@ if ( !defined('ABSPATH') )
 		 * @since 2.3.0
 		 * @param string The content that will be printed.
 		 */
-        echo do_shortcode('[google-translator]');
+
 		echo apply_filters( 'update_footer', '' );
 		?>
 	</p>
