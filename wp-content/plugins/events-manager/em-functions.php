@@ -87,7 +87,7 @@ function em_paginate($link, $total, $limit, $page=1, $data=array()){
 function em_admin_paginate($total, $limit, $page=1, $vars=false, $base = false, $format = ''){
 	$return = '<div class="tablenav-pages em-tablenav-pagination">';
 	$base = !empty($base) ? $base:add_query_arg( 'pno', '%#%' );
-	$events_nav = paginate_links( array(
+	$meetings_nav = paginate_links( array(
 		'base' => $base,
 		'format' => $format,
 		'total' => ceil($total / $limit),
@@ -98,7 +98,7 @@ function em_admin_paginate($total, $limit, $page=1, $vars=false, $base = false, 
 		number_format_i18n( ( $page - 1 ) * $limit + 1 ),
 		number_format_i18n( min( $page * $limit, $total ) ),
 		number_format_i18n( $total ),
-		$events_nav
+		$meetings_nav
 	);
 	$return .= '</div>';
 	return apply_filters('em_admin_paginate',$return,$total,$limit,$page,$vars);
@@ -198,15 +198,15 @@ function em_get_countries($add_blank = false, $sort = true){
 }
 
 /**
- * Returns an array of scopes available to events manager. Hooking into this function's em_get_scopes filter will allow you to add scope options to the event pages.
+ * Returns an array of scopes available to meetings manager. Hooking into this function's em_get_scopes filter will allow you to add scope options to the meeting pages.
  */
 function em_get_scopes(){
 	$scopes = array(
-		'all' => __('All events','dbem'),
-		'future' => __('Future events','dbem'),
-		'past' => __('Past events','dbem'),
-		'today' => __('Today\'s events','dbem'),
-		'tomorrow' => __('Tomorrow\'s events','dbem'),
+		'all' => __('All meetings','dbem'),
+		'future' => __('Future meetings','dbem'),
+		'past' => __('Past meetings','dbem'),
+		'today' => __('Today\'s meetings','dbem'),
+		'tomorrow' => __('Tomorrow\'s meetings','dbem'),
 		'month' => __('Events this month','dbem'),
 		'next-month' => __('Events next month','dbem'),
 		'1-months'  => __('Events current and next month','dbem'),
@@ -292,16 +292,16 @@ function em_get_attributes($lattributes = false){
 	$formats =
 		get_option ( 'dbem_placeholders_custom' ).
 		get_option ( 'dbem_location_placeholders_custom' ).
-		get_option ( 'dbem_full_calendar_event_format' ).
+		get_option ( 'dbem_full_calendar_meeting_format' ).
 		get_option ( 'dbem_rss_description_format' ).
 		get_option ( 'dbem_rss_title_format' ).
 		get_option ( 'dbem_map_text_format' ).
 		get_option ( 'dbem_location_baloon_format' ).
-		get_option ( 'dbem_location_event_list_item_format' ).
+		get_option ( 'dbem_location_meeting_list_item_format' ).
 		get_option ( 'dbem_location_page_title_format' ).
-		get_option ( 'dbem_event_list_item_format' ).
-		get_option ( 'dbem_event_page_title_format' ).
-		get_option ( 'dbem_single_event_format' ).
+		get_option ( 'dbem_meeting_list_item_format' ).
+		get_option ( 'dbem_meeting_page_title_format' ).
+		get_option ( 'dbem_single_meeting_format' ).
 		get_option ( 'dbem_single_location_format' );
 	//We now have one long string of formats, get all the attribute placeholders
 	if( $lattributes ){
@@ -309,7 +309,7 @@ function em_get_attributes($lattributes = false){
 	}else{
 		preg_match_all('/#_ATT\{([^}]+)\}(\{([^}]+)\})?/', $formats, $matches);
 	}
-	//Now grab all the unique attributes we can use in our event.
+	//Now grab all the unique attributes we can use in our meeting.
 	$attributes = array('names'=>array(), 'values'=>array());
 	foreach($matches[1] as $key => $attribute) {
 		if( !in_array($attribute, $attributes['names']) ){
@@ -345,8 +345,8 @@ function em_booking_add_registration( $EM_Booking ){
     	while( username_exists($username_rand) ) {
     		$username_rand = $username_root.rand(1,1000);
     	}
-    	$_REQUEST['dbem_phone'] = (!empty($_REQUEST['dbem_phone'])) ? wp_kses_data($_REQUEST['dbem_phone']):''; //fix to prevent warnings
-    	$_REQUEST['user_name'] = (!empty($_REQUEST['user_name'])) ? wp_kses_data($_REQUEST['user_name']):''; //fix to prevent warnings
+    	$_REQUEST['dbem_phone'] = (!empty($_REQUEST['dbem_phone'])) ? wp_kses_data($_REQUEST['dbem_phone']):''; //fix to prmeeting warnings
+    	$_REQUEST['user_name'] = (!empty($_REQUEST['user_name'])) ? wp_kses_data($_REQUEST['user_name']):''; //fix to prmeeting warnings
     	$user_data = array('user_login' => $username_rand, 'user_email'=> $_REQUEST['user_email'], 'user_name'=> $_REQUEST['user_name'], 'dbem_phone'=> $_REQUEST['dbem_phone']);
     	$id = em_register_new_user($user_data);
     	if( is_numeric($id) ){
@@ -426,7 +426,7 @@ function em_register_new_user( $user_data ) {
 
 	do_action( 'register_post', $sanitized_user_login, $user_email, $errors );
 
-	//custom registration filter to prevent things like SI Captcha and other plugins of this kind interfering with EM
+	//custom registration filter to prmeeting things like SI Captcha and other plugins of this kind interfering with EM
 	$errors = apply_filters( 'em_registration_errors', $errors, $sanitized_user_login, $user_email );
 	
 	if ( $errors->get_error_code() ) return $errors;
@@ -505,7 +505,7 @@ function em_get_search_form_defaults($args = array()){
 	if( !is_array($args) ) $args = array();
 	$search_args = array();
 	$search_args['css'] = get_option('dbem_css_search');
-	$search_args['search_action'] = 'search_events';
+	$search_args['search_action'] = 'search_meetings';
 	$search_args['search_text_show'] = get_option('dbem_search_form_advanced_show');
 	$search_args['search_text_hide'] = get_option('dbem_search_form_advanced_hide');
 	$search_args['search_button'] = get_option('dbem_search_form_submit');
@@ -563,7 +563,7 @@ function em_get_search_form_defaults($args = array()){
 	$search_args['main_classes'][] = $search_args['advanced_hidden'] ? 'advanced-hidden':'advanced-visible';
 	//merge defaults with supplied arguments 
 	$args = array_merge($search_args, $args);
-	//overwrite with $_REQUEST defaults in event of a submitted search
+	//overwrite with $_REQUEST defaults in meeting of a submitted search
 	if( isset($_REQUEST['geo']) ) $args['geo'] = $_REQUEST['geo']; //if geo search string requested, use that for search form
 	if( isset($_REQUEST['near']) ) $args['near'] = $_REQUEST['near']; //if geo search string requested, use that for search form
 	if( isset($_REQUEST['em_search']) ) $args['search'] = $_REQUEST['em_search']; //if geo search string requested, use that for search form
@@ -575,7 +575,7 @@ function em_get_search_form_defaults($args = array()){
 	if( isset($_REQUEST['near_unit']) ) $args['near_unit'] = $_REQUEST['near_unit']; //if state requested, use that for searching
 	if( isset($_REQUEST['near_distance']) ) $args['near_distance'] = $_REQUEST['near_distance']; //if state requested, use that for searching
 	if( !empty($_REQUEST['scope']) && !is_array($_REQUEST['scope'])){ 
-		$args['scope'] = explode(',',$_REQUEST['scope']); //convert scope to an array in event of pagination 
+		$args['scope'] = explode(',',$_REQUEST['scope']); //convert scope to an array in meeting of pagination 
 	}elseif( !empty($_REQUEST['scope']) ){
 		$args['scope'] = $_REQUEST['scope'];
 	}
@@ -720,17 +720,17 @@ function em_options_radio($name, $options, $title='') {
 function em_options_radio_binary($title, $name, $description='', $option_names = '', $trigger='') {
 	if( empty($option_names) ) $option_names = array(0 => __('No','dbem'), 1 => __('Yes','dbem'));
 	if( substr($name, 0, 7) == 'dbem_ms' ){
-		$list_events_page = get_site_option($name);
+		$list_meetings_page = get_site_option($name);
 	}else{
-		$list_events_page = get_option($name);
+		$list_meetings_page = get_option($name);
 	}
 	$trigger_att = ($trigger) ? 'data-trigger="'.esc_attr($trigger).'" class="em-trigger"':'';
 	?>
    	<tr valign="top" id='<?php echo $name;?>_row'>
    		<th scope="row"><?php echo esc_html($title); ?></th>
    		<td>
-   			<?php echo $option_names[1]; ?> <input id="<?php echo esc_attr($name) ?>_yes" name="<?php echo esc_attr($name) ?>" type="radio" value="1" <?php if($list_events_page) echo "checked='checked'"; echo $trigger_att; ?> />&nbsp;&nbsp;&nbsp;
-			<?php echo $option_names[0]; ?> <input  id="<?php echo esc_attr($name) ?>_no" name="<?php echo esc_attr($name) ?>" type="radio" value="0" <?php if(!$list_events_page) echo "checked='checked'"; echo $trigger_att; ?> />
+   			<?php echo $option_names[1]; ?> <input id="<?php echo esc_attr($name) ?>_yes" name="<?php echo esc_attr($name) ?>" type="radio" value="1" <?php if($list_meetings_page) echo "checked='checked'"; echo $trigger_att; ?> />&nbsp;&nbsp;&nbsp;
+			<?php echo $option_names[0]; ?> <input  id="<?php echo esc_attr($name) ?>_no" name="<?php echo esc_attr($name) ?>" type="radio" value="0" <?php if(!$list_meetings_page) echo "checked='checked'"; echo $trigger_att; ?> />
 			<br/><em><?php echo $description; ?></em>
 		</td>
    	</tr>
@@ -739,7 +739,7 @@ function em_options_radio_binary($title, $name, $description='', $option_names =
 
 function em_options_select($title, $name, $list, $description='', $default='') {
 	$option_value = get_option($name, $default);
-	if( $name == 'dbem_events_page' && !is_object(get_page($option_value)) ){
+	if( $name == 'dbem_meetings_page' && !is_object(get_page($option_value)) ){
 		$option_value = 0; //Special value
 	}
 	?>
@@ -774,7 +774,7 @@ function em_options_select($title, $name, $list, $description='', $default='') {
    	</tr>
 	<?php
 }
-// got from http://davidwalsh.name/php-email-encode-prevent-spam
+// got from http://davidwalsh.name/php-email-encode-prmeeting-spam
 function em_ascii_encode($e){
 	$output = '';
     for ($i = 0; $i < strlen($e); $i++) { $output .= '&#'.ord($e[$i]).';'; }
