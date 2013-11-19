@@ -13,7 +13,7 @@ Text Domain: zAlive
 
 /* Reset styles defined by browser or bootstrap */
 body{-ms-word-wrap: break-word;word-wrap: break-word;}
-h1,h2,h3,h4,h5,h6,a,a:hover{color:#59C7DB;}
+h1,h2,h3,h4,h5,h6,a,a:hover{color:#404041;}
 select,textarea,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],.uneditable-input,.input-append .add-on:last-child,.input-append .btn:last-child,.input-append .btn-group:last-child>.dropdown-toggle,.breadcrumb,.alert,.nav-tabs>li>a,.btn,.dropdown-menu,.navbar-inner,pre,code{-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;}
 blockquote p{font-size:inherit;}
 video,embed,audio,iframe,object{max-width:100%;}
@@ -82,7 +82,7 @@ img.aligncenter {margin-top: 12px;margin-top: 0.857142857rem;margin-bottom: 12px
 .navbar .brand a:hover,.navbar .brand a:focus{text-decoration:none;}
 .navbar .nav{display:none;padding:10px 0;margin:0 10px;}
 .navbar .nav li{list-style:none;}
-.navbar .nav>li>a{color:#59C7DB;text-shadow:none;}
+.navbar .nav>li>a{color:#404041;text-shadow:none;}
 .navbar .nav li, dd {margin-bottom: 0px;}
 .navbar .nav li.dropdown.open>.dropdown-toggle, .navbar .nav li.dropdown.active>.dropdown-toggle, .navbar .nav li.dropdown.open.active>.dropdown-toggle,.navbar .nav>li>a:focus,.navbar .nav>li>a:hover{color:#fff;background:#59C7DB;}
 .navbar .nav li.dropdown>.dropdown-toggle .caret,.navbar .nav li.dropdown>a:hover .caret, .navbar .nav li.dropdown>a:focus .caret{border-top-color: #59C7DB;border-bottom-color: #59C7DB;}
