@@ -5,7 +5,7 @@ $required = apply_filters('em_required_html','<i>*</i>');
 ?>
 <div class="event-form-when" id="em-form-when">
 	<p class="em-date-range">
-		<?php _e ( 'Date ', 'dbem' ); ?>
+		<?php _e ( 'Date : ', 'dbem' ); ?>
 		<input class="em-date-start em-date-input-loc" type="text" style="margin: 1px;"/>
 		<input class="em-date-input" type="hidden" name="event_start_date" value="<?php echo $EM_Event->event_start_date ?>" style="margin: 1px;"/>
         <?php _e('~','dbem'); ?>
@@ -13,7 +13,7 @@ $required = apply_filters('em_required_html','<i>*</i>');
 		<input class="em-date-input" type="hidden" name="event_end_date" value="<?php echo $EM_Event->event_end_date ?>" style="margin: 1px;"/>
 	</p>
 	<p class="em-start-time-range">
-		<span class="em-event-text"><?php _e('Time','dbem'); ?></span>
+		<span class="em-event-text"><?php _e('Time : ','dbem'); ?></span>
 		<input id="start-time" class="em-time-input em-time-start" type="text" size="8" maxlength="8" name="event_start_time" value="<?php echo date( $hours_format, $EM_Event->start ); ?>" style="margin: 1px;"/>
 		<?php _e('~','dbem'); ?>
 		<input id="end-time" class="em-time-input em-time-end" type="text" size="8" maxlength="8" name="event_end_time" value="<?php echo date( $hours_format, $EM_Event->end ); ?>" style="margin: 1px;"/>
