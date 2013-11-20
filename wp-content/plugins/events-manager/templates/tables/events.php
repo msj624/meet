@@ -26,7 +26,7 @@
 			</div>
 			<p class="search-box">
 				<label class="screen-reader-text" for="post-search-input"><?php _e('Search Events','dbem'); ?>:</label>
-				<input type="text" id="post-search-input" name="em_search" value="<?php echo (!empty($_REQUEST['em_search'])) ? esc_attr($_REQUEST['em_search']):''; ?>" style="float: none; height: 1em;"/>
+				<input type="text" id="post-search-input" name="em_search" value="<?php echo (!empty($_REQUEST['em_search'])) ? esc_attr($_REQUEST['em_search']):''; ?>"/>
 				<?php if( !empty($_REQUEST['view']) ): ?>
 				<input type="hidden" name="view" value="<?php echo esc_attr($_REQUEST['view']); ?>" />
 				<?php endif; ?>
