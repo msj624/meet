@@ -139,6 +139,7 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 	$classes = apply_filters( 'login_body_class', $classes, $action );
 
 	?>
+    <div><center><?php echo do_shortcode('[google-translator]'); ?></center></div>
 	</head>
 	<body class="login <?php echo esc_attr( implode( ' ', $classes ) ); ?>">
 	<div id="login">
@@ -231,7 +232,6 @@ function login_footer($input_id = '') {
 	do_action( 'login_footer' ); ?>
 	<div class="clear"></div>
 	</body>
-    <div><center><?php echo do_shortcode('[google-translator]'); ?></center></div>
 	</html>
 	<?php
 }
