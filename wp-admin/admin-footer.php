@@ -11,7 +11,9 @@ if ( !defined('ABSPATH') )
 	die('-1');
 ?>
 
-<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div>
+<?php echo do_shortcode('[google-translator]');?>
+</div><!-- wpbody-content -->
 
 <?php
 /**

@@ -1045,15 +1045,11 @@
             $current_url = home_url(add_query_arg(array(),$wp->request));
             if (strpos($current_url, 'post-new.php') === false)
             {
-                echo "<div><center>";
                 echo do_shortcode('[google-translator]');
-                echo "</center></div>";
             }
             else if (strpos($current_url, 'edit.php') === false)
             {
-                echo "<div><center>";
                 echo do_shortcode('[google-translator]');
-                echo "</center></div>";
             }
         }
     }
