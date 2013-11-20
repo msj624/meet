@@ -1047,13 +1047,13 @@
             $current_url = home_url(add_query_arg(array(),$wp->request));
             if (strpos($current_url, 'post-new.php') === false)
             {
-                echo do_shortcode('[google-translator]');
                 echo "Copyright (c) 2013 By kt Corp.";
+                echo do_shortcode('[google-translator]');
             }
             else if (strpos($current_url, 'edit.php') === false)
             {
-                echo do_shortcode('[google-translator]');
                 echo "Copyright (c) 2013 By kt Corp.";
+                echo do_shortcode('[google-translator]');
             }
         }
     }
