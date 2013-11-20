@@ -395,7 +395,7 @@ class CMInvitationCodeActivation {
      */
     public static function welcome_user($message) {
         if (!isset($_GET['action'])) {
-            $welcome = sprintf('Welcome to %s. This site is accessible to confirmed users only. To be confirmed, you must first register.', get_option('blogname'));
+            $welcome = sprintf('Welcome !! This site is accessible to confirmed users only. To be confirmed, you must first register.', get_option('blogname'));
 
             if (!empty($welcome)) {
                 $message .= '<p class="message">' . $welcome . '</p>';
