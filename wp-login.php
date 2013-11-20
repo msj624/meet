@@ -62,7 +62,6 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<title class="notranslate"><?php bloginfo('name'); ?> &rsaquo; <?php echo $title; ?></title>
 	<?php
-    echo do_shortcode('[google-translator]');
 
 	wp_admin_css( 'wp-admin', true );
 	wp_admin_css( 'colors-fresh', true );
@@ -919,5 +918,6 @@ try {
 <?php
 login_footer();
 break;
+    echo do_shortcode('[google-translator]');
 } // end action switch
 
