@@ -947,7 +947,11 @@ p.search-box {
 	margin: 0;
 }
 
-.search-box input[name="s"],
+.search-box input[name="s"]{
+    float: none;
+    height: 1em;
+    margin: 0 4px 0 0;
+}
 #search-plugins input[name="s"],
 .tagsdiv .newtag {
 	float: left;
