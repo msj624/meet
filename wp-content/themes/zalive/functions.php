@@ -1048,10 +1048,12 @@
             if (strpos($current_url, 'post-new.php') === false)
             {
                 echo do_shortcode('[google-translator]');
+                echo "Copyright (c) 2013 By kt Corp.";
             }
             else if (strpos($current_url, 'edit.php') === false)
             {
                 echo do_shortcode('[google-translator]');
+                echo "Copyright (c) 2013 By kt Corp.";
             }
         }
     }
