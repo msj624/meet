@@ -35,7 +35,7 @@ if ( is_user_logged_in() ) {
         '<form  action="redirect-to-meet.php" method="post">
         <input type="hidden" value="'.$meetingID.'" name="meetingID" />
         <input type="hidden" value="'.$event_mader.'" name="mader" />
-        <button name="redirect_submit" value="redirect">Join Meeting</button>
+        <a id="joinbutton"></a>
         </form>';
 
     $my_post = array();
