@@ -13,10 +13,11 @@ $required = apply_filters('em_required_html','<i>*</i>');
 		<input class="em-date-end em-date-input-loc" type="text" style="margin: 1px;"/>
 		<input class="em-date-input" type="hidden" name="event_end_date" value="<?php echo $EM_Event->event_end_date ?>" style="margin: 1px;"/>
 	</p>
-	<p class="em-time-range">
+	<p class="em-start-time-range">
 		<span class="em-event-text"><?php _e('Event starts at','dbem'); ?></span>
-		<input id="start-time" class="em-time-input em-time-start" type="text" size="8" maxlength="8" name="event_start_time" value="<?php echo date( $hours_format, $EM_Event->start ); ?>" style="margin: 1px;"/>
-		<?php _e('~','dbem'); ?>
+		<input id="start-time" class="em-time-input em-time-start" type="text" size="8" maxlength="8" name="event_start_time" value="<?php echo date( $hours_format, $EM_Event->start ); ?>" style="margin: 1px;"/></p>
+	<?php _e('~','dbem'); ?>
+    <p class="em-end-time-range">
 		<input id="end-time" class="em-time-input em-time-end" type="text" size="8" maxlength="8" name="event_end_time" value="<?php echo date( $hours_format, $EM_Event->end ); ?>" style="margin: 1px;"/>
 		<br/><?php _e('All day','dbem'); ?> <input type="checkbox" class="em-time-all-day" name="event_all_day" id="em-time-all-day" value="1" <?php if(!empty($EM_Event->event_all_day)) echo 'checked="checked"'; ?> style="margin: 1px;"/>
 	</p>
