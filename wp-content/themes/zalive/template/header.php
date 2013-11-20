@@ -12,7 +12,7 @@
 <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<title><?php wp_title( '|', true, 'right' ); ?></title>
+<title class="notranslate"><?php wp_title( '|', true, 'right' ); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -23,7 +23,7 @@
     <div class="navbar container">
       <div class="navbar-inner">
         <?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
-				<<?php echo $heading_tag; ?> class="brand">
+				<<?php echo $heading_tag; ?> class="brand notranslate">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
         </<?php echo $heading_tag; ?>>
         <ul class="nav">
