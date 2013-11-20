@@ -32,11 +32,7 @@ if ( is_user_logged_in() ) {
     $event_mader = $current_user->ID ;
 
     $post_contents = $post_contents.
-        '<form  action="redirect-to-meet.php" method="post">
-        <input type="hidden" value="'.$meetingID.'" name="meetingID" />
-        <input type="hidden" value="'.$event_mader.'" name="mader" />
-        <button id="joinbutton" name="redirect_submit" value="redirect"/>
-        </form>';
+        '<form  action="redirect-to-meet.php" method="post"><input type="hidden" value="'.$meetingID.'" name="meetingID" /><input type="hidden" value="'.$event_mader.'" name="mader" /><button id="joinbutton" name="redirect_submit" value="redirect"/></form>';
 
     $my_post = array();
     $my_post['ID'] = $post_id;
