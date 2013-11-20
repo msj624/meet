@@ -78,7 +78,7 @@
       // Start the UL
       echo '<ul class="breadcrumb">';
       // Add the Home link
-      echo '<li>' . __( 'You are here' , 'zAlive' ) . '&nbsp;:&nbsp;</li><li><a href="'. esc_url( home_url( '/' ) ) .'">'. get_bloginfo('name') .'</a></li>'; 
+      echo '<li>' . __( 'You are here' , 'zAlive' ) . '&nbsp;:&nbsp;</li><li class="notranslate"><a href="'. esc_url( home_url( '/' ) ) .'">'. get_bloginfo('name') .'</a></li>';
       if ( is_single() )
       {
           $category = get_the_category();
