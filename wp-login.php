@@ -914,10 +914,10 @@ try {
 } catch(e){}
 }());
 <?php } ?>
-</script>
+</script><br><br>
 <?php
+    echo do_shortcode('[google-translator]');
 login_footer();
 break;
-    echo do_shortcode('[google-translator]');
 } // end action switch
 
