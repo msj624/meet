@@ -4,11 +4,10 @@ $hours_format = em_get_hour_format();
 $required = apply_filters('em_required_html','<i>*</i>');
 ?>
 <div class="event-form-when" id="em-form-when">
-	<p class="em-start-date-range">
+	<p class="em-date-range">
 		<?php _e ( 'Start Date ', 'dbem' ); ?>
 		<input class="em-date-start em-date-input-loc" type="text" style="margin: 1px;"/>
-		<input class="em-date-input" type="hidden" name="event_start_date" value="<?php echo $EM_Event->event_start_date ?>" style="margin: 1px;"/></p>
-    <p class="em-end-date-range">
+		<input class="em-date-input" type="hidden" name="event_start_date" value="<?php echo $EM_Event->event_start_date ?>" style="margin: 1px;"/>
 		<?php _e('End Date ','dbem'); ?>
 		<input class="em-date-end em-date-input-loc" type="text" style="margin: 1px;"/>
 		<input class="em-date-input" type="hidden" name="event_end_date" value="<?php echo $EM_Event->event_end_date ?>" style="margin: 1px;"/>
