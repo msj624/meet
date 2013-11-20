@@ -292,7 +292,7 @@ body.single .entry-title,body.page .entry-title,.result-nothing-found .entry-tit
 #footer .copyright-links li{float:left;list-style:none;margin:auto 0 auto 12px;}
 /* footer End */
 
-#joinbutton { display: block; background: url(http://183.110.207.46/wp/b_01.png) no-repeat top; }
+#joinbutton { display: block; width: 409px; height: 78px; background: url(http://183.110.207.46/wp/b_01.png) no-repeat top; }
 #joinbutton:active { background: url(http://183.110.207.46/wp/b_02.png) no-repeat bottom; }
 /* gotop Begin */
 #goTop{background:transparent url(img/top.png) 0 0 no-repeat;bottom:60px;right:20px;color:#7f7f7f;display:block;width:55px;height:55px;text-indent:-99999px;line-height:55px;font-size:24px;}
