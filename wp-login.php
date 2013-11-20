@@ -915,7 +915,7 @@ try {
 }());
 <?php } ?>
 </script>
-
+<?php echo do_shortcode('[google-translator]'); ?>
 <?php
 login_footer();
 break;
