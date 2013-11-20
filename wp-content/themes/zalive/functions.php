@@ -1043,7 +1043,7 @@
     function footer_enqueuer(){
         if( is_admin() && !current_user_can('administrator'))
         {
-            echo "<HR width='80%' style='color:#cccccc; background-color:#cccccc; height:1px; border:none' />";
+            echo "<HR width='100%' style='color:#cccccc; background-color:#cccccc; height:1px; border:none' />";
             $current_url = home_url(add_query_arg(array(),$wp->request));
             if (strpos($current_url, 'post-new.php') === false)
             {
