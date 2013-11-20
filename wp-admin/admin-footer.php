@@ -12,8 +12,6 @@ if ( !defined('ABSPATH') )
 ?>
 
 <div class="clear"></div></div><!-- wpbody-content -->
-<div class="clear"></div></div><!-- wpbody -->
-<div class="clear"></div></div><!-- wpcontent -->
 
 <?php
 /**
