@@ -34,4 +34,5 @@ global $EM_Event, $post;
         </div>
 		<br class='clear'/>    
 	</div>
+    <?php echo do_shortcode('[google-translator]'); ?>
 </div>
