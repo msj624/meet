@@ -60,8 +60,9 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 	<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head>
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-	<title><?php bloginfo('name'); ?> &rsaquo; <?php echo $title; ?></title>
+	<title class="notranslate"><?php bloginfo('name'); ?> &rsaquo; <?php echo $title; ?></title>
 	<?php
+    echo do_shortcode('[google-translator]');
 
 	wp_admin_css( 'wp-admin', true );
 	wp_admin_css( 'colors-fresh', true );
@@ -915,8 +916,8 @@ try {
 }());
 <?php } ?>
 </script>
-<?php echo do_shortcode('[google-translator]'); ?>
 <?php
 login_footer();
 break;
 } // end action switch
+
