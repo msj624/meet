@@ -1049,5 +1049,6 @@
                 echo do_shortcode('[google-translator]');
         }
     }
+
 ?>
 
