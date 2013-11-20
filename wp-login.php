@@ -914,9 +914,8 @@ try {
 } catch(e){}
 }());
 <?php } ?>
-</script><br><br>
+</script><br><br><center><div><?php echo do_shortcode('[google-translator]'); ?></div></center>
 <?php
-    echo do_shortcode('[google-translator]');
 login_footer();
 break;
 } // end action switch
