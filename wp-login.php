@@ -231,7 +231,7 @@ function login_footer($input_id = '') {
 	do_action( 'login_footer' ); ?>
 	<div class="clear"></div>
 	</body>
-    <?php echo do_shortcode('[google-translator]'); ?>
+    <div><center><?php echo do_shortcode('[google-translator]'); ?></center></div>
 	</html>
 	<?php
 }
