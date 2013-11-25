@@ -13,7 +13,7 @@ require('php/bbb_api.php');
 $attendeePW = 'ap';
 $moderatorPW = 'mp';
 $SALT = "ade7513b0851821b36c0b94bec4dd63d";
-$URL = "http://183.110.207.45/bigbluebutton/";
+$URL = "http://183.110.207.43/bigbluebutton/";
 $role = $_GET['role'];
 $username = $_GET['username'];
 $meetingID = $_GET['meetingID'];

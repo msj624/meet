@@ -17,7 +17,7 @@ $SALT = "ade7513b0851821b36c0b94bec4dd63d";
 
 $attendeePW = 'ap';
 $moderatorPW = 'mp';
-$URL = "http://183.110.207.45/bigbluebutton/";
+$URL = "http://183.110.207.43/bigbluebutton/";
 $url_create = $URL."api/create?";
 
 $params = 'name='.urlencode($name).'&meetingID='.urlencode($meetingID).'&attendeePW='.urlencode($attendeePW).'&moderatorPW='.urlencode($moderatorPW).'&record='.$record;

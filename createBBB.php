@@ -22,7 +22,7 @@ if ( is_user_logged_in() ) {
     global $current_user;
     get_currentuserinfo();
 
-    wp_redirect('http://183.110.207.45/demo/create.jsp?action=init&creator='.$current_user->user_login);
+    wp_redirect('http://183.110.207.43/demo/create.jsp?action=init&creator='.$current_user->user_login);
 }
 else
 {
