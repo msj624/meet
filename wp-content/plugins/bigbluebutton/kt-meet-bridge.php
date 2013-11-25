@@ -18,13 +18,22 @@ $role = $_GET['role'];
 $username = $_GET['username'];
 $meetingID = $_GET['meetingID'];
 
-if ($role == 'creator')
+$info = BigBlueButton::getMeetingInfoArray( $meetingID, $moderatorPW, $URL, $SALT);
+//Analyzes the bigbluebutton server's response
+if( $info['returncode'] == 'FAILED')
 {
-    header("Location: ".BigBlueButton::getJoinURL( $meetingID, $username, $moderatorPW, $SALT, $URL ));
-    exit();
+    echo "<script>alert('This meeting was finished by creator');window.location.href='http://183.110.207.46/wp/';</script>";
 }
 else
 {
-    header("Location: ".BigBlueButton::getJoinURL( $meetingID, $username, $attendeePW, $SALT, $URL ));
-    exit();
+    if ($role == 'creator')
+    {
+        header("Location: ".BigBlueButton::getJoinURL( $meetingID, $username, $moderatorPW, $SALT, $URL ));
+        exit();
+    }
+    else
+    {
+        header("Location: ".BigBlueButton::getJoinURL( $meetingID, $username, $attendeePW, $SALT, $URL ));
+        exit();
+    }
 }
