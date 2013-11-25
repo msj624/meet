@@ -22,7 +22,8 @@ $info = BigBlueButton::getMeetingInfoArray( $meetingID, $moderatorPW, $URL, $SAL
 //Analyzes the bigbluebutton server's response
 if( $info['returncode'] == 'FAILED')
 {
-    echo "<script>alert('This meeting was finished by creator');window.location.href='http://183.110.207.46/wp/';</script>";
+    //echo "<script>alert('This meeting was finished.');window.location.href='http://183.110.207.46/wp/';</script>";
+    header("Location: http://183.110.207.46/wp/?page_id=838");
 }
 else
 {
