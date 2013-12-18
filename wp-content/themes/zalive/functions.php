@@ -1058,12 +1058,6 @@
         }
     }
 
-    function wp_hi_res_admin_icons() {
-        echo '<link rel="icon" href="/wp-content/themes/' . basename(dirname(__FILE__)) . '/img/icon_32.png" sizes="32x32" />'."\n";
-        echo '<link rel="icon" href="/wp-content/themes/' . basename(dirname(__FILE__)) . '/img/icon_48.png" sizes="48x48" />'."\n";
-    }
-    add_action('login_head', 'wp_hi_res_admin_icons');
-    add_action('admin_head', 'wp_hi_res_admin_icons');
 
 ?>
 

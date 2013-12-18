@@ -16,6 +16,15 @@
  }else{
    $sidebar_layout_classes = 'content-full-width';
  }
+
+add_action('login_head', 'wp_hi_res_admin_icons');
+add_action('admin_head', 'wp_hi_res_admin_icons');
+
+function wp_hi_res_admin_icons() {
+    echo '<link rel="icon" href="/wp-content/themes/' . basename(dirname(__FILE__)) . '/img/icon_32.png" sizes="32x32" />'."\n";
+    echo '<link rel="icon" href="/wp-content/themes/' . basename(dirname(__FILE__)) . '/img/icon_48.png" sizes="48x48" />'."\n";
+}
+
 ?>
   <div id="content" class="container <?php echo $container_classes; ?>">
     <div class="<?php echo $sidebar_layout_classes; ?> clearfix">
