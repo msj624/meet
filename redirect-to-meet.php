@@ -27,11 +27,11 @@ if ( is_user_logged_in() ) {
         $meetingID = $_POST['meetingID'];
         if ($_POST['mader'] == $current_user->ID )
         {
-            wp_redirect("http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/kt-meet-bridge.php?role=creator&username=".$current_user->user_login."&meetingID=".$meetingID);
+            wp_redirect("http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/kt-meet-bridge.php?role=creator&username=".$current_user->display_name."&meetingID=".$meetingID);
         }
         else
         {
-            wp_redirect("http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/kt-meet-bridge.php?role=guest&username=".$current_user->user_login."&meetingID=".$meetingID);
+            wp_redirect("http://183.110.207.46/wp/wp-content/plugins/bigbluebutton/kt-meet-bridge.php?role=guest&username=".$current_user->display_name."&meetingID=".$meetingID);
         }
     }
     else
