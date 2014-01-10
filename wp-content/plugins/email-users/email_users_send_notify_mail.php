@@ -200,8 +200,9 @@
 			$num_sent = mailusers_send_mail($recipients, format_to_post($original_subject), $original_mail_content, $mail_format, $from_name, $from_address);
 	?>
 			<div class="updated fade">
-				<p><?php echo sprintf(__("Notification sent to %s user(s).", MAILUSERS_I18N_DOMAIN), $num_sent); ?></p>
+				<p><?php echo "<SCRIPT>alert('Notification sent to users')</SCRIPT>" ?></p>
 			</div>
+
 	<?php
 			include 'email_users_notify_form.php';
 		}
