@@ -104,7 +104,7 @@ class BigBlueButton {
      */
     public function getJoinURL( $meetingID, $userName, $PW, $SALT, $URL ) {
         $url_join = $URL."api/join?";
-        $params = 'meetingID='.urlencode($meetingID).'&fullName='.$userName.'&password='.urlencode($PW);
+        $params = 'meetingID='.urlencode($meetingID).'&fullName='.urlencode($userName).'&password='.urlencode($PW);
         return ($url_join.$params.'&checksum='.sha1("join".$params.$SALT) );
     }
 
@@ -124,7 +124,7 @@ class BigBlueButton {
      *@return The url to join the meeting
      */
     public function getCreateMeetingURL($name, $meetingID, $attendeePW, $moderatorPW, $welcome, $logoutURL, $SALT, $URL, $record = 'false', $duration=0, $voiceBridge=0, $metadata = array() ) {
-        var $url_create = $URL."api/create?";
+        $url_create = $URL."api/create?";
         if ( $voiceBridge == 0)
             $voiceBridge = 70000 + rand(0, 9999);
 
@@ -253,7 +253,7 @@ class BigBlueButton {
             return ( (string)$xml->messageKey.' : '.(string)$xml->message );
         }
         else {
-            return ('Unable to fetch URL ');
+            return ('Unable to fetch URL '.$url_create.$params.'&checksum='.sha1("create".$params.$SALT) );
         }
     }
 
