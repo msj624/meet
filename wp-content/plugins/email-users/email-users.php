@@ -293,12 +293,7 @@ function mailusers_post_relatedlink() {
 	global $post_ID;
 	if (isset($post_ID) && current_user_can(MAILUSERS_NOTIFY_USERS_CAP)) {
 ?>
-<div id="email-users-notify-post" class="postbox email-users-notify-postbox">
-<h3 class='hndle'><span><?php _e('Email Users', MAILUSERS_I18N_DOMAIN); ?></span></h3>
-<div class="inside">
-<p><img style="padding: 5px; vertical-align: middle;" src="<?php echo plugins_url('images/email.png' , __FILE__); ?>"</img><a href="admin.php?page=mailusers-send-notify-mail-post&post_id=<?php echo $post_ID; ?>"><?php _e('Notify Users About this Post', MAILUSERS_I18N_DOMAIN); ?></a></p>
-</div>
-</div>
+
 <?php
 	}
 }
