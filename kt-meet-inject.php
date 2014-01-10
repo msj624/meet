@@ -32,7 +32,8 @@ if ( is_user_logged_in() ) {
     $event_mader = $current_user->ID ;
 
     $post_contents = $post_contents.
-        '<form  action="redirect-to-meet.php" method="post"><input type="hidden" value="'.$meetingID.'" name="meetingID" /><input type="hidden" value="'.$event_mader.'" name="mader" /><button id="joinbutton" name="redirect_submit" value="redirect"/></form>';
+        '<p><img style="padding: 5px; vertical-align: middle;" src="http://183.110.207.46/wp/wp-content/plugins/email-users/images/email.png" <="" img=""><a href="admin.php?page=mailusers-send-notify-mail-post&amp;post_id='.$post_id.'">Notify Users About this Meeting</a></p>
+        <form  action="redirect-to-meet.php" method="post"><input type="hidden" value="'.$meetingID.'" name="meetingID" /><input type="hidden" value="'.$event_mader.'" name="mader" /><button id="joinbutton" name="redirect_submit" value="redirect"/></form>';
 
     $my_post = array();
     $my_post['ID'] = $post_id;
