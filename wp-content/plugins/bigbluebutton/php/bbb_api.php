@@ -104,7 +104,7 @@ class BigBlueButton {
      */
     public function getJoinURL( $meetingID, $userName, $PW, $SALT, $URL ) {
         $url_join = $URL."api/join?";
-        $params = 'meetingID='.urlencode($meetingID).'&fullName='.urlencode($userName).'&password='.urlencode($PW);
+        $params = 'meetingID='.urlencode($meetingID).'&fullName='.$userName.'&password='.urlencode($PW);
         return ($url_join.$params.'&checksum='.sha1("join".$params.$SALT) );
     }
 
