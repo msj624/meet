@@ -187,7 +187,7 @@
                                 break;
 
                             case 'lf' :
-                                $name = sprintf('%s, %s - %s,%s,%s,%s',
+                                $name = sprintf('%s, %s - %s',
                                     is_null($user->last_name) ? $na : $user->last_name,
                                     is_null($user->first_name) ? $na : $user->first_name,
                                     is_null($user->description) ? $na : $user->description);
