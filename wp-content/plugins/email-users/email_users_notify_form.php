@@ -163,7 +163,7 @@
             <small><?php _e('The users that did not agree to receive notifications do not appear here.', MAILUSERS_I18N_DOMAIN); ?></small></label></th>
             <td>
 
-                <select name="send_users[]" multiple="yes" size="8" style="width: 400px; height: 250px; overflow:scoll;">
+                <select name="send_users[]" multiple="yes" size="8" style="width: 450px; height: 250px;">
                 <?php 
                     //  Display of users is based on plugin setting
                     $na = __('N/A', MAILUSERS_I18N_DOMAIN);
@@ -247,7 +247,12 @@
             <th scope="row" valign="top"><label for="subject"><?php _e('Subject', MAILUSERS_I18N_DOMAIN); ?></label></th>
             <td><?php echo mailusers_get_default_mail_format()=='html' ? $subject : '<pre>' . format_to_edit($subject) . '</pre>';?></td>
         </tr>
+        <tr>
+            <th scope="row" valign="top"><label for="mailcontent"><?php _e('Message', MAILUSERS_I18N_DOMAIN); ?></label></th>
+            <td><?php echo mailusers_get_default_mail_format()=='html' ? $mail_content : '<pre>' . wordwrap(strip_tags($mail_content), 80, "\n") . '</pre>';?>
 
+            </td>
+        </tr>
         </table>
         
         <p class="submit">
