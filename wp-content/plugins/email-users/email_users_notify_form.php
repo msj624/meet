@@ -163,7 +163,7 @@
             <small><?php _e('The users that did not agree to receive notifications do not appear here.', MAILUSERS_I18N_DOMAIN); ?></small></label></th>
             <td style="overflow:scoll;">
 
-                <select name="send_users[]" multiple="yes" size="8" style="width: 400px; height: 250px;">
+                <select name="send_users[]" multiple="yes" size="8" style="width: 500px; height: 250px;">
                 <?php 
                     //  Display of users is based on plugin setting
                     $na = __('N/A', MAILUSERS_I18N_DOMAIN);
