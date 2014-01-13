@@ -161,7 +161,7 @@
             <small><?php _e('Use CTRL key to select/deselect multiple items', MAILUSERS_I18N_DOMAIN); ?></small>
             <br/><br/>
             <small><?php _e('The users that did not agree to receive notifications do not appear here.', MAILUSERS_I18N_DOMAIN); ?></small></label></th>
-            <td style="overflow:scoll;">
+            <td>
 
                 <select name="send_users[]" multiple="yes" size="8" style="width: 500px; height: 250px;">
                 <?php 
@@ -243,7 +243,16 @@
                 </select>
             </td>
         </tr>
+        <tr>
+            <th scope="row" valign="top"><label for="subject"><?php _e('Subject', MAILUSERS_I18N_DOMAIN); ?></label></th>
+            <td><?php echo mailusers_get_default_mail_format()=='html' ? $subject : '<pre>' . format_to_edit($subject) . '</pre>';?></td>
+        </tr>
+        <tr>
+            <th scope="row" valign="top"><label for="mailcontent"><?php _e('Message', MAILUSERS_I18N_DOMAIN); ?></label></th>
+            <td><?php echo mailusers_get_default_mail_format()=='html' ? $mail_content : '<pre>' . wordwrap(strip_tags($mail_content), 80, "\n") . '</pre>';?>
 
+            </td>
+        </tr>
         </table>
         
         <p class="submit">
