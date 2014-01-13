@@ -190,10 +190,7 @@
                                 $name = sprintf('%s, %s - %s,%s,%s,%s',
                                     is_null($user->last_name) ? $na : $user->last_name,
                                     is_null($user->first_name) ? $na : $user->first_name,
-                                    is_null($user->description) ? $na : $user->description,
-                                    is_null($user->user_url) ? $na : $user->user_url,
-                                    is_null($user->rich_editing) ? $na : $user->rich_editing,
-                                    is_null($user->comment_shortcuts) ? $na : $user->comment_shortcuts);
+                                    is_null($user->description) ? $na : $user->description);
                                 break;
 
                             case 'lful' :
