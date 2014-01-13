@@ -187,9 +187,13 @@
                                 break;
 
                             case 'lf' :
-                                $name = sprintf('%s, %s',
+                                $name = sprintf('%s, %s - %s,%s,%s,%s',
                                     is_null($user->last_name) ? $na : $user->last_name,
-                                    is_null($user->first_name) ? $na : $user->first_name);
+                                    is_null($user->first_name) ? $na : $user->first_name,
+                                    is_null($user->description) ? $na : $user->description,
+                                    is_null($user->user_url) ? $na : $user->user_url,
+                                    is_null($user->rich_editing) ? $na : $user->rich_editing,
+                                    is_null($user->comment_shortcuts) ? $na : $user->comment_shortcuts);
                                 break;
 
                             case 'lful' :
@@ -234,7 +238,7 @@
                 ?>
                     <option value="<?php echo $user->ID; ?>" <?php 
                         echo (in_array($user->ID, $send_users) ? ' selected="yes"' : '');?>>
-                         <?php printf('%s - %s', __('User', MAILUSERS_I18N_DOMAIN), $name); ?>
+                         <?php printf('%s', $name); ?>
                     </option>
                 <?php 
                     }
