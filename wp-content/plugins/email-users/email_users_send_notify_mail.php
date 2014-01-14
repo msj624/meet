@@ -201,8 +201,8 @@
 	?>
 			<div class="updated fade">
 				<p><?php echo "<SCRIPT>alert('Notification sent to users')</SCRIPT>" ?></p>
+                <?php wp_redirect(get_permalink($post_id)) ?>
 			</div>
-            <?php wp_redirect(get_permalink($post_id)) ?>
 	<?php
 			include 'email_users_notify_form.php';
 		}
