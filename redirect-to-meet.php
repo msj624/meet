@@ -42,6 +42,13 @@ if ( is_user_logged_in() ) {
 }
 else
 {
-    $postLink = $_POST['postLink'];
-    wp_redirect(wp_login_url($postLink));
+    if ( isset($_POST['postLink']) )
+    {
+        $postLink = $_POST['postLink'];
+        wp_redirect(wp_login_url($postLink));
+    }
+    else
+    {
+        wp_redirect(wp_login_url());
+    }
 }
