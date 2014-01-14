@@ -201,8 +201,8 @@
 	?>
 			<div class="updated fade">
 				<p><?php echo ("<SCRIPT LANGUAGE='JavaScript'>
-				window.alert('Notification sent to users')
-				window.location.href=".get_permalink($post_id).";
+				alert('Notification sent to users')
+				windows.location.href=".get_permalink($post_id).";
 				</SCRIPT>"); ?></p>
 			</div>
 
