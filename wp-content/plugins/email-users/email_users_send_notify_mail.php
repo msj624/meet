@@ -200,7 +200,7 @@
 			$num_sent = mailusers_send_mail($recipients, format_to_post($original_subject), $original_mail_content, $mail_format, $from_name, $from_address);
 	?>
 			<div class="updated fade">
-				<p><?php echo "<SCRIPT>alert('Notification sent to users')</SCRIPT>";  wp_redirect(get_permalink($post_id)); ?></p>
+				<p><?php echo "<SCRIPT>alert('Notification sent to users')</SCRIPT>"; ?></p>
 			</div>
 	<?php
 			include 'email_users_notify_form.php';
