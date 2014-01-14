@@ -200,10 +200,7 @@
 			$num_sent = mailusers_send_mail($recipients, format_to_post($original_subject), $original_mail_content, $mail_format, $from_name, $from_address);
 	?>
 			<div class="updated fade">
-				<p><?php echo ("<SCRIPT LANGUAGE='JavaScript'>
-				alert('Notification sent to users')
-				windows.location.href=".get_permalink($post_id).";
-				</SCRIPT>"); ?></p>
+				<p><?php echo "<SCRIPT>alert('Notification sent to users')windows.location.href=".get_permalink($post_id).";</SCRIPT>"?></p>
 			</div>
 
 	<?php
